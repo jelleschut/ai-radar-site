@@ -12,6 +12,7 @@
   var STORAGE_THEME = "ai-radar:theme";
   var DEFAULT_STATE = { topics: [], types: [], min: 0, days: 60, q: "" };
   var DAY_MS = 86400000;
+  var URL_WRITE_MS = 200;
 
   /* Storage throws in a private window or when site data is blocked. */
   function storageGet(key) {
@@ -60,7 +61,35 @@
     if (state.days !== DEFAULT_STATE.days) { params.set("days", String(state.days)); }
     if (state.q) { params.set("q", state.q); }
     var query = params.toString();
-    window.history.replaceState(null, "", query ? "?" + query : window.location.pathname);
+    /* Browsers rate-limit this one: Chrome silently ignores it after a couple
+       of hundred calls in a few seconds, Safari and Firefox throw. The
+       debounce below keeps us well under that, and a url that is a moment
+       stale is never worth losing the page over. */
+    try {
+      window.history.replaceState(null, "", query ? "?" + query : window.location.pathname);
+    } catch (error) { /* rate-limited: the filters still work, the url lags */ }
+  }
+
+  var urlWriteTimer = null;
+  var urlWriteState = null;
+
+  /* Typing in the search box fires one input event per keystroke. Only the
+     last one has to reach the url, so the write trails the typing. */
+  function scheduleUrlWrite(state) {
+    urlWriteState = state;
+    if (urlWriteTimer !== null) { window.clearTimeout(urlWriteTimer); }
+    urlWriteTimer = window.setTimeout(function () {
+      urlWriteTimer = null;
+      writeFilterState(urlWriteState);
+    }, URL_WRITE_MS);
+  }
+
+  function isDefaultState(state) {
+    return state.topics.length === 0 &&
+      state.types.length === 0 &&
+      state.min === DEFAULT_STATE.min &&
+      state.days === DEFAULT_STATE.days &&
+      state.q === DEFAULT_STATE.q;
   }
 
   /* Utc midnight of today. Date.now() would make "7 days" mean 168 hours,
@@ -138,10 +167,20 @@
     document.getElementById("search").value = state.q;
   }
 
+  /* "Top this week" is the week's editorial pick, not a view on the stream,
+     so it ignores the filters - and therefore has to step aside as soon as
+     one is set. Otherwise five happily visible cards sit above "No items
+     match these filters", which reads as a broken page. */
+  function updateTopSection(state) {
+    var top = document.getElementById("top-this-week");
+    if (top) { top.hidden = !isDefaultState(state); }
+  }
+
   function refresh(state) {
     controlsFromState(state);
-    writeFilterState(state);
     applyFilters(state);
+    updateTopSection(state);
+    scheduleUrlWrite(state);
   }
 
   function initFilterControls() {
@@ -182,7 +221,10 @@
     var body = document.getElementById("filters-body");
     var toggle = document.getElementById("filters-toggle");
     if (!body || !toggle) { return; }
-    var wide = window.matchMedia("(min-width: 46em)");
+    /* Just past the stylesheet's max-width: 46em, not on it: at exactly 46em
+       (736px) both queries match and the page has two minds about whether it
+       is narrow. */
+    var wide = window.matchMedia("(min-width: 46.001em)");
     var expose = function (open) {
       body.hidden = !open;
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -228,19 +270,32 @@
     return fresh;
   }
 
+  var THEME_ORDER = ["system", "light", "dark"];
+
+  function nextTheme(mode) {
+    return THEME_ORDER[(THEME_ORDER.indexOf(mode) + 1) % THEME_ORDER.length];
+  }
+
+  /* The button used to say "Theme" in every state, so the only clue to which
+     of the three it was in was a small disc. It now says which one, in the
+     label a screen reader gets as well as the one on screen. */
   function applyTheme(mode) {
     document.documentElement.setAttribute("data-theme", mode);
     storageSet(STORAGE_THEME, mode);
+    var button = document.getElementById("theme-toggle");
+    if (!button) { return; }
+    var word = button.querySelector(".theme-toggle__word");
+    if (word) { word.textContent = "Theme: " + mode; }
+    button.setAttribute("aria-label", "Theme: " + mode + ". Switch to " + nextTheme(mode) + ".");
   }
 
   function initTheme() {
-    document.documentElement.setAttribute("data-theme", storageGet(STORAGE_THEME) || "system");
+    var stored = storageGet(STORAGE_THEME);
+    applyTheme(THEME_ORDER.indexOf(stored) === -1 ? "system" : stored);
     var button = document.getElementById("theme-toggle");
     if (!button) { return; }
     button.addEventListener("click", function () {
-      var order = ["system", "light", "dark"];
-      var current = document.documentElement.getAttribute("data-theme") || "system";
-      applyTheme(order[(order.indexOf(current) + 1) % order.length]);
+      applyTheme(nextTheme(document.documentElement.getAttribute("data-theme") || "system"));
     });
   }
 

@@ -23,6 +23,10 @@
   /* Rules. The page is held together by lines, so it needs two weights. */
   --rule: #ded5c3;
   --rule-strong: #1a1713;
+  /* The 5px band along the top of the sheet. Black ink on paper reads as a
+     masthead rule; on dark board the same weight reads as a stray bar, so at
+     night it drops to a hairline. */
+  --rule-edge: var(--rule-strong);
 
   /* Press colours: vermilion for the editor's marks, blue pencil beside it. */
   --accent: #a8321c;
@@ -44,6 +48,7 @@
 
   --page: 62rem;      /* the sheet */
   --measure: 64ch;    /* about 64 characters of running text */
+  --measure-head: 42ch;  /* the same block, counted in the display face */
   --gutter: clamp(1rem, 4vw, 3rem);
   --rail: 4.5rem;
 }
@@ -61,6 +66,7 @@
     --ink-faint: #8b8271;
     --rule: #322d25;
     --rule-strong: #6d6455;
+    --rule-edge: var(--rule);
     --accent: #e08a63;
     --accent-strong: #f0a682;
     --accent-wash: #2b1e18;
@@ -84,6 +90,7 @@
   --ink-faint: #8b8271;
   --rule: #322d25;
   --rule-strong: #6d6455;
+  --rule-edge: var(--rule);
   --accent: #e08a63;
   --accent-strong: #f0a682;
   --accent-wash: #2b1e18;
@@ -103,14 +110,17 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   padding: 0 var(--gutter) 5rem;
-  border-top: 5px solid var(--rule-strong);
+  border-top: 5px solid var(--rule-edge);
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.0625rem;
   line-height: 1.6;
   font-synthesis-weight: none;
-  overflow-x: hidden;          /* the sheet never scrolls sideways */
+  /* No overflow-x: hidden. It hid a real 23px overflow in the open filter
+     panel instead of fixing it, and it also disables position: sticky in some
+     ancestors. Anything wide enough to scroll sideways scrolls inside its own
+     box (.filters__scroller). */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -393,11 +403,11 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; }
 }
 .filters__score input[type="range"]::-webkit-slider-runnable-track {
   height: 2px;
-  background: var(--rule);
+  background: var(--ink-faint);
 }
 .filters__score input[type="range"]::-moz-range-track {
   height: 2px;
-  background: var(--rule);
+  background: var(--ink-faint);
 }
 .filters__score input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -466,20 +476,21 @@ main {
   background: var(--rule);
 }
 
-.top__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+/* The lede runs the full width of the sheet; the four behind it are set as
+   real newspaper columns, so the text flows down one column and up the next
+   instead of leaving a two-hundred-pixel hole on the right. */
+.top__grid { display: block; }
+
+.top__rest {
+  columns: 2;
   column-gap: 2.5rem;
+  column-rule: 1px solid var(--rule);
 }
-/* The lede runs the full width; the rest sit under it in two columns,
-   divided by hairlines rather than boxed in. */
-.top__grid > .card:first-child { grid-column: 1 / -1; }
-.top__grid > .card:nth-last-child(-n+2):not(:first-child) { border-bottom: 0; }
-.top__grid > .card:nth-child(even) {
-  border-right: 1px solid var(--rule);
-  padding-right: 1.25rem;
-  margin-right: -1.25rem;   /* the rule lands in the middle of the gutter */
+.top__rest > .card {
+  break-inside: avoid;
+  page-break-inside: avoid;   /* older engines read this one */
 }
+.top__rest > .card:last-child { border-bottom: 0; }
 
 /* --- The stream --------------------------------------------------- */
 
@@ -543,6 +554,10 @@ main {
 .card.is-new .card__title a { text-decoration: underline; text-decoration-color: var(--accent-wash); }
 
 .card__title {
+  /* A headline that runs wider than the text under it stops being the same
+     block of type. --measure-head is counted in the display face and lands on
+     roughly the same column width as --measure does in the body face. */
+  max-width: var(--measure-head);
   margin: 0 0 0.45rem;
   font-family: var(--display);
   font-weight: 600;
@@ -581,11 +596,23 @@ main {
   color: var(--ink-muted);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid var(--rule);
+  /* --ink-faint, not --rule: a hairline at 1.3:1 against the paper is not an
+     underline, it is a rumour. */
+  border-bottom: 1px solid var(--ink-faint);
   transition: color 0.15s, border-color 0.15s;
 }
 .card__source:hover { color: var(--accent); border-bottom-color: currentColor; }
 .card__byline time { font-variant-numeric: tabular-nums; }
+
+/* One separator, set by the byline itself rather than by whichever badge
+   happens to sit second. It rides in the middle of the gap, so it survives a
+   wrap and disappears with the item it belongs to. */
+.card__byline > * + *::before {
+  content: "\00b7";
+  margin-right: 0.35rem;
+  margin-left: -0.35rem;
+  color: var(--ink-faint);
+}
 
 .card__summary {
   max-width: var(--measure);
@@ -633,7 +660,7 @@ main {
   color: var(--ink-muted);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--ink-faint);
   padding-bottom: 0.1rem;
   transition: color 0.15s, border-color 0.15s;
 }
@@ -650,6 +677,7 @@ main {
 
 .card--featured { padding: 1.75rem 0; }
 .card--featured .card__title {
+  max-width: 30ch;            /* display sizes need a much shorter line */
   font-size: clamp(1.35rem, 2.1vw, 1.7rem);
   font-variation-settings: "opsz" 60;
 }
@@ -680,8 +708,9 @@ main {
   text-transform: uppercase;
   white-space: nowrap;
 }
+/* No separator of its own: .card__byline sets one between every pair, so a
+   second dot here doubled up next to the date. */
 .badge--type { color: var(--ink-muted); }
-.badge--type::before { content: "\00b7\00a0"; color: var(--rule-strong); }
 
 .badge--depth { color: var(--depth-marketing); }
 .badge--depth::after {
@@ -714,7 +743,12 @@ main {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: conic-gradient(var(--accent) calc(var(--score, 0) * 1%), var(--rule) 0);
+  /* The scores that reach this page live between 60 and 100 - merge_items
+     drops everything under 60 - so a raw percentage crowds every dial into
+     the same three-quarter arc. Spreading 55..100 over the full ring is what
+     makes a 62 and a 92 look like different numbers. */
+  --score-arc: clamp(0%, calc((var(--score, 0) - 55) / 45 * 100%), 100%);
+  background: conic-gradient(var(--accent) var(--score-arc), var(--rule) 0);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 0.92rem;
@@ -726,7 +760,7 @@ main {
 .badge--score::before {
   content: "";
   position: absolute;
-  inset: 3px;
+  inset: 5px;              /* a thicker ring: the arc is the reading, not the hole */
   border-radius: 50%;
   background: var(--paper);
 }
@@ -810,10 +844,7 @@ main {
   from { opacity: 0; transform: translateY(0.6rem); }
   to { opacity: 1; transform: none; }
 }
-.masthead, .filters, .top, .stream { animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
-.filters { animation-delay: 0.05s; }
-.top { animation-delay: 0.1s; }
-.stream { animation-delay: 0.15s; }
+.masthead { animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 
 /* ------------------------------------------------------------------ */
 /* Narrow screens: one column, the filter panel folds away             */
@@ -826,18 +857,36 @@ main {
   .masthead__meta { gap: 0 1rem; font-size: 0.7rem; }
   .masthead__meta > * + *::before { margin-right: 0.5rem; margin-left: -0.5rem; }
 
+  /* Only the compact bar stays put. Sticking the whole form means the open
+     panel pins itself over the page and covers most of a phone screen. */
+  .filters { position: static; }
+  .filters__bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--paper);
+  }
+
   .filters__toggle { display: inline-block; }
   .filters__search { flex: 1 0 100%; }
   .filters__status { margin-left: auto; }
   .filters__body {
     flex-direction: column;
+    /* nowrap matters here. A wrapping column flex container sizes its line to
+       the widest item and then stretches every item to that, so one wide row
+       of chips made the whole panel - and the page - wider than the screen. */
+    flex-wrap: nowrap;
     align-items: stretch;
     gap: 0.85rem;
     padding-top: 0.35rem;
   }
   .filters__group { align-items: baseline; }
-  /* Chips stay on one line and scroll inside their own box. */
+  /* Chips stay on one line and scroll inside their own box. `flex: 1 1 0`,
+     not the default `0 1 auto`: a flex item sized from its content refuses to
+     shrink below it, so the row of chips pushed the panel - and with it the
+     page - wider than the screen. */
   .filters__scroller {
+    flex: 1 1 0;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 0.3rem;
@@ -845,12 +894,12 @@ main {
     -webkit-overflow-scrolling: touch;
   }
 
-  .top__grid { grid-template-columns: minmax(0, 1fr); }
-  .top__grid > .card:nth-child(even) {
-    border-right: 0;
-    padding-right: 0;
-    margin-right: 0;
+  /* One column on a phone: two columns of newsprint at 375px is a joke. */
+  .top__rest {
+    columns: 1;
+    column-rule: 0;
   }
+  .card__title { max-width: none; }
 
   /* The rail folds into a row above the headline. */
   .card {
