@@ -3,6 +3,40 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "id": "2cceb7d82bdd550b8789ddac06261d9d44d5c72d",
+      "published": "2026-09-04",
+      "score": 90,
+      "source": "Azure Architecture Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
+      "summary": "Shows that Private Link on Foundry itself does not secure agent egress: dependent resources like AI Search, Storage and Cosmos DB need their own private endpoints, and outbound traffic needs Azure Firewall inspection to actually close the gap.",
+      "title": "Your Private Endpoint Does Not Cover Agent Egress: Locking Down Azure AI Foundry in Both Directions",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/your-private-endpoint-does-not-cover-agent-egress-locking-down/ba-p/4547864",
+      "why": "A concrete, verified fix for a private-networking gap that looks closed but isn't."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "9ea5ee149bdedbb5e5968ab86fa09aae18e6f797",
+      "published": "2026-09-04",
+      "score": 88,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Root cause: with private networking enabled, the Foundry endpoint resolves to a private IP, so the browser-based playground's own calls originate from a public origin reaching into private address space, which Local Network Access exists to block.",
+      "title": "It Wasn't the Private Endpoint: Why the Foundry Playground Breaks Behind Private Networking",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/it-wasn-t-the-private-endpoint-why-the-foundry-playground-breaks/ba-p/4552771",
+      "why": "Names the exact browser-vs-backend cause behind a networking failure that fooled the team for hours."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "id": "4dabe4d480a80907b8c013170dbab1cfb6adb6c9",
       "published": "2026-09-04",
       "score": 80,
@@ -16,6 +50,23 @@
       "type": "article",
       "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness",
       "why": "A measured before/after number (0.67 to 0.83 Pass@1) from changing only a tool's output shape is exactly the kind of harness-design evidence that changes how I would build my own coding-agent tools."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "0242dd1ae6387a086244c1976e0b13d1058d5381",
+      "published": "2026-09-04",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Recommends Voice Live plus BYOM when Voice Live should own speech handling but your team keeps model, capacity and content-filter control, and reconsidering it when every credential and tool call must stay in-process instead.",
+      "title": "Choosing a real-time voice architecture on Microsoft Foundry: three enterprise patterns",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/choosing-a-real-time-voice-architecture-on-microsoft-foundry/ba-p/4552676",
+      "why": "Gives an actual decision rule for picking between three real-time voice architectures on Foundry."
     },
     {
       "deepened": false,
@@ -33,6 +84,24 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
       "why": "It is a concrete containment failure mode for agents with real tool access, directly relevant to how I would scope permissions for my own agent systems."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "b3b9e98febac2b86707b07c47f6b36e0bb04fb58",
+      "published": "2026-09-04",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "GPT-6 Astra's pelican SVGs beat GPT-5.6 Sol's best at every reasoning level; at roughly double the per-token price but using far fewer tokens, Astra's lowest setting still beats Sol's best for about 9.55 cents.",
+      "title": "The Pelican comparison grid for Astra is pretty interesting",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans",
+      "why": "A genuinely useful cost-per-quality comparison across reasoning levels, dressed up as a pelican test."
     },
     {
       "deepened": false,
@@ -753,6 +822,23 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "id": "b3fc3bb08f32d54678e4ca8d664a908998408566",
+      "published": "2026-08-26",
+      "score": 85,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "A detailed baseline for a network-isolated Foundry chat app: Private Link on every PaaS dependency, Azure Firewall egress inspection, zone-redundant Cosmos DB and AI Search, plus explicit tradeoffs on orchestration, grounding store and compute.",
+      "title": "Baseline Microsoft Foundry Chat Reference Architecture",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat",
+      "why": "Names real constraints too: no built-in multi-region failover and nondeterministic tool costs."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "id": "504dd1ec950803b896fd5f67b4c0caebf6b6fbe6",
       "published": "2026-08-26",
       "score": 80,
@@ -885,13 +971,190 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
       "why": "A hands-on account of running a new open MoE model at different quantization levels on real hardware tells me more than the spec sheet about what it actually takes to self-host it."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "4e66e71e0084ef294634befd66700efac46ef416",
+      "published": "2026-08-25",
+      "score": 88,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Ramp built its own coding agent, Inspect, because local tools capped concurrency and lacked org context; it now provides remote sandboxes that verify changes and integrate with internal systems like Snowflake and feature flags.",
+      "title": "Why Ramp built its own in-house coding agent, Inspect",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/why-ramp-built-inspect",
+      "why": "75% of merged PRs now come from Inspect sessions, with 1M sessions and 150+ contributing engineers by July."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "4c433491c75583b93b6e1697b0cf3ef0a6dd090a",
+      "published": "2026-08-25",
+      "score": 78,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Headlong is a sub-10k-line Bash agent framework that loops an LLM over its own trajectory to keep it thinking continuously, using exponential-decay compaction for memory and costing $1-2/hour when idle.",
+      "title": "Headlong: A microharness for persistent agents",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+      "why": "Names real failure modes too: the agent has killed its own service and is bad at keeping secrets."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "f7d88d4e498ff0537fc6404201d8e4e951e7957e",
+      "published": "2026-08-24",
+      "score": 92,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Part 2 of a series: sets up five non-production Copilot Studio agents, one per grounding pattern, with the same model pinned on each, to compare retrieval patterns without conflating latency, billing units or quality signals.",
+      "title": "Benchmark Retrieval Patterns for Copilot Studio and Foundry IQ",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/benchmark-retrieval-patterns-for-copilot-studio-and-foundry-iq/ba-p/4547920",
+      "why": "A genuinely reproducible evaluation harness for comparing Foundry/Copilot Studio retrieval patterns fairly."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "12bb97e1286f7d60913dde113febc78f3a1d8f65",
+      "published": "2026-08-24",
+      "score": 85,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Confirms that model choice is rarely the bottleneck for production Foundry agents; failures trace to grounding quality, tool reliability, observability and security, and reliable retrieval beats sophisticated prompting.",
+      "title": "Building Production-Ready AI Agents in Microsoft Foundry: 10 Lessons Learned",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-production-ready-ai-agents-in-microsoft-foundry-10/ba-p/4544174",
+      "why": "Names where production agent reliability actually breaks, backed by a concrete support-agent scenario."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "id": "678278baec143c12bbfd9a4ec2dcdf8f79de6bcd",
+      "published": "2026-08-24",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Enabling incoming A2A on a Foundry hosted agent needs the protocol declared on both the agent version and endpoint, a container serving plain HTTP on port 8088 with a fast readiness check, and Entra ID auth only - no keys or anonymous access.",
+      "title": "Enabling A2A endpoint and Agent Card for a Hosted Agent",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/enabling-a2a-endpoint-and-agent-card-for-a-hosted-agent/ba-p/4546979",
+      "why": "Concrete, current constraints for exposing a governed A2A endpoint, including that it's REST/SDK-only for now."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "700f0f74f83db9d048c42a98df9bde5b70776779",
+      "published": "2026-08-24",
+      "score": 72,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "Adding one NuGet package and three lines - AgentHost.CreateBuilder, AddFoundryResponses and RegisterProtocol - then running azd provision and azd deploy takes a local Agent Framework app to a hosted Foundry agent with telemetry and versioning wired in.",
+      "title": "From dotnet run to Foundry Hosted Agent in 3 lines of C#",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/dotnet/from-dotnet-run-to-foundry-hosted-agent-in-3-lines-of-csharp",
+      "why": "An exact, minimal, verified path from local agent code to a governed hosted deployment."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "46c56422349e856520db89f00a94eece8427ad4c",
+      "published": "2026-08-24",
+      "score": 68,
+      "source": "Import AI",
+      "source_url": "https://importai.substack.com/",
+      "summary": "Three build-relevant items: SPADE trains models to alternate designing and solving executable environments, gaining +8.1 points at 30B; Hawkeye grounds agents in hardware-specific unit tests, hitting 18.9x geomean speedup over expert GPU kernels.",
+      "title": "Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://importai.substack.com/p/import-ai-470-no-rights-for-machines",
+      "why": "A digest with actual method and numbers behind each item, not just headlines."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "451496f8489c5cad64bee56b9be87cb775185f45",
+      "published": "2026-08-23",
+      "score": 75,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A personal agent.md enforcing terse comments, named constants over magic numbers, early returns over nested arrows, strict layered boundaries, and test-first bug fixes, because LLMs otherwise produce working but poorly structured code.",
+      "title": "My agent.md to improve LLM-assisted code quality",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://fabiensanglard.net/agent.md/index.html",
+      "why": "Concrete, reasoned conventions plus the real failure mode - context dilution - that forces new sessions per feature."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "id": "02dbe79386a6916414afc264125769f5eb1ea546",
+      "published": "2026-08-23",
+      "score": 66,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Drew Breunig argues Fable's high cost ended the assumption that a cheaper future model would paper over prompt/context problems, pushing teams to route routine coding work to Opus, Sonnet or GLM and reserve Fable for what actually needs it.",
+      "title": "Quoting Drew Breunig",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig",
+      "why": "A real, current account of deliberately routing coding-agent work by cost versus capability."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "id": "686686b80dcf4d54eb5c0f7e3858bca133a2840a",
+      "published": "2026-08-22",
+      "score": 60,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Linus Torvalds credits AI assistance for grinding through a debug session on a GPU memory bug, noting the AI repeatedly claimed it was unsolvable yet kept adding useful debug code when pushed.",
+      "title": "Quoting Linus Torvalds",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+      "why": "A candid, hard-won account of AI-assisted debugging on real kernel code, warts included."
     }
   ],
   "meta": {
-    "last_run": "2026-09-04T21:52:44Z",
-    "new_items": 52,
-    "run_date": "2026-09-04",
-    "total_items": 52,
+    "last_run": "2026-09-05T05:17:28Z",
+    "new_items": 15,
+    "run_date": "2026-09-05",
+    "total_items": 67,
     "window_days": 60
   }
 }

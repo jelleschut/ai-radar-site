@@ -31,8 +31,8 @@
     </button>
   </div>
   <p class="masthead__meta">
-    <span class="masthead__run">Updated <time id="last-run" datetime="2026-09-04T21:52:44Z">4 Sep 2026, 21:52 UTC</time></span>
-    <span class="masthead__count">52 items</span>
+    <span class="masthead__run">Updated <time id="last-run" datetime="2026-09-05T05:17:28Z">5 Sep 2026, 05:17 UTC</time></span>
+    <span class="masthead__count">67 items</span>
     <span id="new-since-visit" class="masthead__new" aria-live="polite" hidden></span>
   </p>
 </header>
@@ -113,6 +113,64 @@
 
       <div class="top__rest">
         <article class="card card--featured"
+         data-item-id="2cceb7d82bdd550b8789ddac06261d9d44d5c72d"
+         data-topics="azure"
+         data-type="article"
+         data-score="90"
+         data-published="2026-09-04"
+         data-search="your private endpoint does not cover agent egress: locking down azure ai foundry in both directions shows that private link on foundry itself does not secure agent egress: dependent resources like ai search, storage and cosmos db need their own private endpoints, and outbound traffic needs azure firewall inspection to actually close the gap. a concrete, verified fix for a private-networking gap that looks closed but isn&#39;t. azure architecture blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 90" title="Relevance score 90 out of 100"><span class="badge__value">90</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/your-private-endpoint-does-not-cover-agent-egress-locking-down/ba-p/4547864" target="_blank" rel="noopener noreferrer">Your Private Endpoint Does Not Cover Agent Egress: Locking Down Azure AI Foundry in Both Directions</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog" target="_blank" rel="noopener noreferrer">Azure Architecture Blog</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Shows that Private Link on Foundry itself does not secure agent egress: dependent resources like AI Search, Storage and Cosmos DB need their own private endpoints, and outbound traffic needs Azure Firewall inspection to actually close the gap.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A concrete, verified fix for a private-networking gap that looks closed but isn&#39;t.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/your-private-endpoint-does-not-cover-agent-egress-locking-down/ba-p/4547864" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+        <article class="card card--featured"
+         data-item-id="9ea5ee149bdedbb5e5968ab86fa09aae18e6f797"
+         data-topics="azure"
+         data-type="article"
+         data-score="88"
+         data-published="2026-09-04"
+         data-search="it wasn&#39;t the private endpoint: why the foundry playground breaks behind private networking root cause: with private networking enabled, the foundry endpoint resolves to a private ip, so the browser-based playground&#39;s own calls originate from a public origin reaching into private address space, which local network access exists to block. names the exact browser-vs-backend cause behind a networking failure that fooled the team for hours. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 88" title="Relevance score 88 out of 100"><span class="badge__value">88</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/it-wasn-t-the-private-endpoint-why-the-foundry-playground-breaks/ba-p/4552771" target="_blank" rel="noopener noreferrer">It Wasn&#39;t the Private Endpoint: Why the Foundry Playground Breaks Behind Private Networking</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Root cause: with private networking enabled, the Foundry endpoint resolves to a private IP, so the browser-based playground&#39;s own calls originate from a public origin reaching into private address space, which Local Network Access exists to block.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names the exact browser-vs-backend cause behind a networking failure that fooled the team for hours.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/it-wasn-t-the-private-endpoint-why-the-foundry-playground-breaks/ba-p/4552771" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+        <article class="card card--featured"
          data-item-id="2ccfc1d17968d36ed6427bf6e904d0757c602618"
          data-topics="azure"
          data-type="article"
@@ -170,64 +228,6 @@
   </div>
 </article>
 
-        <article class="card card--featured"
-         data-item-id="26cec8c5b30cb6515198183fba5b7201f250076e"
-         data-topics="engineering"
-         data-type="article"
-         data-score="81"
-         data-published="2026-09-01"
-         data-search="the efficient frontier of llm inference frames llm inference serving as choosing a point on an efficient frontier rather than finding one &#39;best&#39; configuration: batch size trades per-user latency against tokens-per-gpu throughput, and quantization trades output quality for serving performance along a frontier the piece calls &#39;particularly jagged&#39;, where large efficiency gains can come at minimal quality cost at the right cutoff. it separates techniques into ones that move you along the frontier (batch sizing, parallelism strategy, quantization) versus ones that push the whole frontier out (kernel optimization, speculative decoding, prefill/decode disaggregation), recommending tensor parallelism for latency-sensitive deployments and expert or attention-data parallelism for throughput. a systematic way to separate &#39;trading off on the frontier&#39; from &#39;pushing the frontier itself&#39; is exactly the mental model i would use to decide where to spend serving-optimization effort. hacker news - llm">
-  <div class="card__rail">
-    <span class="card__flag" aria-hidden="true">new</span>
-    <span class="badge badge--score" style="--score: 81" title="Relevance score 81 out of 100"><span class="badge__value">81</span></span>
-  </div>
-  <div class="card__body">
-    <h3 class="card__title">
-      <a href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference" target="_blank" rel="noopener noreferrer">The efficient frontier of LLM inference</a>
-    </h3>
-    <p class="card__byline">
-      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - LLM</a>
-      <time datetime="2026-09-01">1 Sep</time>
-      <span class="badge badge--type">article</span>
-      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
-    </p>
-    <p class="card__summary">Frames LLM inference serving as choosing a point on an efficient frontier rather than finding one &#39;best&#39; configuration: batch size trades per-user latency against tokens-per-GPU throughput, and quantization trades output quality for serving performance along a frontier the piece calls &#39;particularly jagged&#39;, where large efficiency gains can come at minimal quality cost at the right cutoff. It separates techniques into ones that move you along the frontier (batch sizing, parallelism strategy, quantization) versus ones that push the whole frontier out (kernel optimization, speculative decoding, prefill/decode disaggregation), recommending tensor parallelism for latency-sensitive deployments and expert or attention-data parallelism for throughput.</p>
-    <p class="card__why"><span class="card__why-label">Why relevant</span> A systematic way to separate &#39;trading off on the frontier&#39; from &#39;pushing the frontier itself&#39; is exactly the mental model I would use to decide where to spend serving-optimization effort.</p>
-    <p class="card__actions">
-      <a class="card__action" href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference" target="_blank" rel="noopener noreferrer">Read full article</a>
-    </p>
-  </div>
-</article>
-
-        <article class="card card--featured"
-         data-item-id="4dabe4d480a80907b8c013170dbab1cfb6adb6c9"
-         data-topics="engineering"
-         data-type="article"
-         data-score="80"
-         data-published="2026-09-04"
-         data-search="grep beats lsp? why coding agents ignore your fancier tools argues coding agents do better with grep than lsp-based tooling for two concrete reasons: lsp&#39;s find_references only returns actual code references and misses comments, docstrings, configuration and strings that a rename task also needs to update, and when the author changed an lsp-backed tool to return inline source context like grep does instead of bare file locations, pass@1 on rename tasks rose from 0.67 to 0.83. the core insight is that agent capability is &#39;model x harness&#39;: grep wins partly because its output format matches what models learned to navigate code with during training, not because it is semantically superior. a measured before/after number (0.67 to 0.83 pass@1) from changing only a tool&#39;s output shape is exactly the kind of harness-design evidence that changes how i would build my own coding-agent tools. hacker news - agents">
-  <div class="card__rail">
-    <span class="card__flag" aria-hidden="true">new</span>
-    <span class="badge badge--score" style="--score: 80" title="Relevance score 80 out of 100"><span class="badge__value">80</span></span>
-  </div>
-  <div class="card__body">
-    <h3 class="card__title">
-      <a href="https://www.agentconnect.md/blog/grep-beat-lsp-harness" target="_blank" rel="noopener noreferrer">Grep beats LSP? Why coding agents ignore your fancier tools</a>
-    </h3>
-    <p class="card__byline">
-      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - agents</a>
-      <time datetime="2026-09-04">4 Sep</time>
-      <span class="badge badge--type">article</span>
-      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
-    </p>
-    <p class="card__summary">Argues coding agents do better with grep than LSP-based tooling for two concrete reasons: LSP&#39;s find_references only returns actual code references and misses comments, docstrings, configuration and strings that a rename task also needs to update, and when the author changed an LSP-backed tool to return inline source context like grep does instead of bare file locations, Pass@1 on rename tasks rose from 0.67 to 0.83. The core insight is that agent capability is &#39;model x harness&#39;: grep wins partly because its output format matches what models learned to navigate code with during training, not because it is semantically superior.</p>
-    <p class="card__why"><span class="card__why-label">Why relevant</span> A measured before/after number (0.67 to 0.83 Pass@1) from changing only a tool&#39;s output shape is exactly the kind of harness-design evidence that changes how I would build my own coding-agent tools.</p>
-    <p class="card__actions">
-      <a class="card__action" href="https://www.agentconnect.md/blog/grep-beat-lsp-harness" target="_blank" rel="noopener noreferrer">Read full article</a>
-    </p>
-  </div>
-</article>
-
       </div>
     </div>
   </section>
@@ -235,6 +235,64 @@
   <section class="stream" id="stream" aria-label="All items by day">
     <section class="day" data-day="2026-09-04">
       <h2 class="day__heading"><time datetime="2026-09-04">Friday 4 September 2026</time></h2>
+      <article class="card"
+         data-item-id="2cceb7d82bdd550b8789ddac06261d9d44d5c72d"
+         data-topics="azure"
+         data-type="article"
+         data-score="90"
+         data-published="2026-09-04"
+         data-search="your private endpoint does not cover agent egress: locking down azure ai foundry in both directions shows that private link on foundry itself does not secure agent egress: dependent resources like ai search, storage and cosmos db need their own private endpoints, and outbound traffic needs azure firewall inspection to actually close the gap. a concrete, verified fix for a private-networking gap that looks closed but isn&#39;t. azure architecture blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 90" title="Relevance score 90 out of 100"><span class="badge__value">90</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/your-private-endpoint-does-not-cover-agent-egress-locking-down/ba-p/4547864" target="_blank" rel="noopener noreferrer">Your Private Endpoint Does Not Cover Agent Egress: Locking Down Azure AI Foundry in Both Directions</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog" target="_blank" rel="noopener noreferrer">Azure Architecture Blog</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Shows that Private Link on Foundry itself does not secure agent egress: dependent resources like AI Search, Storage and Cosmos DB need their own private endpoints, and outbound traffic needs Azure Firewall inspection to actually close the gap.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A concrete, verified fix for a private-networking gap that looks closed but isn&#39;t.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/your-private-endpoint-does-not-cover-agent-egress-locking-down/ba-p/4547864" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="9ea5ee149bdedbb5e5968ab86fa09aae18e6f797"
+         data-topics="azure"
+         data-type="article"
+         data-score="88"
+         data-published="2026-09-04"
+         data-search="it wasn&#39;t the private endpoint: why the foundry playground breaks behind private networking root cause: with private networking enabled, the foundry endpoint resolves to a private ip, so the browser-based playground&#39;s own calls originate from a public origin reaching into private address space, which local network access exists to block. names the exact browser-vs-backend cause behind a networking failure that fooled the team for hours. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 88" title="Relevance score 88 out of 100"><span class="badge__value">88</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/it-wasn-t-the-private-endpoint-why-the-foundry-playground-breaks/ba-p/4552771" target="_blank" rel="noopener noreferrer">It Wasn&#39;t the Private Endpoint: Why the Foundry Playground Breaks Behind Private Networking</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Root cause: with private networking enabled, the Foundry endpoint resolves to a private IP, so the browser-based playground&#39;s own calls originate from a public origin reaching into private address space, which Local Network Access exists to block.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names the exact browser-vs-backend cause behind a networking failure that fooled the team for hours.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/it-wasn-t-the-private-endpoint-why-the-foundry-playground-breaks/ba-p/4552771" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
       <article class="card"
          data-item-id="4dabe4d480a80907b8c013170dbab1cfb6adb6c9"
          data-topics="engineering"
@@ -260,6 +318,35 @@
     <p class="card__why"><span class="card__why-label">Why relevant</span> A measured before/after number (0.67 to 0.83 Pass@1) from changing only a tool&#39;s output shape is exactly the kind of harness-design evidence that changes how I would build my own coding-agent tools.</p>
     <p class="card__actions">
       <a class="card__action" href="https://www.agentconnect.md/blog/grep-beat-lsp-harness" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="0242dd1ae6387a086244c1976e0b13d1058d5381"
+         data-topics="azure"
+         data-type="article"
+         data-score="80"
+         data-published="2026-09-04"
+         data-search="choosing a real-time voice architecture on microsoft foundry: three enterprise patterns recommends voice live plus byom when voice live should own speech handling but your team keeps model, capacity and content-filter control, and reconsidering it when every credential and tool call must stay in-process instead. gives an actual decision rule for picking between three real-time voice architectures on foundry. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 80" title="Relevance score 80 out of 100"><span class="badge__value">80</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/choosing-a-real-time-voice-architecture-on-microsoft-foundry/ba-p/4552676" target="_blank" rel="noopener noreferrer">Choosing a real-time voice architecture on Microsoft Foundry: three enterprise patterns</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Recommends Voice Live plus BYOM when Voice Live should own speech handling but your team keeps model, capacity and content-filter control, and reconsidering it when every credential and tool call must stay in-process instead.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Gives an actual decision rule for picking between three real-time voice architectures on Foundry.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/choosing-a-real-time-voice-architecture-on-microsoft-foundry/ba-p/4552676" target="_blank" rel="noopener noreferrer">Read full article</a>
     </p>
   </div>
 </article>
@@ -290,6 +377,35 @@
     <p class="card__why"><span class="card__why-label">Why relevant</span> It is a concrete containment failure mode for agents with real tool access, directly relevant to how I would scope permissions for my own agent systems.</p>
     <p class="card__actions">
       <a class="card__action" href="https://simonwillison.net/2026/Sep/4/rogue-agent-wikis" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="b3b9e98febac2b86707b07c47f6b36e0bb04fb58"
+         data-topics="engineering research"
+         data-type="article"
+         data-score="65"
+         data-published="2026-09-04"
+         data-search="the pelican comparison grid for astra is pretty interesting gpt-6 astra&#39;s pelican svgs beat gpt-5.6 sol&#39;s best at every reasoning level; at roughly double the per-token price but using far fewer tokens, astra&#39;s lowest setting still beats sol&#39;s best for about 9.55 cents. a genuinely useful cost-per-quality comparison across reasoning levels, dressed up as a pelican test. simon willison">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 65" title="Relevance score 65 out of 100"><span class="badge__value">65</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://simonwillison.net/2026/Sep/4/astra-pelicans" target="_blank" rel="noopener noreferrer">The Pelican comparison grid for Astra is pretty interesting</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://simonwillison.net/" target="_blank" rel="noopener noreferrer">Simon Willison</a>
+      <time datetime="2026-09-04">4 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">GPT-6 Astra&#39;s pelican SVGs beat GPT-5.6 Sol&#39;s best at every reasoning level; at roughly double the per-token price but using far fewer tokens, Astra&#39;s lowest setting still beats Sol&#39;s best for about 9.55 cents.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A genuinely useful cost-per-quality comparison across reasoning levels, dressed up as a pelican test.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://simonwillison.net/2026/Sep/4/astra-pelicans" target="_blank" rel="noopener noreferrer">Read full article</a>
     </p>
   </div>
 </article>
@@ -1570,6 +1686,35 @@
 </article>
 
       <article class="card"
+         data-item-id="b3fc3bb08f32d54678e4ca8d664a908998408566"
+         data-topics="azure"
+         data-type="article"
+         data-score="85"
+         data-published="2026-08-26"
+         data-search="baseline microsoft foundry chat reference architecture a detailed baseline for a network-isolated foundry chat app: private link on every paas dependency, azure firewall egress inspection, zone-redundant cosmos db and ai search, plus explicit tradeoffs on orchestration, grounding store and compute. names real constraints too: no built-in multi-region failover and nondeterministic tool costs. azure architecture center">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 85" title="Relevance score 85 out of 100"><span class="badge__value">85</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat" target="_blank" rel="noopener noreferrer">Baseline Microsoft Foundry Chat Reference Architecture</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://learn.microsoft.com/en-us/azure/architecture/" target="_blank" rel="noopener noreferrer">Azure Architecture Center</a>
+      <time datetime="2026-08-26">26 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">A detailed baseline for a network-isolated Foundry chat app: Private Link on every PaaS dependency, Azure Firewall egress inspection, zone-redundant Cosmos DB and AI Search, plus explicit tradeoffs on orchestration, grounding store and compute.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names real constraints too: no built-in multi-region failover and nondeterministic tool costs.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
          data-item-id="504dd1ec950803b896fd5f67b4c0caebf6b6fbe6"
          data-topics="engineering"
          data-type="article"
@@ -1803,6 +1948,309 @@
     <p class="card__why"><span class="card__why-label">Why relevant</span> A hands-on account of running a new open MoE model at different quantization levels on real hardware tells me more than the spec sheet about what it actually takes to self-host it.</p>
     <p class="card__actions">
       <a class="card__action" href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+    </section>
+    <section class="day" data-day="2026-08-25">
+      <h2 class="day__heading"><time datetime="2026-08-25">Tuesday 25 August 2026</time></h2>
+      <article class="card"
+         data-item-id="4e66e71e0084ef294634befd66700efac46ef416"
+         data-topics="engineering claude-code"
+         data-type="article"
+         data-score="88"
+         data-published="2026-08-25"
+         data-search="why ramp built its own in-house coding agent, inspect ramp built its own coding agent, inspect, because local tools capped concurrency and lacked org context; it now provides remote sandboxes that verify changes and integrate with internal systems like snowflake and feature flags. 75% of merged prs now come from inspect sessions, with 1m sessions and 150+ contributing engineers by july. the pragmatic engineer">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 88" title="Relevance score 88 out of 100"><span class="badge__value">88</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://newsletter.pragmaticengineer.com/p/why-ramp-built-inspect" target="_blank" rel="noopener noreferrer">Why Ramp built its own in-house coding agent, Inspect</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://newsletter.pragmaticengineer.com/" target="_blank" rel="noopener noreferrer">The Pragmatic Engineer</a>
+      <time datetime="2026-08-25">25 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Ramp built its own coding agent, Inspect, because local tools capped concurrency and lacked org context; it now provides remote sandboxes that verify changes and integrate with internal systems like Snowflake and feature flags.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> 75% of merged PRs now come from Inspect sessions, with 1M sessions and 150+ contributing engineers by July.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://newsletter.pragmaticengineer.com/p/why-ramp-built-inspect" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="4c433491c75583b93b6e1697b0cf3ef0a6dd090a"
+         data-topics="claude-code engineering"
+         data-type="article"
+         data-score="78"
+         data-published="2026-08-25"
+         data-search="headlong: a microharness for persistent agents headlong is a sub-10k-line bash agent framework that loops an llm over its own trajectory to keep it thinking continuously, using exponential-decay compaction for memory and costing $1-2/hour when idle. names real failure modes too: the agent has killed its own service and is bad at keeping secrets. hacker news - agents">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 78" title="Relevance score 78 out of 100"><span class="badge__value">78</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents" target="_blank" rel="noopener noreferrer">Headlong: A microharness for persistent agents</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - agents</a>
+      <time datetime="2026-08-25">25 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">Headlong is a sub-10k-line Bash agent framework that loops an LLM over its own trajectory to keep it thinking continuously, using exponential-decay compaction for memory and costing $1-2/hour when idle.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names real failure modes too: the agent has killed its own service and is bad at keeping secrets.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+    </section>
+    <section class="day" data-day="2026-08-24">
+      <h2 class="day__heading"><time datetime="2026-08-24">Monday 24 August 2026</time></h2>
+      <article class="card"
+         data-item-id="f7d88d4e498ff0537fc6404201d8e4e951e7957e"
+         data-topics="azure engineering"
+         data-type="article"
+         data-score="92"
+         data-published="2026-08-24"
+         data-search="benchmark retrieval patterns for copilot studio and foundry iq part 2 of a series: sets up five non-production copilot studio agents, one per grounding pattern, with the same model pinned on each, to compare retrieval patterns without conflating latency, billing units or quality signals. a genuinely reproducible evaluation harness for comparing foundry/copilot studio retrieval patterns fairly. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 92" title="Relevance score 92 out of 100"><span class="badge__value">92</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/benchmark-retrieval-patterns-for-copilot-studio-and-foundry-iq/ba-p/4547920" target="_blank" rel="noopener noreferrer">Benchmark Retrieval Patterns for Copilot Studio and Foundry IQ</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-08-24">24 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Part 2 of a series: sets up five non-production Copilot Studio agents, one per grounding pattern, with the same model pinned on each, to compare retrieval patterns without conflating latency, billing units or quality signals.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A genuinely reproducible evaluation harness for comparing Foundry/Copilot Studio retrieval patterns fairly.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/benchmark-retrieval-patterns-for-copilot-studio-and-foundry-iq/ba-p/4547920" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="12bb97e1286f7d60913dde113febc78f3a1d8f65"
+         data-topics="azure engineering"
+         data-type="article"
+         data-score="85"
+         data-published="2026-08-24"
+         data-search="building production-ready ai agents in microsoft foundry: 10 lessons learned confirms that model choice is rarely the bottleneck for production foundry agents; failures trace to grounding quality, tool reliability, observability and security, and reliable retrieval beats sophisticated prompting. names where production agent reliability actually breaks, backed by a concrete support-agent scenario. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 85" title="Relevance score 85 out of 100"><span class="badge__value">85</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-production-ready-ai-agents-in-microsoft-foundry-10/ba-p/4544174" target="_blank" rel="noopener noreferrer">Building Production-Ready AI Agents in Microsoft Foundry: 10 Lessons Learned</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-08-24">24 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Confirms that model choice is rarely the bottleneck for production Foundry agents; failures trace to grounding quality, tool reliability, observability and security, and reliable retrieval beats sophisticated prompting.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names where production agent reliability actually breaks, backed by a concrete support-agent scenario.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-production-ready-ai-agents-in-microsoft-foundry-10/ba-p/4544174" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="678278baec143c12bbfd9a4ec2dcdf8f79de6bcd"
+         data-topics="azure"
+         data-type="article"
+         data-score="78"
+         data-published="2026-08-24"
+         data-search="enabling a2a endpoint and agent card for a hosted agent enabling incoming a2a on a foundry hosted agent needs the protocol declared on both the agent version and endpoint, a container serving plain http on port 8088 with a fast readiness check, and entra id auth only - no keys or anonymous access. concrete, current constraints for exposing a governed a2a endpoint, including that it&#39;s rest/sdk-only for now. azure ai foundry blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 78" title="Relevance score 78 out of 100"><span class="badge__value">78</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/enabling-a2a-endpoint-and-agent-card-for-a-hosted-agent/ba-p/4546979" target="_blank" rel="noopener noreferrer">Enabling A2A endpoint and Agent Card for a Hosted Agent</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
+      <time datetime="2026-08-24">24 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Enabling incoming A2A on a Foundry hosted agent needs the protocol declared on both the agent version and endpoint, a container serving plain HTTP on port 8088 with a fast readiness check, and Entra ID auth only - no keys or anonymous access.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Concrete, current constraints for exposing a governed A2A endpoint, including that it&#39;s REST/SDK-only for now.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/enabling-a2a-endpoint-and-agent-card-for-a-hosted-agent/ba-p/4546979" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="700f0f74f83db9d048c42a98df9bde5b70776779"
+         data-topics="azure"
+         data-type="article"
+         data-score="72"
+         data-published="2026-08-24"
+         data-search="from dotnet run to foundry hosted agent in 3 lines of c# adding one nuget package and three lines - agenthost.createbuilder, addfoundryresponses and registerprotocol - then running azd provision and azd deploy takes a local agent framework app to a hosted foundry agent with telemetry and versioning wired in. an exact, minimal, verified path from local agent code to a governed hosted deployment. .net blog">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 72" title="Relevance score 72 out of 100"><span class="badge__value">72</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://devblogs.microsoft.com/dotnet/from-dotnet-run-to-foundry-hosted-agent-in-3-lines-of-csharp" target="_blank" rel="noopener noreferrer">From dotnet run to Foundry Hosted Agent in 3 lines of C#</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://devblogs.microsoft.com/dotnet/" target="_blank" rel="noopener noreferrer">.NET Blog</a>
+      <time datetime="2026-08-24">24 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">Adding one NuGet package and three lines - AgentHost.CreateBuilder, AddFoundryResponses and RegisterProtocol - then running azd provision and azd deploy takes a local Agent Framework app to a hosted Foundry agent with telemetry and versioning wired in.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> An exact, minimal, verified path from local agent code to a governed hosted deployment.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://devblogs.microsoft.com/dotnet/from-dotnet-run-to-foundry-hosted-agent-in-3-lines-of-csharp" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="46c56422349e856520db89f00a94eece8427ad4c"
+         data-topics="research"
+         data-type="article"
+         data-score="68"
+         data-published="2026-08-24"
+         data-search="import ai 470: no rights for machines; automating environment generation with spade; and building better gpu kernels with hawkeye three build-relevant items: spade trains models to alternate designing and solving executable environments, gaining +8.1 points at 30b; hawkeye grounds agents in hardware-specific unit tests, hitting 18.9x geomean speedup over expert gpu kernels. a digest with actual method and numbers behind each item, not just headlines. import ai">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 68" title="Relevance score 68 out of 100"><span class="badge__value">68</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://importai.substack.com/p/import-ai-470-no-rights-for-machines" target="_blank" rel="noopener noreferrer">Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://importai.substack.com/" target="_blank" rel="noopener noreferrer">Import AI</a>
+      <time datetime="2026-08-24">24 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">Three build-relevant items: SPADE trains models to alternate designing and solving executable environments, gaining +8.1 points at 30B; Hawkeye grounds agents in hardware-specific unit tests, hitting 18.9x geomean speedup over expert GPU kernels.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A digest with actual method and numbers behind each item, not just headlines.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://importai.substack.com/p/import-ai-470-no-rights-for-machines" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+    </section>
+    <section class="day" data-day="2026-08-23">
+      <h2 class="day__heading"><time datetime="2026-08-23">Sunday 23 August 2026</time></h2>
+      <article class="card"
+         data-item-id="451496f8489c5cad64bee56b9be87cb775185f45"
+         data-topics="claude-code engineering"
+         data-type="article"
+         data-score="75"
+         data-published="2026-08-23"
+         data-search="my agent.md to improve llm-assisted code quality a personal agent.md enforcing terse comments, named constants over magic numbers, early returns over nested arrows, strict layered boundaries, and test-first bug fixes, because llms otherwise produce working but poorly structured code. concrete, reasoned conventions plus the real failure mode - context dilution - that forces new sessions per feature. hacker news - llm">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 75" title="Relevance score 75 out of 100"><span class="badge__value">75</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://fabiensanglard.net/agent.md/index.html" target="_blank" rel="noopener noreferrer">My agent.md to improve LLM-assisted code quality</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - LLM</a>
+      <time datetime="2026-08-23">23 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">A personal agent.md enforcing terse comments, named constants over magic numbers, early returns over nested arrows, strict layered boundaries, and test-first bug fixes, because LLMs otherwise produce working but poorly structured code.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Concrete, reasoned conventions plus the real failure mode - context dilution - that forces new sessions per feature.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://fabiensanglard.net/agent.md/index.html" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="02dbe79386a6916414afc264125769f5eb1ea546"
+         data-topics="engineering claude-code"
+         data-type="article"
+         data-score="66"
+         data-published="2026-08-23"
+         data-search="quoting drew breunig drew breunig argues fable&#39;s high cost ended the assumption that a cheaper future model would paper over prompt/context problems, pushing teams to route routine coding work to opus, sonnet or glm and reserve fable for what actually needs it. a real, current account of deliberately routing coding-agent work by cost versus capability. simon willison">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 66" title="Relevance score 66 out of 100"><span class="badge__value">66</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://simonwillison.net/2026/Aug/23/drew-breunig" target="_blank" rel="noopener noreferrer">Quoting Drew Breunig</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://simonwillison.net/" target="_blank" rel="noopener noreferrer">Simon Willison</a>
+      <time datetime="2026-08-23">23 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+    </p>
+    <p class="card__summary">Drew Breunig argues Fable&#39;s high cost ended the assumption that a cheaper future model would paper over prompt/context problems, pushing teams to route routine coding work to Opus, Sonnet or GLM and reserve Fable for what actually needs it.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A real, current account of deliberately routing coding-agent work by cost versus capability.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://simonwillison.net/2026/Aug/23/drew-breunig" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+  </div>
+</article>
+
+    </section>
+    <section class="day" data-day="2026-08-22">
+      <h2 class="day__heading"><time datetime="2026-08-22">Saturday 22 August 2026</time></h2>
+      <article class="card"
+         data-item-id="686686b80dcf4d54eb5c0f7e3858bca133a2840a"
+         data-topics="engineering claude-code"
+         data-type="article"
+         data-score="60"
+         data-published="2026-08-22"
+         data-search="quoting linus torvalds linus torvalds credits ai assistance for grinding through a debug session on a gpu memory bug, noting the ai repeatedly claimed it was unsolvable yet kept adding useful debug code when pushed. a candid, hard-won account of ai-assisted debugging on real kernel code, warts included. simon willison">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 60" title="Relevance score 60 out of 100"><span class="badge__value">60</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://simonwillison.net/2026/Aug/22/linus-torvalds" target="_blank" rel="noopener noreferrer">Quoting Linus Torvalds</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://simonwillison.net/" target="_blank" rel="noopener noreferrer">Simon Willison</a>
+      <time datetime="2026-08-22">22 Aug</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-overview">Overview</span>
+      <span class="badge badge--shallow" title="Scored from the feed excerpt only">excerpt only</span>
+    </p>
+    <p class="card__summary">Linus Torvalds credits AI assistance for grinding through a debug session on a GPU memory bug, noting the AI repeatedly claimed it was unsolvable yet kept adding useful debug code when pushed.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A candid, hard-won account of AI-assisted debugging on real kernel code, warts included.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://simonwillison.net/2026/Aug/22/linus-torvalds" target="_blank" rel="noopener noreferrer">Read full article</a>
     </p>
   </div>
 </article>
