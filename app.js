@@ -5,8 +5,10 @@
 (function () {
   "use strict";
 
-  var FEEDBACK_ENABLED = false;
+  var FEEDBACK_ENABLED = true;
+  var FEEDBACK_MODE = "github";
   var FEEDBACK_WEBHOOK_URL = "";
+  var FEEDBACK_GITHUB_NEW_URL = "https://github.com/jelleschut/ai-radar/new/main";
   var STORAGE_SEEN_IDS = "ai-radar:seen-ids";
   var SEEN_IDS_KEPT = 5000;
   var STORAGE_THEME = "ai-radar:theme";
@@ -313,7 +315,7 @@
      at all. The answer is opaque by definition: there is nothing to read, and
      nothing to do if the post failed - the mark stays, the signal is lost, and
      the next click sends a fresh one. */
-  function sendVote(card, signal) {
+  function sendVoteWebhook(card, signal) {
     var body = new URLSearchParams();
     body.set("item_id", card.dataset.itemId);
     body.set("signal", signal);
@@ -325,8 +327,48 @@
     } catch (error) { /* offline, blocked, or no fetch: the vote is simply lost */ }
   }
 
+  /* feedback.validate_record's exact contract: item_id, signal, ts, title, url. */
+  function feedbackRecord(card, signal) {
+    return {
+      item_id: card.dataset.itemId,
+      signal: signal,
+      ts: new Date().toISOString(),
+      title: card.dataset.title || "",
+      url: card.dataset.url || ""
+    };
+  }
+
+  /* A feedback filename may not contain a ":" - the repo lives on Windows -
+     so the stamp is stripped down to letters and digits, exactly like the
+     Home Assistant automation already does for the webhook route. */
+  function feedbackFileStamp(isoTs) {
+    return isoTs.replace(/[^0-9A-Za-z]/g, "");
+  }
+
+  /* github mode needs no server at all: the record becomes the pre-filled
+     body of GitHub's own "create new file" page, landing exactly where
+     consolidate_feedback.py expects it. Jelle - already logged in to GitHub
+     in the browser - only has to press "Commit changes"; there is nothing
+     here to catch, a popup blocker simply means the tab never opens. */
+  function sendVoteGithub(card, signal) {
+    var record = feedbackRecord(card, signal);
+    var path = "feedback/inbox/" + feedbackFileStamp(record.ts) + "-" + record.item_id + ".json";
+    var value = JSON.stringify(record, null, 2) + "\n";
+    var url = FEEDBACK_GITHUB_NEW_URL +
+      "?filename=" + encodeURIComponent(path) +
+      "&value=" + encodeURIComponent(value);
+    window.open(url, "_blank", "noopener");
+  }
+
+  function sendVote(card, signal) {
+    if (FEEDBACK_MODE === "webhook") { sendVoteWebhook(card, signal); }
+    else if (FEEDBACK_MODE === "github") { sendVoteGithub(card, signal); }
+  }
+
   function initFeedback() {
-    if (!FEEDBACK_ENABLED || !FEEDBACK_WEBHOOK_URL || !window.fetch) { return; }
+    if (!FEEDBACK_ENABLED) { return; }
+    if (FEEDBACK_MODE === "webhook" && (!FEEDBACK_WEBHOOK_URL || !window.fetch)) { return; }
+    if (FEEDBACK_MODE === "github" && !FEEDBACK_GITHUB_NEW_URL) { return; }
     var votes = readVotes();
     markVotes(votes);
     document.addEventListener("click", function (event) {
