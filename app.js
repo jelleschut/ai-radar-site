@@ -270,6 +270,79 @@
     return fresh;
   }
 
+  var STORAGE_VOTES = "ai-radar:votes";
+  var VOTES_KEPT = 2000;
+
+  function readVotes() {
+    var raw = storageGet(STORAGE_VOTES);
+    if (!raw) { return {}; }
+    try {
+      var parsed = JSON.parse(raw);
+      return (parsed && typeof parsed === "object" && !Array.isArray(parsed)) ? parsed : {};
+    } catch (error) { return {}; }
+  }
+
+  /* String keys keep their insertion order, so the oldest votes are the ones
+     that fall off when the object outgrows its cap. */
+  function writeVotes(votes) {
+    var keys = Object.keys(votes);
+    if (keys.length > VOTES_KEPT) {
+      var trimmed = {};
+      keys.slice(keys.length - VOTES_KEPT).forEach(function (key) { trimmed[key] = votes[key]; });
+      votes = trimmed;
+    }
+    storageSet(STORAGE_VOTES, JSON.stringify(votes));
+    return votes;
+  }
+
+  /* An item in "Top this week" is on the page twice, under the same
+     data-item-id. Walking every button rather than the clicked card is what
+     keeps both copies in step. */
+  function markVotes(votes) {
+    var buttons = document.querySelectorAll(".card [data-signal]");
+    Array.prototype.forEach.call(buttons, function (button) {
+      var card = button.closest(".card");
+      var id = card && card.dataset.itemId;
+      var cast = id ? votes[id] : null;
+      button.setAttribute("aria-pressed", cast === button.dataset.signal ? "true" : "false");
+    });
+  }
+
+  /* no-cors with a URLSearchParams body is the one shape that reaches a Home
+     Assistant webhook without a preflight, so HA needs no CORS configuration
+     at all. The answer is opaque by definition: there is nothing to read, and
+     nothing to do if the post failed - the mark stays, the signal is lost, and
+     the next click sends a fresh one. */
+  function sendVote(card, signal) {
+    var body = new URLSearchParams();
+    body.set("item_id", card.dataset.itemId);
+    body.set("signal", signal);
+    body.set("title", card.dataset.title || "");
+    body.set("url", card.dataset.url || "");
+    body.set("ts", new Date().toISOString());
+    try {
+      window.fetch(FEEDBACK_WEBHOOK_URL, { method: "POST", mode: "no-cors", body: body });
+    } catch (error) { /* offline, blocked, or no fetch: the vote is simply lost */ }
+  }
+
+  function initFeedback() {
+    if (!FEEDBACK_ENABLED || !FEEDBACK_WEBHOOK_URL || !window.fetch) { return; }
+    var votes = readVotes();
+    markVotes(votes);
+    document.addEventListener("click", function (event) {
+      var button = event.target && event.target.closest && event.target.closest("[data-signal]");
+      if (!button) { return; }
+      var card = button.closest(".card");
+      if (!card || !card.dataset.itemId) { return; }
+      /* A second click is a change of mind, not a second vote: last one wins,
+         here and in feedback_digest.py. */
+      votes[card.dataset.itemId] = button.dataset.signal;
+      votes = writeVotes(votes);
+      markVotes(votes);
+      sendVote(card, button.dataset.signal);
+    });
+  }
+
   var THEME_ORDER = ["system", "light", "dark"];
 
   function nextTheme(mode) {
@@ -304,8 +377,6 @@
     initFilterDisclosure();
     initFilterControls();
     markNewSinceLastVisit();
-    if (FEEDBACK_ENABLED && FEEDBACK_WEBHOOK_URL) {
-      /* Phase 2 wires the .vote buttons to the Home Assistant webhook here. */
-    }
+    initFeedback();
   });
 })();

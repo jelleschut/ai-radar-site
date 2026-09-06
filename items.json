@@ -2,6 +2,25 @@
   "items": [
     {
       "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-06",
+      "id": "22aacec03e469cb8ff0d2414798a2527bd6373bc",
+      "published": "2026-09-05",
+      "score": 63,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison shows that frontier coding agents like ChatGPT Codex can drive Blender's Python API on macOS, producing editable .blend files and rendered animations from plain-language prompts. He iteratively refines a pelican-on-a-bicycle scene and notes models have gotten surprisingly capable at 3D tooling.",
+      "title": "Using Blender with coding agents on macOS",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
+      "why": "A concrete, reproducible agentic workflow beyond code, though light on limits or failure cases."
+    },
+    {
+      "deepened": true,
       "depth": "deep-dive",
       "id": "2cceb7d82bdd550b8789ddac06261d9d44d5c72d",
       "published": "2026-09-04",
@@ -1151,10 +1170,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-05T05:17:28Z",
-    "new_items": 15,
-    "run_date": "2026-09-05",
-    "total_items": 67,
+    "last_run": "2026-09-06T05:03:27Z",
+    "new_items": 1,
+    "run_date": "2026-09-06",
+    "total_items": 68,
     "window_days": 60
   }
 }
