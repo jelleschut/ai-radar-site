@@ -6,9 +6,9 @@
   "use strict";
 
   var FEEDBACK_ENABLED = true;
-  var FEEDBACK_MODE = "github";
-  var FEEDBACK_WEBHOOK_URL = "";
-  var FEEDBACK_GITHUB_NEW_URL = "https://github.com/jelleschut/ai-radar/new/main";
+  var FEEDBACK_MODE = "webhook";
+  var FEEDBACK_WEBHOOK_URL = "https://b8fi7w8ryrbxdnqt6akosc9aujqc8rn8.ui.nabu.casa/api/webhook/ttsq0b8vmpxknz6sx92h78toabgtvdrm2hs35xd0ft2ovukx";
+  var FEEDBACK_GITHUB_NEW_URL = "";
   var STORAGE_SEEN_IDS = "ai-radar:seen-ids";
   var SEEN_IDS_KEPT = 5000;
   var STORAGE_THEME = "ai-radar:theme";
