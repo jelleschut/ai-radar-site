@@ -31,8 +31,8 @@
     </button>
   </div>
   <p class="masthead__meta">
-    <span class="masthead__run">Updated <time id="last-run" datetime="2026-09-06T05:03:27Z">6 Sep 2026, 05:03 UTC</time></span>
-    <span class="masthead__count">68 items</span>
+    <span class="masthead__run">Updated <time id="last-run" datetime="2026-09-07T05:05:32Z">7 Sep 2026, 05:05 UTC</time></span>
+    <span class="masthead__count">72 items</span>
     <span id="new-since-visit" class="masthead__new" aria-live="polite" hidden></span>
   </p>
 </header>
@@ -83,44 +83,6 @@
     <h2 id="top-heading" class="top__heading"><span class="top__heading-text">Top this week</span></h2>
     <div class="top__grid">
       <article class="card card--featured"
-         data-item-id="a41c597094ad41978b2f83ca07fb6bc78fef155c"
-         data-topics="azure"
-         data-type="article"
-         data-score="92"
-         data-published="2026-08-31"
-         data-search="model migration process on microsoft foundry and azure openai describes a six-phase model migration process (discover, assess, adapt, validate, roll out, retire) built specifically to catch the silent regressions that happen when swapping one azure openai or foundry model for another, since failures often show up as nothing crashing while responses quietly change shape, json fields disappear, or tool-call order shifts. it recommends offline certification using foundry evaluations before any traffic shift, followed by controlled canary rollout to catch production variance that test datasets miss. a named, repeatable six-phase process plus concrete offline-evaluation-then-canary validation is exactly the migration and versioning guidance this profile weighs highest. azure ai foundry blog"
-         data-title="Model Migration Process on Microsoft Foundry and Azure OpenAI"
-         data-url="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/model-migration-process-on-microsoft-foundry-and-azure-openai/ba-p/4541236">
-  <div class="card__rail">
-    <span class="card__flag" aria-hidden="true">new</span>
-    <span class="badge badge--score" style="--score: 92" title="Relevance score 92 out of 100"><span class="badge__value">92</span></span>
-  </div>
-  <div class="card__body">
-    <h3 class="card__title">
-      <a href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/model-migration-process-on-microsoft-foundry-and-azure-openai/ba-p/4541236" target="_blank" rel="noopener noreferrer">Model Migration Process on Microsoft Foundry and Azure OpenAI</a>
-    </h3>
-    <p class="card__byline">
-      <a class="card__source" href="https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog" target="_blank" rel="noopener noreferrer">Azure AI Foundry Blog</a>
-      <time datetime="2026-08-31">31 Aug</time>
-      <span class="badge badge--type">article</span>
-      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
-    </p>
-    <p class="card__summary">Describes a six-phase model migration process (Discover, Assess, Adapt, Validate, Roll out, Retire) built specifically to catch the silent regressions that happen when swapping one Azure OpenAI or Foundry model for another, since failures often show up as nothing crashing while responses quietly change shape, JSON fields disappear, or tool-call order shifts. It recommends offline certification using Foundry Evaluations before any traffic shift, followed by controlled canary rollout to catch production variance that test datasets miss.</p>
-    <p class="card__why"><span class="card__why-label">Why relevant</span> A named, repeatable six-phase process plus concrete offline-evaluation-then-canary validation is exactly the migration and versioning guidance this profile weighs highest.</p>
-    <p class="card__actions">
-      <a class="card__action" href="https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/model-migration-process-on-microsoft-foundry-and-azure-openai/ba-p/4541236" target="_blank" rel="noopener noreferrer">Read full article</a>
-    </p>
-    <p class="card__feedback" data-feedback>
-      <span class="card__feedback-label" aria-hidden="true">Signal</span>
-      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
-      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
-      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
-    </p>
-  </div>
-</article>
-
-      <div class="top__rest">
-        <article class="card card--featured"
          data-item-id="2cceb7d82bdd550b8789ddac06261d9d44d5c72d"
          data-topics="azure"
          data-type="article"
@@ -157,6 +119,7 @@
   </div>
 </article>
 
+      <div class="top__rest">
         <article class="card card--featured"
          data-item-id="9ea5ee149bdedbb5e5968ab86fa09aae18e6f797"
          data-topics="azure"
@@ -268,13 +231,164 @@
   </div>
 </article>
 
+        <article class="card card--featured"
+         data-item-id="26cec8c5b30cb6515198183fba5b7201f250076e"
+         data-topics="engineering"
+         data-type="article"
+         data-score="81"
+         data-published="2026-09-01"
+         data-search="the efficient frontier of llm inference frames llm inference serving as choosing a point on an efficient frontier rather than finding one &#39;best&#39; configuration: batch size trades per-user latency against tokens-per-gpu throughput, and quantization trades output quality for serving performance along a frontier the piece calls &#39;particularly jagged&#39;, where large efficiency gains can come at minimal quality cost at the right cutoff. it separates techniques into ones that move you along the frontier (batch sizing, parallelism strategy, quantization) versus ones that push the whole frontier out (kernel optimization, speculative decoding, prefill/decode disaggregation), recommending tensor parallelism for latency-sensitive deployments and expert or attention-data parallelism for throughput. a systematic way to separate &#39;trading off on the frontier&#39; from &#39;pushing the frontier itself&#39; is exactly the mental model i would use to decide where to spend serving-optimization effort. hacker news - llm"
+         data-title="The efficient frontier of LLM inference"
+         data-url="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 81" title="Relevance score 81 out of 100"><span class="badge__value">81</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference" target="_blank" rel="noopener noreferrer">The efficient frontier of LLM inference</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - LLM</a>
+      <time datetime="2026-09-01">1 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Frames LLM inference serving as choosing a point on an efficient frontier rather than finding one &#39;best&#39; configuration: batch size trades per-user latency against tokens-per-GPU throughput, and quantization trades output quality for serving performance along a frontier the piece calls &#39;particularly jagged&#39;, where large efficiency gains can come at minimal quality cost at the right cutoff. It separates techniques into ones that move you along the frontier (batch sizing, parallelism strategy, quantization) versus ones that push the whole frontier out (kernel optimization, speculative decoding, prefill/decode disaggregation), recommending tensor parallelism for latency-sensitive deployments and expert or attention-data parallelism for throughput.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> A systematic way to separate &#39;trading off on the frontier&#39; from &#39;pushing the frontier itself&#39; is exactly the mental model I would use to decide where to spend serving-optimization effort.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+    <p class="card__feedback" data-feedback>
+      <span class="card__feedback-label" aria-hidden="true">Signal</span>
+      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
+      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
+      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
+    </p>
+  </div>
+</article>
+
       </div>
     </div>
   </section>
 
   <section class="stream" id="stream" aria-label="All items by day">
+    <section class="day" data-day="2026-09-06">
+      <h2 class="day__heading"><time datetime="2026-09-06">Sunday 6 September 2026</time></h2>
+      <article class="card"
+         data-item-id="19672c4832d4c9bc0fd35c9ad6b6596c81afa104"
+         data-topics="engineering research"
+         data-type="article"
+         data-score="78"
+         data-published="2026-09-06"
+         data-search="research acceleration: the view inside openai openai reports its research org used 3.1 agent-workdays per human workday by mid-august, with experiments per experimenter and task complexity both rising, though over half of long successful tasks still needed human intervention. primary-source usage data on agentic coding at scale, with real numbers and named limits. openai"
+         data-title="Research acceleration: The view inside OpenAI"
+         data-url="https://openai.com/index/research-acceleration-view-inside-openai">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 78" title="Relevance score 78 out of 100"><span class="badge__value">78</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noopener noreferrer">Research acceleration: The view inside OpenAI</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://openai.com/news/" target="_blank" rel="noopener noreferrer">OpenAI</a>
+      <time datetime="2026-09-06">6 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">OpenAI reports its research org used 3.1 agent-workdays per human workday by mid-August, with experiments per experimenter and task complexity both rising, though over half of long successful tasks still needed human intervention.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Primary-source usage data on agentic coding at scale, with real numbers and named limits.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+    <p class="card__feedback" data-feedback>
+      <span class="card__feedback-label" aria-hidden="true">Signal</span>
+      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
+      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
+      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
+    </p>
+  </div>
+</article>
+
+      <article class="card"
+         data-item-id="a8e8f9dc895a026b51bbe8a83b4fa897c6604f10"
+         data-topics="research engineering"
+         data-type="article"
+         data-score="66"
+         data-published="2026-09-06"
+         data-search="an alien mind openai&#39;s chief scientist argues frontier progress could sustain recursive self-improvement, distinguishes goal from value alignment, and says chain-of-thought monitoring - its primary safety bet - is growing less reliable. names a concrete, weakening safety mechanism agents already depend on, not just a call for caution. openai"
+         data-title="An Alien Mind"
+         data-url="https://openai.com/index/an-alien-mind">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 66" title="Relevance score 66 out of 100"><span class="badge__value">66</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://openai.com/index/an-alien-mind" target="_blank" rel="noopener noreferrer">An Alien Mind</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://openai.com/news/" target="_blank" rel="noopener noreferrer">OpenAI</a>
+      <time datetime="2026-09-06">6 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">OpenAI&#39;s chief scientist argues frontier progress could sustain recursive self-improvement, distinguishes goal from value alignment, and says chain-of-thought monitoring - its primary safety bet - is growing less reliable.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names a concrete, weakening safety mechanism agents already depend on, not just a call for caution.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://openai.com/index/an-alien-mind" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+    <p class="card__feedback" data-feedback>
+      <span class="card__feedback-label" aria-hidden="true">Signal</span>
+      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
+      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
+      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
+    </p>
+  </div>
+</article>
+
+    </section>
     <section class="day" data-day="2026-09-05">
       <h2 class="day__heading"><time datetime="2026-09-05">Saturday 5 September 2026</time></h2>
+      <article class="card"
+         data-item-id="f31be0c625cb8e92bf2410b33b7a2b9a615d9fda"
+         data-topics="engineering claude-code"
+         data-type="article"
+         data-score="74"
+         data-published="2026-09-05"
+         data-search="okf agent memory – git-native persistent memory for ai coding agents a dependency-free go implementation storing agent memory as version-controlled markdown with yaml frontmatter, using in-memory bm25 search under 300 microseconds and an mcp server for claude and cursor integration. working, benchmarked code for a real agent-memory pattern, not just a proposal. hacker news - agents"
+         data-title="OKF Agent Memory – Git-native persistent memory for AI coding agents"
+         data-url="https://github.com/okf-memory/okf-agent-memory">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 74" title="Relevance score 74 out of 100"><span class="badge__value">74</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://github.com/okf-memory/okf-agent-memory" target="_blank" rel="noopener noreferrer">OKF Agent Memory – Git-native persistent memory for AI coding agents</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - agents</a>
+      <time datetime="2026-09-05">5 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">A dependency-free Go implementation storing agent memory as version-controlled Markdown with YAML frontmatter, using in-memory BM25 search under 300 microseconds and an MCP server for Claude and Cursor integration.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Working, benchmarked code for a real agent-memory pattern, not just a proposal.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://github.com/okf-memory/okf-agent-memory" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+    <p class="card__feedback" data-feedback>
+      <span class="card__feedback-label" aria-hidden="true">Signal</span>
+      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
+      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
+      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
+    </p>
+  </div>
+</article>
+
       <article class="card"
          data-item-id="22aacec03e469cb8ff0d2414798a2527bd6373bc"
          data-topics="claude-code engineering"
@@ -846,6 +960,43 @@
     </section>
     <section class="day" data-day="2026-09-02">
       <h2 class="day__heading"><time datetime="2026-09-02">Wednesday 2 September 2026</time></h2>
+      <article class="card"
+         data-item-id="db92b87dfb03b81c1973582ae502a43db4818760"
+         data-topics="engineering"
+         data-type="article"
+         data-score="80"
+         data-published="2026-09-02"
+         data-search="ai agents and the refactoring that never happens argues coding agents remove the human &#39;i&#39;m lost&#39; signal that used to trigger refactoring, so teams keep shipping features on code nobody fully understands anymore, and that this also degrades agent performance. names a concrete anti-pattern, the lost refactoring reflex, from real working experience with agents. hacker news - agents"
+         data-title="AI Agents and the Refactoring That Never Happens"
+         data-url="https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/">
+  <div class="card__rail">
+    <span class="card__flag" aria-hidden="true">new</span>
+    <span class="badge badge--score" style="--score: 80" title="Relevance score 80 out of 100"><span class="badge__value">80</span></span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">
+      <a href="https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/" target="_blank" rel="noopener noreferrer">AI Agents and the Refactoring That Never Happens</a>
+    </h3>
+    <p class="card__byline">
+      <a class="card__source" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News - agents</a>
+      <time datetime="2026-09-02">2 Sep</time>
+      <span class="badge badge--type">article</span>
+      <span class="badge badge--depth badge--depth-deep-dive">Deep dive</span>
+    </p>
+    <p class="card__summary">Argues coding agents remove the human &#39;I&#39;m lost&#39; signal that used to trigger refactoring, so teams keep shipping features on code nobody fully understands anymore, and that this also degrades agent performance.</p>
+    <p class="card__why"><span class="card__why-label">Why relevant</span> Names a concrete anti-pattern, the lost refactoring reflex, from real working experience with agents.</p>
+    <p class="card__actions">
+      <a class="card__action" href="https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/" target="_blank" rel="noopener noreferrer">Read full article</a>
+    </p>
+    <p class="card__feedback" data-feedback>
+      <span class="card__feedback-label" aria-hidden="true">Signal</span>
+      <button type="button" class="vote" data-signal="up" aria-pressed="false" aria-label="More like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9650;</button>
+      <button type="button" class="vote" data-signal="down" aria-pressed="false" aria-label="Less like this" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">&#9660;</button>
+      <button type="button" class="vote vote--more" data-signal="more" aria-pressed="false" aria-label="More on this topic" title="Opens a pre-filled GitHub commit page; press Commit changes to record the vote">More like this</button>
+    </p>
+  </div>
+</article>
+
       <article class="card"
          data-item-id="cd5da1960a4afcad7e4926ab40f6aad1d8b8468f"
          data-topics="claude-code"

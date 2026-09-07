@@ -2,6 +2,63 @@
   "items": [
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-07",
+      "id": "19672c4832d4c9bc0fd35c9ad6b6596c81afa104",
+      "published": "2026-09-06",
+      "score": 78,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI reports its research org used 3.1 agent-workdays per human workday by mid-August, with experiments per experimenter and task complexity both rising, though over half of long successful tasks still needed human intervention.",
+      "title": "Research acceleration: The view inside OpenAI",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "why": "Primary-source usage data on agentic coding at scale, with real numbers and named limits."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-07",
+      "id": "a8e8f9dc895a026b51bbe8a83b4fa897c6604f10",
+      "published": "2026-09-06",
+      "score": 66,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI's chief scientist argues frontier progress could sustain recursive self-improvement, distinguishes goal from value alignment, and says chain-of-thought monitoring - its primary safety bet - is growing less reliable.",
+      "title": "An Alien Mind",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/an-alien-mind",
+      "why": "Names a concrete, weakening safety mechanism agents already depend on, not just a call for caution."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-07",
+      "id": "f31be0c625cb8e92bf2410b33b7a2b9a615d9fda",
+      "published": "2026-09-05",
+      "score": 74,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A dependency-free Go implementation storing agent memory as version-controlled Markdown with YAML frontmatter, using in-memory BM25 search under 300 microseconds and an MCP server for Claude and Cursor integration.",
+      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://github.com/okf-memory/okf-agent-memory",
+      "why": "Working, benchmarked code for a real agent-memory pattern, not just a proposal."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-09-06",
       "id": "22aacec03e469cb8ff0d2414798a2527bd6373bc",
@@ -258,6 +315,24 @@
       "type": "article",
       "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
       "why": "A genuine, warts-and-all account of using an LLM on an unusual low-level porting task tells me more about real model capability limits than any vendor benchmark."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-07",
+      "id": "db92b87dfb03b81c1973582ae502a43db4818760",
+      "published": "2026-09-02",
+      "score": 80,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Argues coding agents remove the human 'I'm lost' signal that used to trigger refactoring, so teams keep shipping features on code nobody fully understands anymore, and that this also degrades agent performance.",
+      "title": "AI Agents and the Refactoring That Never Happens",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/",
+      "why": "Names a concrete anti-pattern, the lost refactoring reflex, from real working experience with agents."
     },
     {
       "deepened": false,
@@ -1170,10 +1245,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-06T05:03:27Z",
-    "new_items": 1,
-    "run_date": "2026-09-06",
-    "total_items": 68,
+    "last_run": "2026-09-07T05:05:32Z",
+    "new_items": 4,
+    "run_date": "2026-09-07",
+    "total_items": 72,
     "window_days": 60
   }
 }
