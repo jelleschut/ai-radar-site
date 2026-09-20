@@ -3,6 +3,24 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-20",
+      "id": "00e72da2b937ce6608206f3322d07454c5bd978a",
+      "published": "2026-09-19",
+      "score": 74,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Nathan Lambert argues current frontier progress is inference-time scaling and agent parallelization, not true recursive self-improvement, given exponential compute costs and human-bottlenecked post-training. He draws implications for evals, agent architecture, and where near-term R&D value actually concentrates.",
+      "title": "Why I still haven’t bought into true RSI",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+      "why": "Substantive, evidence-based case against near-term RSI, with direct implications for eval design and agent architecture."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-18",
       "id": "3f8ce213f8ded073466733161188cf11da484725",
       "published": "2026-09-18",
@@ -1852,10 +1870,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-19T05:09:47Z",
-    "new_items": 15,
-    "run_date": "2026-09-19",
-    "total_items": 105,
+    "last_run": "2026-09-20T05:04:24Z",
+    "new_items": 1,
+    "run_date": "2026-09-20",
+    "total_items": 106,
     "window_days": 60
   }
 }
