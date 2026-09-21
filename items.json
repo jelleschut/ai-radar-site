@@ -2,6 +2,25 @@
   "items": [
     {
       "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-21",
+      "id": "6aa47ed911e4b48e709364c6510a17bb77a92ab0",
+      "published": "2026-09-20",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "llm-keys-ui gives coding-agent sessions (e.g. Codex Remote) a local web UI, reachable over Tailscale, for storing API keys instead of pasting them into the agent chat. Existing key values are never displayed, and agents later fetch a key at runtime with `llm keys get <name>`.",
+      "title": "llm-keys-ui 0.1",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui",
+      "why": "A small but concrete security pattern for keeping API keys out of agent context while remaining fetchable on demand."
+    },
+    {
+      "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-09-20",
       "id": "00e72da2b937ce6608206f3322d07454c5bd978a",
@@ -1870,10 +1889,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-20T05:04:24Z",
+    "last_run": "2026-09-21T05:04:42Z",
     "new_items": 1,
-    "run_date": "2026-09-20",
-    "total_items": 106,
+    "run_date": "2026-09-21",
+    "total_items": 107,
     "window_days": 60
   }
 }
