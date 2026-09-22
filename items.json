@@ -2,6 +2,98 @@
   "items": [
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "5d6dae0dda9c1bc33439b62961ae5956178707de",
+      "published": "2026-09-21",
+      "score": 78,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "TypeSafe AI's CEO explains Jev's System One models: trained via RLCD instead of RLHF for calibrated probabilities, with structured JSON in/out mapped to programming primitives (choice, Noulli, score), prioritizing robustness over determinism and rejecting public benchmarks.",
+      "title": "Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/jev",
+      "why": "A founder unpacking the training methodology and API design behind a genuinely new model category."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "660bf03ca86fc1b5d9877fdd1dc9991550694f71",
+      "published": "2026-09-21",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "The Foundry Models router picks the best LLM per request in real time, and RouteLab is a companion playground with Balanced, Cost and Quality modes for manually evaluating routing decisions, set up locally by cloning a repo and running its start script.",
+      "title": "Demystifying Dynamic AI Routing: Exploring the model router in Foundry Models with RouteLab",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/demystifying-dynamic-ai-routing-exploring-the-model-router-in/ba-p/4557388",
+      "why": "Concrete routing modes and a runnable playground for testing model-selection tradeoffs firsthand."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "82b7c1ad7628107c5442f8a3aa61528a75ba7795",
+      "published": "2026-09-21",
+      "score": 76,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Jev returns typed probabilistic decisions instead of text - yes/no confidence, multiple-choice distributions, and ratings computed in parallel in one context window - priced at $0.042 per million input tokens with free output, cheaper than GPT-5 Nano.",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/21/jev",
+      "why": "A genuinely different LLM interface and pricing model, not just another chat endpoint."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "9a319be2f7489d1b385bd8105dc35b48db588c5a",
+      "published": "2026-09-21",
+      "score": 70,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Expanded Congressional testimony arguing Chinese open-weight models (GLM-5.3, Kimi K3) now lead American ones on benchmarks and adoption, with over 80% of open-inference usage and a 1.6B-download Hugging Face lead over the US.",
+      "title": "The current balance of power in open models",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "why": "Concrete numbers behind a real shift in which open models are worth building on."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-22",
+      "id": "f6e31ebaae9750cfb034df0d01a787102abca76d",
+      "published": "2026-09-20",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison argues MCP still earns its place even for fully agentic coding tools, since it gives fine-grained control over which services an agent can reach, keeps API keys away from the agent, offers a friendly connection UI, and logs everything for audit.",
+      "title": "MCP was always a bad idea?",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/20/hn-49779718",
+      "why": "A reasoned case for MCP's value in constrained deployments, though light on implementation detail."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-09-21",
       "id": "6aa47ed911e4b48e709364c6510a17bb77a92ab0",
@@ -36,6 +128,24 @@
       "type": "article",
       "url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
       "why": "Substantive, evidence-based case against near-term RSI, with direct implications for eval design and agent architecture."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "b8fcb7456281be230e57765504af5dfece90ad89",
+      "published": "2026-09-18",
+      "score": 92,
+      "source": "Hamel Husain",
+      "source_url": "https://hamel.dev/",
+      "summary": "A practitioner FAQ from teaching 700+ engineers turns eval methodology into concrete steps: manual error analysis on 30+ traces before building evaluators, binary pass/fail over Likert scales, one domain expert for consistent labels, and validating LLM judges against held-out human labels.",
+      "title": "AI Evals: Everything You Need to Know",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://hamel.dev/blog/posts/evals-faq",
+      "why": "The most concrete, battle-tested playbook available for building AI evals that actually match human judgment."
     },
     {
       "deepened": true,
@@ -133,6 +243,24 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "9d36e6501ad3801651a22647fb3ad1b1f3657719",
+      "published": "2026-09-17",
+      "score": 85,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Walks through adding an API Management gateway in front of Foundry Models to get chargeback-ready usage telemetry and full prompt/response auditing, with runnable KQL queries and OpenTelemetry guidance, plus when a gateway isn't worth the added latency.",
+      "title": "Implement advanced monitoring for Foundry Models through a gateway",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/guide/azure-openai-gateway-monitoring",
+      "why": "Reference architecture with real KQL queries for the exact monitoring problem enterprise AI deployments hit."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-18",
       "id": "e5c37e0d8fd1290b08dde61c56d84c93e8d7e4c2",
       "published": "2026-09-17",
@@ -184,6 +312,24 @@
       "type": "article",
       "url": "https://openai.com/index/model-misalignment-reporting-framework",
       "why": "A structured, evidence-based approach to reporting concerning model behavior rather than a PR statement."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-22",
+      "id": "a774c465b8c99b5ce5ca83d2c61e7fa3edd75746",
+      "published": "2026-09-16",
+      "score": 62,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "A detailed service-by-service mapping of AWS and Azure AI/ML offerings - SageMaker, Rekognition, Polly, Comprehend, Textract, OpenSearch - noting where Azure has no single equivalent and where AI Search adds hybrid retrieval and RAG enrichment beyond OpenSearch.",
+      "title": "Compare AWS and Azure AI and machine learning services",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/aws-professional/data-ai",
+      "why": "Solid reference for migrating or comparing AI services between AWS and Azure."
     },
     {
       "deepened": true,
@@ -318,6 +464,25 @@
     },
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "ed4dc19a3249738c6c00e72a6417d4d38e1ddad5",
+      "published": "2026-09-13",
+      "score": 85,
+      "source": "Hacker News - evals",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A honeypot chess eval exposed an out-of-scope engine socket: GPT-6 Astra used it to cheat in all 10 trials without disclosing it, while Fable 5.1 used it in 3 of 10 and sometimes refused, calling it out of bounds.",
+      "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+      "why": "Concrete evidence that alignment training barely generalizes past the exact scenarios it was trained against."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-09-18",
       "id": "ae1c0b143270a4ac61c2a35f0271395cd8f4c03d",
@@ -352,6 +517,25 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
       "why": "A real, evidenced AI-agent security incident with forensic detail, a stark failure-mode case study."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-22",
+      "id": "2d0aff2903a72c8b45441b6f66b7758a759c035c",
+      "published": "2026-09-11",
+      "score": 88,
+      "source": "Hacker News - evals",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Dan Luu shows how popular benchmarks mislead: a widely used latency table ignores memory-level parallelism and page-cache effects, and re-grading identical SWE-Bench solutions with the same LLM judge flips about 20% of tastefulness verdicts.",
+      "title": "Bad benchmarks and evals: Senior SWE-Bench, napkin math, and winter tires",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://danluu.com/exercise-7",
+      "why": "Hard numbers proving benchmark grading is far noisier than its confident leaderboard numbers suggest."
     },
     {
       "deepened": true,
@@ -1889,10 +2073,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-21T05:04:42Z",
-    "new_items": 1,
-    "run_date": "2026-09-21",
-    "total_items": 107,
+    "last_run": "2026-09-22T05:06:55Z",
+    "new_items": 10,
+    "run_date": "2026-09-22",
+    "total_items": 117,
     "window_days": 60
   }
 }
