@@ -3,6 +3,153 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "4365ab95abe024dfc682530fb7da7938a3a5e3b9",
+      "published": "2026-09-22",
+      "score": 88,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A hands-on method for using coding agents to optimize Rust: criterion baselines, explicit speedup constraints, anti-cheating guardrails, and a 'breakthrough' reprompt once gains plateau. Reports 2x-32x speedups across several projects, with lessons on subagent triage and when to stop.",
+      "title": "Writing Rust code that's fast by asking agents to make the code faster",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://minimaxir.com/2026/09/agentic-iteration",
+      "why": "A concrete, repeatable agentic-optimization workflow with guardrails against benchmark gaming."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "201aa60c0b8e10b79ecea16a7b7860a4d2fece89",
+      "published": "2026-09-22",
+      "score": 85,
+      "source": "Semantic Kernel Blog",
+      "source_url": "https://devblogs.microsoft.com/semantic-kernel/",
+      "summary": "Details Microsoft Agent Framework's two independent Foundry isolation controls: user isolation via Entra or delegated identity, and session isolation via VM-backed sandboxes keyed by agent_session_id. Shows concrete pooling patterns for mapping many users onto few sandboxes.",
+      "title": "Foundry hosted agent isolation with Microsoft Agent Framework",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/agent-framework/foundry-hosted-agent-isolation-with-microsoft-agent-framework",
+      "why": "A real access-control architecture for multi-tenant hosted agents, not just a feature announcement."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "4a34b417a07923550b623517ede555b1843229f8",
+      "published": "2026-09-22",
+      "score": 85,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Compares pricing and hands-on impressions across today's four new model launches, including a case where Opus 5.5's max reasoning mode exhausted its 128k output limit on a trivial task, costing $2.56 without finishing. The author now defaults to GPT-6 Sol and Opus 5.5, keeping Luna for cheap fast work.",
+      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
+      "why": "Real cost/quality tradeoffs across today's new models, including where Opus 5.5's max mode breaks down."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-23",
+      "id": "b6b1e4118cdbb52902a3c3f3fd0aba59eb85acae",
+      "published": "2026-09-22",
+      "score": 76,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "GPT-6 adds a caching dashboard for hit rates, a diagnostics tool that names the exact reason a cache miss occurred (e.g. tools_changed) with its token impact, and explicit cache breakpoints for pinning stable context ahead of changing content.",
+      "title": "Better prompt caching for GPT-6",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "why": "Real cache-miss diagnostics, not just a caching feature announcement."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "a1905b81ace1b0cd661c58a9520e94cb02e9f6a9",
+      "published": "2026-09-22",
+      "score": 74,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Details how Windows is becoming agent-native: Entra-based agent identity, an On-Device Agent Registry that proxies and inspects MCP traffic, and Microsoft Execution Containers offering five isolation levels trading blast radius against speed.",
+      "title": "How will AI change operating systems? Part 2: Windows",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/windows-and-ai",
+      "why": "Concrete OS-level sandboxing tradeoffs for running local agents and MCP servers safely."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "20af5c3822b9beb30709c4180eef128878cc58fb",
+      "published": "2026-09-22",
+      "score": 68,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Xiaomi's MiMo-V2.6-Pro (1T params, 42B active) tops the open-weights Intelligence Index after $3M of training, $2.6M of which was a 130-hour RL run on 75B tokens; Xiaomi is open-sourcing its async RL infrastructure.",
+      "title": "[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b",
+      "why": "A real cost/capability data point for RL-heavy training at a fraction of typical frontier spend."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-23",
+      "id": "1b1371e9ec402847faba7a43e705f03f1c187ab8",
+      "published": "2026-09-22",
+      "score": 66,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "llm 0.36 adds GPT-6 Sol/Luna support, a supports_conversation flag that makes single-turn model plugins reject chat history instead of silently misbehaving, and wraps reasoning traces in collapsible tags in log output.",
+      "title": "llm 0.36",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/22/llm",
+      "why": "A small but real correctness fix: single-turn models now fail loudly on conversation history."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-23",
+      "id": "518602a6e2afa11e16734884b7488e9612b8232b",
+      "published": "2026-09-22",
+      "score": 62,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "A new llm plugin wraps TypeSafe's Jev model for structured yes/no, multi-choice and rubric-scoring outputs from the command line, with working examples for message routing and bug-report quality scoring.",
+      "title": "llm-typesafe 0.1a0",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe",
+      "why": "A working pattern for cheap structured classification via CLI, worth stealing for triage tasks."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-22",
       "id": "5d6dae0dda9c1bc33439b62961ae5956178707de",
       "published": "2026-09-21",
@@ -165,6 +312,24 @@
       "type": "article",
       "url": "https://arxiv.org/abs/2609.20804",
       "why": "Directly answers how to design a coding-agent harness, with matched-setting evidence rather than a single benchmark score."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-23",
+      "id": "9b0bea9a8f225cf06bd55b8852359086ed6971a6",
+      "published": "2026-09-18",
+      "score": 78,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Claude Code 2.1.277 now falls back to reading AGENTS.md when a project has no CLAUDE.md, configurable under /config; not yet supported on Bedrock, Vertex or Foundry.",
+      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "why": "A precise, checkable behaviour change to how project instructions get picked up."
     },
     {
       "deepened": true,
@@ -663,6 +828,25 @@
       "type": "article",
       "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
       "why": "Separates real architecture research from a rumor about Astra hiding its reasoning."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-23",
+      "id": "23dc7c531ac96d86253adf2a528303e0817a97f3",
+      "published": "2026-09-09",
+      "score": 78,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A self-hosted platform for running Claude Code/Codex agents unattended as scheduled or webhook-triggered 'digital employees', each session kernel-sandboxed with network isolation blocking LAN and cloud metadata, credentials encrypted and injected only per session.",
+      "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://github.com/OtoDock/oto-dock",
+      "why": "Concrete sandboxing and scheduling architecture for running coding agents unattended."
     },
     {
       "deepened": true,
@@ -2073,10 +2257,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-22T05:06:55Z",
+    "last_run": "2026-09-23T05:12:43Z",
     "new_items": 10,
-    "run_date": "2026-09-22",
-    "total_items": 117,
+    "run_date": "2026-09-23",
+    "total_items": 127,
     "window_days": 60
   }
 }
