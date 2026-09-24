@@ -3,6 +3,81 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-24",
+      "id": "a877a4ca213122afa12d52968535fbae9cc63d72",
+      "published": "2026-09-23",
+      "score": 90,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Claude Code's AGENTS.md support ships behind a silent remote flag that is disabled when telemetry is off (DISABLE_TELEMETRY=1 or CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1): the file is then never read, with no warning. The workaround is a one-line CLAUDE.md importing @AGENTS.md.",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on",
+      "why": "A silent, unannounced gate on core project-instructions loading is exactly the quirk I need to know about."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-24",
+      "id": "e61359e960f83497c13408c8ac6ce0e2bb907448",
+      "published": "2026-09-23",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison's bring-your-own-key Gemini 3.8 TTS playground drives 2,000+ voices and multi-speaker dialogue via a client-side, open-CORS API call, generating 1m18s of audio in ~20s for 2.74 cents. Settings are bookmarkable via URL and the app itself was vibe-coded with GPT-6 Astra.",
+      "title": "Gemini 3.8 TTS Playground",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
+      "why": "Working, reproducible code with real cost, latency and API-design detail for a concrete TTS workload."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-24",
+      "id": "1d5a9cc2d9509da81910cada203eb369287e9e13",
+      "published": "2026-09-23",
+      "score": 68,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "MentalHealthBench is an open benchmark of 1,215 synthetic mental-health conversations, built with 80+ licensed psychologists and psychiatrists across 22 countries and 5,262 expert-authored rubric criteria. It scores safety, context-seeking, user-agency and actionable guidance across everyday, high-acuity and emergency scenarios.",
+      "title": "Introducing MentalHealthBench",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/introducing-mentalhealthbench",
+      "why": "A described, expert-validated evaluation method with rubric criteria is exactly the eval-with-numbers signal I want."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-24",
+      "id": "62f29a5a45461faf0665b12d180fece98534a41e",
+      "published": "2026-09-23",
+      "score": 66,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Claude Opus 5.5 is now the default in Claude Code and the Claude app, at $4/$20 per million input/output tokens (down 20%) and roughly 40% cheaper per task at medium effort than Opus 5, while running about 30% faster. OpenAI cut GPT-6 Sol/Luna pricing by about 50% the same week.",
+      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+      "topics": [
+        "research",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+      "why": "Concrete default-model and pricing numbers directly affect cost planning for Claude Code and API usage."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-23",
       "id": "4365ab95abe024dfc682530fb7da7938a3a5e3b9",
       "published": "2026-09-22",
@@ -2257,10 +2332,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-23T05:12:43Z",
-    "new_items": 10,
-    "run_date": "2026-09-23",
-    "total_items": 127,
+    "last_run": "2026-09-24T05:13:28Z",
+    "new_items": 4,
+    "run_date": "2026-09-24",
+    "total_items": 131,
     "window_days": 60
   }
 }
