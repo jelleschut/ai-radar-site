@@ -3,6 +3,115 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-25",
+      "id": "d9bf93c3b81d62b82be0e2f3fdf98bd2e74ea802",
+      "published": "2026-09-25",
+      "score": 76,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "DeepSeek-V4.1-Flash uses a Causal Encoder-Decoder architecture—a 20-layer encoder feeding a 20-layer decoder—that projects the decoder's KV cache from encoder states, cutting KV cache size roughly 8x. The 552B-parameter MoE model activates 8B params on prefill and 16B on decode, with a single continuously tunable reasoning-effort knob replacing the old V4/V4-Pro split, now deployable on Foundry.",
+      "title": "DeepSeek-V4.1-Flash is coming to Microsoft Foundry",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/deepseek-v4-1-flash-is-coming-to-microsoft-foundry/ba-p/4556431",
+      "why": "A real architecture change (KV cache projected from the encoder) that simplifies deployment and cuts cost for agentic workloads on Foundry."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-25",
+      "id": "6c1df0eaaeb4e9f7bda8572ea771c4b4e177a19c",
+      "published": "2026-09-25",
+      "score": 72,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Runway's WorldPrompt converts bidirectional video diffusion models into autoregressive ones, cutting diffusion steps from 50 to 4 to generate continuous 720p/24fps video with audio in real time. The discussion covers error accumulation over long context windows and how scaling laws from language models carry over to video generation.",
+      "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/runway",
+      "why": "Its context-window and error-accumulation challenges in real-time generation mirror the context engineering problems I hit building long-running agents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-25",
+      "id": "26a9af99053de126aa8de66358ff86ea6e93741f",
+      "published": "2026-09-24",
+      "score": 85,
+      "source": "Semantic Kernel Blog",
+      "source_url": "https://devblogs.microsoft.com/semantic-kernel/",
+      "summary": "Concrete code for AG-UI streaming endpoints (Python and .NET), a FoundryMemoryProvider for cross-session memory, and resilient background execution that reloads workflow checkpoints after interruption. The CodeAct feature, where models emit a program instead of iterative tool calls, reports about 50% lower latency and over 60% lower token usage.",
+      "title": "What’s new in Microsoft Agent Framework: Interactive experiences, memory, and resilient execution",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution",
+      "why": "Working code and measured numbers (50% lower latency, 60% lower tokens) for agent memory and resilient execution, directly usable in what I build."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-25",
+      "id": "53a9cbbf31427d0ef17cf1333a283f7e50e487ea",
+      "published": "2026-09-24",
+      "score": 74,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "DHH now reviews around 100 pending pull requests in 90 minutes with Claude Code, down from an estimated week by hand, after moving 37signals to an agent-first workflow. But agent-written pull requests on Basecamp 5 looked fine individually while collectively damaging the architecture, requiring human cleanup.",
+      "title": "The Pulse: RoR creator sparks new “death of coding by hand” debate",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand",
+      "why": "A real production example of both the speed gain and the architectural risk of agent-first coding, not just hype."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-25",
+      "id": "394d1d5b3573474c29bcd182aa7c398b10dd3a99",
+      "published": "2026-09-24",
+      "score": 68,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Insights in Foundry scans the last seven days of agent traces to surface recurring or previously unknown failure patterns, explain the likely cause with evidence, and recommend a targeted fix, new eval, or Agent Optimizer run. Microsoft is explicit that it is decision support, not a replacement for monitoring, evaluation or security review.",
+      "title": "Insights in Foundry Turns Agent Traces into Action",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/insights-in-foundry-turns-agent-traces-into-action/ba-p/4559634",
+      "why": "Ties directly into the eval/observability gap I actually have on agents in production, with an honest caveat about its limits."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-25",
+      "id": "7fbfa598153f724d8235f0a719ee58315655f7d8",
+      "published": "2026-09-24",
+      "score": 62,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Voice becomes a native part of Foundry Agent Service via the Voice Live API, unifying real-time speech, agent logic, deployment, observability and evaluation in one platform. It claims sub-second, single-model audio in/out (à la GPT-4o Realtime) across 80+ languages with graceful handling of interruptions.",
+      "title": "Introducing voice agents in Microsoft Foundry",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-voice-agents-in-microsoft-foundry/ba-p/4557276",
+      "why": "Real latency and language-coverage claims for a unified voice+agent stack, though still closer to a product tour than a deep dive."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-24",
       "id": "a877a4ca213122afa12d52968535fbae9cc63d72",
       "published": "2026-09-23",
@@ -2332,10 +2441,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-24T05:13:28Z",
-    "new_items": 4,
-    "run_date": "2026-09-24",
-    "total_items": 131,
+    "last_run": "2026-09-25T05:16:16Z",
+    "new_items": 6,
+    "run_date": "2026-09-25",
+    "total_items": 137,
     "window_days": 60
   }
 }
