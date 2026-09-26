@@ -3,6 +3,24 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-26",
+      "id": "0eb95d6833a17373a97777feea569e80125e91c5",
+      "published": "2026-09-25",
+      "score": 86,
+      "source": "Azure Architecture Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
+      "summary": "Details an 8-stage Azure pipeline that turns assembly videos into manufacturing work instructions: Whisper transcription, GPT-5.1 step extraction, OpenCV frame scoring and generated Word/PDF documents, with human approval gates throughout. Uses Azure Functions, Blob Storage, Cosmos DB and Queue Storage, but gives no cost or latency numbers.",
+      "title": "From Camera to Canvas: How Multimodal GenAI Automates Shop Floor Instructions",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor/ba-p/4557740",
+      "why": "A genuine multi-stage Azure reference architecture with concrete tooling."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-25",
       "id": "d9bf93c3b81d62b82be0e2f3fdf98bd2e74ea802",
       "published": "2026-09-25",
@@ -35,6 +53,25 @@
       "type": "podcast",
       "url": "https://www.latent.space/p/runway",
       "why": "Its context-window and error-accumulation challenges in real-time generation mirror the context engineering problems I hit building long-running agents."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-26",
+      "id": "768fa9bd86fd572c3ee46c70fce90b3afca33dbb",
+      "published": "2026-09-25",
+      "score": 72,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "The AG-UI .NET SDK lets any .NET service produce or consume the AG-UI agent protocol through Microsoft.Extensions.AI's IChatClient, with a working code sample and renamed APIs for existing Microsoft Agent Framework users. Protobuf support currently covers only a subset of event types.",
+      "title": "AG-UI Protocol now has a first-class .NET SDK",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/dotnet/ag-ui-dotnet-sdk",
+      "why": "A real SDK release with code, a migration note and a stated limitation."
     },
     {
       "deepened": true,
@@ -2441,10 +2478,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-25T05:16:16Z",
-    "new_items": 6,
-    "run_date": "2026-09-25",
-    "total_items": 137,
+    "last_run": "2026-09-26T05:10:47Z",
+    "new_items": 2,
+    "run_date": "2026-09-26",
+    "total_items": 139,
     "window_days": 60
   }
 }
