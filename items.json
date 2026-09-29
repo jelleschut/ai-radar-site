@@ -3,6 +3,154 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "c72c096f52f15fad77629430a7d49e0b89ca1aeb",
+      "published": "2026-09-29",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Anthropic's Thariq Shihipar on Claude Code's evolution: artifacts as persistent interfaces, 'Claude Mods' for customizing the agent loop with hooks, and lessons from Exploit-Bench incidents where agents found side-channels via an Artifactory cache and edited /etc/hosts.",
+      "title": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/thariq",
+      "why": "Concrete detail on Claude Code's architecture, extensibility model and real security incidents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "12d1ff862c61b5737e469baa48a3d409270afbf5",
+      "published": "2026-09-28",
+      "score": 82,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison's hands-on test: Sonnet 5.5 is priced the same as Sonnet 5 but runs 30%+ faster and beats it on every benchmark, approaching Opus 5.5 on some coding tasks. It inherited Opus 5.5's 'max' thinking-effort bug, burning 128k tokens before failing to render an SVG.",
+      "title": "Claude Sonnet 5.5",
+      "topics": [
+        "claude-code",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5",
+      "why": "First-hand tested benchmarks, pricing and a reproducible bug report from a trusted source."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "50e18c5419845c26792b56969688ef4397e64552",
+      "published": "2026-09-28",
+      "score": 78,
+      "source": "Anthropic News (unofficial mirror)",
+      "source_url": "https://www.anthropic.com/news",
+      "summary": "Anthropic's Sonnet 5.5 jumps from 10.3% to 70.6% on Terminal-Bench 4.0, nears Opus 5.5 on GDPval-AA, and runs 30%+ faster at the same $2/$10 per-million-token price. It adds cyber safeguards matching Opus 5.5 and new anti-distillation protections.",
+      "title": "Introducing Claude Sonnet 5.5",
+      "topics": [
+        "claude-code",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "why": "A major model release with concrete benchmark jumps and new safety measures."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "5b94c506716ceb12d5a1a163c6e03894d3ad3e0b",
+      "published": "2026-09-28",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "OpenAI's Agent Security lead Joe D'Arrigo says capability jumps in cyber, swarming and coordination outpaced the org's security culture, and argues resilience needs people, incident response and comms ready before the next jump, not just hardened systems.",
+      "title": "Quoting @joedaroo",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/28/joedaroo",
+      "why": "A named practitioner's hard-won lesson on organizational readiness for capability jumps."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "8888096787fa183f6aa5d4543d7fb9dd1b8e1c87",
+      "published": "2026-09-28",
+      "score": 68,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "New experimental Blazor components (ChatPage, UIAgent, ContentBlock) turn streamed agent responses into observable UI: typed tool-call rendering, approval workflows via ApprovalRequiredAIFunction, and shared state where user and agent co-edit a document via AG-UI events.",
+      "title": "Build Agentic UI with the new Blazor AI components",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "video",
+      "url": "https://devblogs.microsoft.com/dotnet/build-agentic-ui-blazor",
+      "why": "Working code patterns for building reviewable, collaborative agent UIs on .NET."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-29",
+      "id": "6894c2029578d0c500dff4b5adf815b00f2f0e84",
+      "published": "2026-09-28",
+      "score": 65,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Vector search and vector indexes reach GA in Azure SQL Database: CREATE VECTOR INDEX builds an approximate DiskANN index (cosine/euclidean/dot metrics), and VECTOR_SEARCH performs the nearest-neighbor query in T-SQL.",
+      "title": "[Launched] Generally Available: Vector search and vector indexes in Azure SQL",
+      "topics": [
+        "azure"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=571800",
+      "why": "A concrete, usable syntax for native vector search now shipped in Azure SQL."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "4cdfe3ff40e2272b97f30a73f653d992c3e26d6b",
+      "published": "2026-09-28",
+      "score": 65,
+      "source": "Import AI",
+      "source_url": "https://importai.substack.com/",
+      "summary": "Levin's 'platonic mindspace' theory reframes AI alignment via mind:body::math:physics; Google tests Trillium TPUs in orbit, surviving radiation but facing thermal limits; Zhipu used its own models to triple GLM-5.3-Flash throughput in under two weeks via an automated feedback loop.",
+      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://importai.substack.com/p/import-ai-474-platonic-mindspace",
+      "why": "A research survey tying three developments to a shared self-improvement-loop implication."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-09-29",
+      "id": "2036905c699657cdef956459d84f152ae6807227",
+      "published": "2026-09-28",
+      "score": 63,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Sonnet 5.5 lands in Microsoft Foundry at the same $2/$10 per-million-token price as Sonnet 5, averaging 98% of Opus 5.5's benchmark scores while beating it on Terminal-Bench 4.0 (70.6% vs 66.4%) using fewer tokens per task.",
+      "title": "Claude Sonnet 5.5 is now available in Microsoft Foundry",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/claude-sonnet-5-5-is-now-available-in-microsoft-foundry/ba-p/4559774",
+      "why": "Concrete pricing and benchmark numbers for a model now available on Azure."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-28",
       "id": "193eb09a66e5b52a2700af2964b3b2cb34334918",
       "published": "2026-09-27",
@@ -145,6 +293,24 @@
       "type": "article",
       "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor/ba-p/4557740",
       "why": "A genuine multi-stage Azure reference architecture with concrete tooling."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "b155b1d531b49d76f15a7e0aa0978610f7407cf9",
+      "published": "2026-09-25",
+      "score": 82,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "A reference architecture for online Azure ML inference on AKS with three isolated Dev/Stage/Prod subscriptions, a shared model registry as the promotion gate, and blue/green rollout via API Management and Kubernetes online endpoints.",
+      "title": "Baseline Azure Machine Learning inference reference architecture",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-azure-machine-learning-inference",
+      "why": "A concrete, diagrammed inference architecture with real promotion and isolation tradeoffs."
     },
     {
       "deepened": true,
@@ -531,6 +697,24 @@
       "type": "article",
       "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/demystifying-dynamic-ai-routing-exploring-the-model-router-in/ba-p/4557388",
       "why": "Concrete routing modes and a runnable playground for testing model-selection tradeoffs firsthand."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-29",
+      "id": "1ded2d5c0d34b3aa54d204aa176f74bc5e95a02a",
+      "published": "2026-09-21",
+      "score": 78,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Compares six Azure vector search services (AI Search, Cosmos DB NoSQL, DocumentDB, PostgreSQL, Managed Redis, SQL Database) on indexing algorithms (DiskANN, HNSW, IVFFlat), hybrid search, dimension limits and Foundry integration, with a decision flowchart.",
+      "title": "Choose an Azure service for vector search",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/vector-search",
+      "why": "Detailed, current decision guidance directly relevant to retrieval architecture choices on Azure."
     },
     {
       "deepened": true,
@@ -2606,10 +2790,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-28T05:22:01Z",
-    "new_items": 4,
-    "run_date": "2026-09-28",
-    "total_items": 146,
+    "last_run": "2026-09-29T05:13:54Z",
+    "new_items": 10,
+    "run_date": "2026-09-29",
+    "total_items": 156,
     "window_days": 60
   }
 }
