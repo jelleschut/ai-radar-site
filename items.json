@@ -3,6 +3,42 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-09-30",
+      "id": "9ccfb6a6858541d5349619971dcd018a7a2e6bea",
+      "published": "2026-09-29",
+      "score": 85,
+      "source": "Ahead of AI",
+      "source_url": "https://magazine.sebastianraschka.com/",
+      "summary": "A hands-on guide benchmarks text classifiers from bag-of-words through RNNs, CNNs, BERT and GPT-2 on IMDb sentiment (90-95% accuracy), then compares them against a proprietary LLM classifier (96.5%, $0.65/run) on speed and calibration. Code and tutorials are linked for every open method.",
+      "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+      "why": "A reproducible, code-linked comparison of classifier architectures with real accuracy, cost and calibration numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-30",
+      "id": "1e2adcbb126c358376c02e4f6e6c19cc03341cef",
+      "published": "2026-09-29",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Anthropic's Frontier Red Team measured a 6% full control-flow hijack rate for Claude Mythos Preview and 4% for GLM-5.3 on 100 binary-exploitation tasks, versus 0% for the prior generation (Opus 4.6, GLM-5.2). It's a concrete red-team benchmark showing offensive cyber capability crossed a real threshold this generation.",
+      "title": "Quoting Anthropic Frontier Red Team",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team",
+      "why": "Concrete red-team numbers show frontier models crossing a real threshold in offensive cyber capability this generation."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-29",
       "id": "c72c096f52f15fad77629430a7d49e0b89ca1aeb",
       "published": "2026-09-29",
@@ -17,6 +53,43 @@
       "type": "podcast",
       "url": "https://www.latent.space/p/thariq",
       "why": "Concrete detail on Claude Code's architecture, extensibility model and real security incidents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-30",
+      "id": "c92e39202c4ca939d2cf8bd89b6be432634df66b",
+      "published": "2026-09-29",
+      "score": 74,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A peer-reviewed study (PoPETs 2027) finds several of nine conversational AI services disclose conversation titles, prompts and even screenshots to 44 third-party trackers, often with persistent identifiers enabling attribution. Some providers also expose conversation permalinks with no access control, letting trackers read full conversations.",
+      "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+      "why": "A peer-reviewed measurement study finds real conversational-AI privacy leaks: third-party trackers, persistent IDs, and unprotected conversation permalinks."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-09-30",
+      "id": "04392c500debfe1859ca0ea015f9ed84adf1a290",
+      "published": "2026-09-29",
+      "score": 72,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Shopify dropped React Native after AI coding models made building the same feature twice in Swift and Kotlin no longer costly, letting one engineer target both platforms instead of specialists. The migration cut Shopify's Shop app over to native in twelve weeks, though the piece leans more on AI-capability claims than head-to-head performance metrics.",
+      "title": "Why has Shopify dropped React Native?",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/shopify-native-mobile",
+      "why": "A real, specific engineering reversal driven by AI coding capability, though the case rests on claims more than measured performance deltas."
     },
     {
       "deepened": true,
@@ -2790,10 +2863,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-29T05:13:54Z",
-    "new_items": 10,
-    "run_date": "2026-09-29",
-    "total_items": 156,
+    "last_run": "2026-09-30T05:13:48Z",
+    "new_items": 4,
+    "run_date": "2026-09-30",
+    "total_items": 160,
     "window_days": 60
   }
 }

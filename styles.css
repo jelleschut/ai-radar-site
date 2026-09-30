@@ -821,6 +821,33 @@ main {
   text-align: center;
 }
 
+.reference {
+  max-width: var(--page);
+  margin: 4rem auto 0;
+}
+.reference__heading {
+  margin: 0 0 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.reference__list { margin: 0; padding: 0; list-style: none; }
+.reference__item {
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+}
+.reference__link {
+  font-family: var(--display);
+  font-weight: 600;
+  color: var(--ink);
+}
+.reference__link:hover { color: var(--accent); }
+.reference__note { font-size: 0.9rem; }
+
 .colophon {
   max-width: var(--page);
   margin: 4rem auto 0;
