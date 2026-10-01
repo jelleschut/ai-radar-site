@@ -3,6 +3,80 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-01",
+      "id": "942932c820c6030cff98fc89f2f8aab38d3af370",
+      "published": "2026-09-30",
+      "score": 88,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Azure AI Search's Foundry IQ Knowledge Bases add an 'auto' retrieval effort that routes each query to minimal, low or medium depth, escalating 78% of queries on the hard BrowseComp benchmark. It cuts cost 34.7% ($4.79/1k queries) with near-identical recall to fixed medium effort.",
+      "title": "Let the query decide: introducing auto retrieval reasoning effort",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/let-the-query-decide-introducing-auto-retrieval-reasoning-effort/ba-p/4558943",
+      "why": "Concrete per-query routing with measured cost and recall tradeoffs on Azure AI Search."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-01",
+      "id": "77544766b84c4ff026f57685365d9f01e85f4a5d",
+      "published": "2026-09-30",
+      "score": 87,
+      "source": "Hamel Husain",
+      "source_url": "https://hamel.dev/",
+      "summary": "Hamel Husain and Isaac Flath livestream Anthropic's build_eval/hill-climb tooling on real conversation traces and find it pushes users to pick an eval before reviewing data, and its label-review interface hides individual cases behind aggregate counts. It did surface genuinely novel issues other approaches missed, but they recommend waiting for improvements.",
+      "title": "Claude’s new auto eval tool",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://hamel.dev/blog/posts/claude-auto-evals",
+      "why": "Specific, reproduced usability failures in a first-party Claude Code eval tool from real use."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-01",
+      "id": "1a601b09c690596d32914dfc598370785c3411b6",
+      "published": "2026-09-30",
+      "score": 76,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "OpenAI's Computer Use lead describes agents now writing JavaScript to batch actions instead of a screenshot-action loop, combining screenshots, accessibility trees and Playwright, with GPT-6.1 Sol 8x faster than humans on some tasks. The API lead details cloning a competitor's Decisions API in a week atop existing weights, plus async tool calling and mid-turn steering.",
+      "title": "Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/devday-2026",
+      "why": "Specific build details on computer-use agent architecture and a fast-follow API clone."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-01",
+      "id": "99c02528b5ea34a34f752f5940704716d621f51f",
+      "published": "2026-09-30",
+      "score": 70,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A Senior Cloud Solution Architect proposes an 'Agent Acceptance Gateway' pattern to close the gap between a deployed Microsoft Foundry agent and one an application team can actually call and verify. It argues handover needs testable proof of identity and connectivity, not just a working portal demo.",
+      "title": "From \"Agent Deployed\" to \"Agent Ready\" - Agent Acceptance Gateway",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/from-quot-agent-deployed-quot-to-quot-agent-ready-quot-agent/ba-p/4558096",
+      "why": "Names a concrete handover pattern for verifying Foundry agents are integration-ready."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-09-30",
       "id": "9ccfb6a6858541d5349619971dcd018a7a2e6bea",
       "published": "2026-09-29",
@@ -90,6 +164,24 @@
       "type": "article",
       "url": "https://newsletter.pragmaticengineer.com/p/shopify-native-mobile",
       "why": "A real, specific engineering reversal driven by AI coding capability, though the case rests on claims more than measured performance deltas."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-01",
+      "id": "b3701a1b653f0a3b7b5fc25397e712751da80060",
+      "published": "2026-09-29",
+      "score": 67,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison had an AI model build a local, client-side tool that detects and blurs faces using MediaPipe's BlazeFace model compiled to WebAssembly, so no image data leaves the browser. It's labelled experimental, with no discussion of accuracy or edge cases.",
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber",
+      "why": "A concrete, verified client-side AI-built tool with a clear privacy use case."
     },
     {
       "deepened": true,
@@ -2863,10 +2955,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-09-30T05:13:48Z",
-    "new_items": 4,
-    "run_date": "2026-09-30",
-    "total_items": 160,
+    "last_run": "2026-10-01T05:12:15Z",
+    "new_items": 5,
+    "run_date": "2026-10-01",
+    "total_items": 165,
     "window_days": 60
   }
 }
