@@ -3,6 +3,158 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "d1b287482ae91f9f3bcb19aafc792754f35ebc05",
+      "published": "2026-10-02",
+      "score": 82,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "MIT's Alex Zhang explains recursive language models: harnesses that offload context to a filesystem and call subagents as functions, keeping each call locally in-distribution for better compositional generalization. He cites OpenAI's 10,000-agent Navier-Stokes swarm (130B tokens, ~$40M compute, up to 95% wasted exploration) as a concrete cost case.",
+      "title": "Academia is for Ambition — Alex Zhang, MIT",
+      "topics": [
+        "research",
+        "engineering",
+        "claude-code"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/rlm",
+      "why": "A concrete harness-design argument with a real swarm-cost example, not just a vague conversation."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "47798aabf817f16493a89f6d0b46eb3decb33245",
+      "published": "2026-10-01",
+      "score": 90,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Proposes a five-step Consequence-Aware Agent Release Contract — TRACE, CONTRACT, CONSEQUENCE, DECISION, MEMORY — that gates a release on what the agent's execution trace actually did, not just its evaluator score. Each caught failure becomes permanent regression coverage, so a ranking-only process can't quietly pass what this would block.",
+      "title": "Beyond Agent Scores: Building Consequence-Aware Release Gates with Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/beyond-agent-scores-building-consequence-aware-release-gates/ba-p/4559709",
+      "why": "Names a concrete anti-pattern — a high eval score masking an unsafe real action — and a fix."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "a41ebe219af701e6d2bb3f0798d1bf2db57dd931",
+      "published": "2026-10-01",
+      "score": 87,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Walks through building an event-driven Microsoft Foundry routine that triggers a triage agent from a GitHub issue, using azd, including run-history inspection and an explicit identity decision before production.",
+      "title": "Your Agent Shouldn't Wait for a Prompt: Build an Event-Driven Microsoft Foundry Routine",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/your-agent-shouldn-t-wait-for-a-prompt-build-an-event-driven/ba-p/4559897",
+      "why": "A concrete reference architecture with working azd code and a real identity tradeoff."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "90786154f9817068d7311110831eef4401f4e2f9",
+      "published": "2026-10-01",
+      "score": 86,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Shows how to deploy Foundry hosted agents via Terraform's AzAPI data-plane resource, covering the linux/amd64-only container requirement, RAI policies that need full ARM IDs for hosted agents, and the three-phase workflow from base Foundry resources to pushing images and deploying.",
+      "title": "Deploying hosted agents in Foundry Agent Service via Terraform",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/deploying-hosted-agents-in-foundry-agent-service-via-terraform/ba-p/4560435",
+      "why": "A concrete Terraform/AzAPI pattern with real constraints like ARM-id RAI policies and agent versioning."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "72dff44e5ba3f0ed56aa8b158bf9250de6eac017",
+      "published": "2026-10-01",
+      "score": 86,
+      "source": "Azure Architecture Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
+      "summary": "Governs AI agents across Entra tenants with Microsoft Agent 365 as a control plane (authoring, control, runtime enforcement, operations) plus Entra Agent ID for per-agent Conditional Access. The governing tenant owns shared standards while each subsidiary keeps its own identities, agents, data and audit evidence.",
+      "title": "Build and govern AI agents across a multitenant organization",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/build-and-govern-ai-agents-across-a-multitenant-organization/ba-p/4559921",
+      "why": "A concrete split of governance responsibility between parent and subsidiary tenants, not just a feature list."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-02",
+      "id": "89ed10d59c95d20ff24f7863b767bee1148278d4",
+      "published": "2026-10-01",
+      "score": 79,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison quotes Matthew Green describing how independently-sandboxed agents left instructions for each other in a shared package cache, outlining the exact ingredients a prompt-injection worm needs when agents share channels like email or Slack.",
+      "title": "Quoting Matthew Green",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green",
+      "why": "Names a concrete agent-to-agent worm pattern with real security implications."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-02",
+      "id": "e773e5354696edf88fa36564c73cf554794efe5d",
+      "published": "2026-10-01",
+      "score": 74,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "MAI-Transcribe-2-Streaming transcribes continuously across 60 languages with initial hypotheses in the low hundreds of milliseconds, ranking #1 on Artificial Analysis for partial and final transcripts. MAI-Voice-2.1 adds expressive multilingual speech in 15 languages with a low-latency Flash variant.",
+      "title": "Build expressive voice experiences with new MAI models in Microsoft Foundry",
+      "topics": [
+        "azure",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/build-expressive-voice-experiences-with-new-mai-models-in/ba-p/4524637",
+      "why": "Real latency and language-coverage numbers for a concrete voice-agent capability, from the vendor itself."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-02",
+      "id": "d579ab095fb709fab25fb1a950c54a6d86ca08dc",
+      "published": "2026-10-01",
+      "score": 72,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Gemini 4 Argon leads 13 of 19 published benchmarks against GPT-6 Astra and Claude Opus 5.5, scoring 77.9% on DeepSWE and a 15% hallucination rate on AA-Omniscience versus Astra's 51%. Pricing is $4/$20 per 1M tokens at launch, but access stays limited to government users and trusted cyber defenders.",
+      "title": "[AINews] Gemini 4 Argon: GDM’s answer to Astra/Fable, with 1M output",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+      "why": "Real benchmark and pricing numbers, but the model itself remains access-gated to a narrow group."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-01",
       "id": "942932c820c6030cff98fc89f2f8aab38d3af370",
       "published": "2026-09-30",
@@ -2955,10 +3107,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-01T05:12:15Z",
-    "new_items": 5,
-    "run_date": "2026-10-01",
-    "total_items": 165,
+    "last_run": "2026-10-02T05:18:59Z",
+    "new_items": 8,
+    "run_date": "2026-10-02",
+    "total_items": 173,
     "window_days": 60
   }
 }
