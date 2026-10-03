@@ -3,6 +3,63 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-03",
+      "id": "1e235c00de7a0775c88f34f7e680ff6c0d0ada94",
+      "published": "2026-10-02",
+      "score": 90,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "2,040 measurements isolate which optimizations actually cut Foundry latency: concurrent document processing cut latency 56.8%, trimming tools from 20 to five cut 16.8%, and prompt caching helped 14.9-23.6%. Combined with Priority Processing, text got 41% faster and images 49.6% faster, with rigorous paired-control methodology.",
+      "title": "How to make AI responses faster on Microsoft Foundry: lessons from 2,040 measurements",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/how-to-make-ai-responses-faster-on-microsoft-foundry-lessons/ba-p/4560073",
+      "why": "Rare real measurement study isolating which latency optimizations on Foundry actually matter."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-03",
+      "id": "f70039bd83618ee989e145cfd1c77eadf9b3d8dc",
+      "published": "2026-10-02",
+      "score": 85,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Sending shared trajectory context once and scoring several evaluation criteria in one composite LLM-judge call cut model calls 5-6x, input tokens 61-71% and wall time 36-46% on 100-row samples, with quality holding steady across dimensions. Proposed as the cost-efficient default, with per-criterion evaluation kept for sensitive workloads.",
+      "title": "Evaluate More, Spend Less: Batching Microsoft Foundry Evaluators for Efficient Evaluation",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/evaluate-more-spend-less-batching-microsoft-foundry-evaluators/ba-p/4560841",
+      "why": "Concrete numbers showing composite LLM-judge evaluation beats per-criterion calls on cost."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-03",
+      "id": "5d764b6a72ee2a3ea11fd104a51a0f936120fdeb",
+      "published": "2026-10-02",
+      "score": 82,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Foundry's new Insights feature turns recurring agent-trace patterns into reviewable findings, evaluated three ways: trace precision/recall against six public benchmarks (37.8-99.7%), an eight-dimension LLM-judge rubric (mean 2.84-3.88), and injected-defect end-to-end tests (10 of 11 caught, zero false positives). Honest about its weakest dimension: fix specificity.",
+      "title": "Beyond the Trace: The Science of Insight Quality",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/beyond-the-trace-the-science-of-insight-quality/ba-p/4559981",
+      "why": "Rigorous, honestly-scored benchmarking of an agent-observability feature, not just a feature announcement."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-02",
       "id": "d1b287482ae91f9f3bcb19aafc792754f35ebc05",
       "published": "2026-10-02",
@@ -19,6 +76,97 @@
       "type": "podcast",
       "url": "https://www.latent.space/p/rlm",
       "why": "A concrete harness-design argument with a real swarm-cost example, not just a vague conversation."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-03",
+      "id": "d81483cb0de808760f643b83021e406f33ae9456",
+      "published": "2026-10-02",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Airbnb's Everest context graph let a team ship a new service in six weeks instead of nine months, and the company now runs 10+ specialized production models chosen on a cost-latency-quality curve. Results: 60% AI-authored code, ~50% of support tickets resolved by AI, 80% more features shipped.",
+      "title": "Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/airbnb",
+      "why": "Concrete numbers and architecture behind Airbnb's AI-driven engineering and support overhaul."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-03",
+      "id": "87a7234dae36c1fa437c0bde63b5af1d6bd26437",
+      "published": "2026-10-02",
+      "score": 70,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Kroah-Hartman shows mean-time-to-exploit falling from 63 days (2018) to negative days by 2026, breaking the old discover-disclose-patch cycle, while LLM-generated security reports are still wrong about 25% of the time. Argues for turning the same LLM tooling against the attackers' own advantage.",
+      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+      "why": "Hard numbers on how LLMs reshaped the exploit timeline and the kernel security process."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-03",
+      "id": "22b95dcb283e6437e0afc795517eafcc04d183fa",
+      "published": "2026-10-02",
+      "score": 68,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Pi 1.0 ships native MCP support and deferred tool loading; Pi Durable is a TypeScript rewrite that checkpoints every agent step for crash recovery, hot-swapping and multiplayer state sync. A real architectural shift toward production-grade agent reliability.",
+      "title": "[AINews] Pi 1.0, Pi Durable, and AIE NYC",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc",
+      "why": "A minimalist agent harness goes stable with a crash-resilient, production-grade TypeScript rewrite."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-03",
+      "id": "c307e472255122289e51da312986e21ff5dd86ab",
+      "published": "2026-10-02",
+      "score": 68,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Redis creator antirez's ds4 runs frontier open models like DeepSeek V4 locally via 2-bit quantization of routed experts and an SSD-backed persistent KV cache, hitting 790 tokens/s prefill on an M5 Max. Narrow by design: each supported model is validated against official outputs rather than aiming for universal compatibility.",
+      "title": "From the creator of Redis; run LLM locally with ds4",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://dwarfstar.sh/",
+      "why": "A known engineer's narrowly-scoped, carefully validated local inference engine with real throughput numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-03",
+      "id": "8e206c4d9ed6ea5b326e3f64cf71247a89bf9979",
+      "published": "2026-10-02",
+      "score": 68,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI's builder guide shows GPT-5.6 at low reasoning effort beating GPT-5.5 at high reasoning, letting startups cut cost while improving accuracy, plus guidance on model selection and tool orchestration. Practical, numbers-backed guidance rather than a pure feature list.",
+      "title": "A model guide for the GPT-6 family",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "why": "Concrete reasoning-effort and model-selection tradeoffs startups can actually apply."
     },
     {
       "deepened": true,
@@ -3107,10 +3255,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-02T05:18:59Z",
+    "last_run": "2026-10-03T05:11:50Z",
     "new_items": 8,
-    "run_date": "2026-10-02",
-    "total_items": 173,
+    "run_date": "2026-10-03",
+    "total_items": 181,
     "window_days": 60
   }
 }
