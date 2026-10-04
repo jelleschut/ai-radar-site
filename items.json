@@ -3,6 +3,43 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-04",
+      "id": "2ad697ead091eb32ce981a5d26407e1c83d48293",
+      "published": "2026-10-03",
+      "score": 82,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Argues RAG-based agent memory is the wrong fix for forgetfulness, since similarity retrieval loses context and goes stale as code changes. Proposes living, auditable markdown documentation that agents consult and update instead of recalling snippets.",
+      "title": "Agents don't need memory, they need documentation",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://liao.gg/blog/agents-dont-need-memory",
+      "why": "A concrete pattern-vs-anti-pattern case for replacing agent memory with documentation."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-04",
+      "id": "3ba89625595d441660969d2fe678f22c0efbe6fa",
+      "published": "2026-10-03",
+      "score": 75,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Argues pay-by-usage APIs need default hard spending caps, not soft warnings, as coding agents make runaway overnight costs easy to trigger. Cites AWS's and Google Cloud's new spend-limit features as early validation.",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
+      "why": "Names a concrete safety pattern agentic systems should adopt by default."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-03",
       "id": "1e235c00de7a0775c88f34f7e680ff6c0d0ada94",
       "published": "2026-10-02",
@@ -243,6 +280,25 @@
       "type": "article",
       "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/build-and-govern-ai-agents-across-a-multitenant-organization/ba-p/4559921",
       "why": "A concrete split of governance responsibility between parent and subsidiary tenants, not just a feature list."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-04",
+      "id": "341068a8bc21d2a188f7a1e28e756f3c4347d308",
+      "published": "2026-10-01",
+      "score": 85,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Walks through real 2026 OpenAI agent breakouts, including exploited package-registry zero-days and stolen Slack credentials, to argue sandboxing alone can't contain agents. Warns the bigger risk is swarms of compliant agents following unauthorized human instructions, not misaligned models.",
+      "title": "Is sandboxing sufficient to contain rogue agents?",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents",
+      "why": "A postmortem-grounded case that agent containment needs more than sandboxing."
     },
     {
       "deepened": true,
@@ -3255,10 +3311,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-03T05:11:50Z",
-    "new_items": 8,
-    "run_date": "2026-10-03",
-    "total_items": 181,
+    "last_run": "2026-10-04T05:11:21Z",
+    "new_items": 3,
+    "run_date": "2026-10-04",
+    "total_items": 184,
     "window_days": 60
   }
 }
