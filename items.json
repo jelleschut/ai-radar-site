@@ -22,6 +22,25 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-05",
+      "id": "9a14422b82b9b3e36471621a13f3a8cf078c55c6",
+      "published": "2026-10-03",
+      "score": 78,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Kolibri is a 78B-parameter MoE model (3.46B active per token) trained on 24T tokens with a German-optimized tokenizer, 1M-token context, and on-prem deployment for data sovereignty. Benchmarks show strong German reasoning and hallucination calibration but weaker multi-turn tool use and coding agent performance.",
+      "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://tej.as/blog/aleph-alpha-kolibri",
+      "why": "Concrete architecture, training and benchmark numbers for a deployable MoE model, including its real weaknesses."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-04",
       "id": "3ba89625595d441660969d2fe678f22c0efbe6fa",
       "published": "2026-10-03",
@@ -3311,10 +3330,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-04T05:11:21Z",
-    "new_items": 3,
-    "run_date": "2026-10-04",
-    "total_items": 184,
+    "last_run": "2026-10-05T05:16:54Z",
+    "new_items": 1,
+    "run_date": "2026-10-05",
+    "total_items": 185,
     "window_days": 60
   }
 }
