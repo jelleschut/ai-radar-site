@@ -3,6 +3,136 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "6731be75d3a1e6b4e9cb7d5c7c95c9fff553cb3a",
+      "published": "2026-10-05",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Compares native speech-to-speech and cascaded voice-agent architectures in Foundry Agent Service, assigns responsibilities (Microsoft manages the runtime and turn detection; the customer owns auth and incident response), and measures end-to-end latency across six configurations from 300 real calls.",
+      "title": "Voice agents in Foundry Agent Service: architecture, trust boundaries, and real-audio latency",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/voice-agents-in-foundry-agent-service-architecture-trust/ba-p/4560813",
+      "why": "Real architecture comparison and measured latency numbers, not a feature announcement."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "12a7f4ee280e8b7fa962fc0868224c43984f421f",
+      "published": "2026-10-05",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Explains how to pull retrieval signals buried in natural language, such as field names, metadata values and scoring rules, back out with LLMs for increasingly agentic search.",
+      "title": "From User inputs to Retrieval optimization: Making Retrieval Smarter with LLMs",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/from-user-inputs-to-retrieval-optimization-making-retrieval/ba-p/4561293",
+      "why": "A concrete retrieval technique for Azure AI Search, not a product pitch."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "5ba0368126f29c3526ee42480e1d1e0bb1d5f026",
+      "published": "2026-10-05",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Walks through how BNY balances agent autonomy against regulatory control at enterprise scale, covering runtime hosting, network isolation and the Agent Harness stack.",
+      "title": "Banking Challenges with AI and Agents",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/banking-challenges-with-ai-and-agents/ba-p/4560463",
+      "why": "Real architectural trade-offs for running AI agents under regulatory constraints."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "b72246d4bedb007395ddff8820fa78656f06a18d",
+      "published": "2026-10-05",
+      "score": 75,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Argues from architecture-review experience that running agents on an existing managed Kubernetes cluster, while sensible at first, often stops being enough once an agentic app reaches production.",
+      "title": "Your Agents Need More Than a Place to Run",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/your-agents-need-more-than-a-place-to-run/ba-p/4561565",
+      "why": "A decision record about where agents should actually run, not a feature pitch."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-06",
+      "id": "2a01f0d16ca8636e2efa1fd8cf08af703bb3b6c2",
+      "published": "2026-10-05",
+      "score": 68,
+      "source": "Import AI",
+      "source_url": "https://importai.substack.com/",
+      "summary": "Reports that a 4-agent swarm needs about double the tokens for half the wall-clock time but hits diminishing returns at scale, describes DeepMind's SynthID watermarking for synthetic biology, and lays out a market-based scheme for licensing AI-generated science proposals.",
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
+      "why": "A roundup with real numbers on swarm scaling and a concrete biology-watermarking mechanism, not just commentary."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-06",
+      "id": "cbee4f83437993a6e84fad6a308299abb5c45f19",
+      "published": "2026-10-05",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Felix Rieseberg explains why Cowork moved both model inference and its VM to the cloud, giving each session an isolated sandbox and routing only device-level actions through the local desktop app.",
+      "title": "Quoting Felix Rieseberg",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
+      "why": "A real trade-off explanation: local VM cost and laptop-tied execution versus cloud persistence and mobile access."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "3bcfe2f4d2ef6b2185149fb713c34815aac945e9",
+      "published": "2026-10-04",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Reruns a two-year-old test of whether LLMs can add large numbers when forced to answer in words, now on Qwen3.8-27B: accuracy falls from 97% on short numbers to 6% on 13-digit ones without reasoning, but reasoning fixes nearly all cases.",
+      "title": "Qwen3.8 27B addition in words",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words",
+      "why": "A rigorous, reproducible benchmark with real numbers on a concrete model capability limit."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-04",
       "id": "2ad697ead091eb32ce981a5d26407e1c83d48293",
       "published": "2026-10-03",
@@ -466,6 +596,25 @@
       "type": "article",
       "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
       "why": "A reproducible, code-linked comparison of classifier architectures with real accuracy, cost and calibration numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-06",
+      "id": "7a2aebea82a830e97957fa5b7d6f9bfe9b9b5bd3",
+      "published": "2026-09-29",
+      "score": 85,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Lays out five concrete points where tenant context can leak in an agentic system — agent identity, model behavior, tool-calling, handoffs, and data stores — with a risk diagram, an identity-architecture comparison table, and the recurring rule to enforce tenant boundaries in deterministic code, never in prompts or model behavior.",
+      "title": "Considerations for multitenant agentic systems",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/agentic-systems",
+      "why": "Direct, detailed architectural guidance for exactly the kind of multitenant agent systems I build."
     },
     {
       "deepened": true,
@@ -3330,10 +3479,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-05T05:16:54Z",
-    "new_items": 1,
-    "run_date": "2026-10-05",
-    "total_items": 185,
+    "last_run": "2026-10-06T05:18:31Z",
+    "new_items": 8,
+    "run_date": "2026-10-06",
+    "total_items": 193,
     "window_days": 60
   }
 }
