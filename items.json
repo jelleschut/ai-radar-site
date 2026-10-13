@@ -3,6 +3,138 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "728a22683c3ed7dcc48a41c2ebc23a978083d7ad",
+      "published": "2026-10-12",
+      "score": 85,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Anthropic's Dynamic Workflows ('flows') let a lead Claude agent draft a plan and write its own orchestration program to spawn and coordinate subagents, instead of developers pre-wiring a coordinator and roster. Flows cost much more than single-agent runs, the model can't see its remaining budget, and a 'dreaming' preview reorganizes memory between sessions.",
+      "title": "How Anthropic’s Dynamic Workflows Coordinate Claude Agents",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/claude-dynamic-workflows",
+      "why": "Anthropic's own account of solving agent-orchestration cost and review bottlenecks, with real limitations."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "048fcb30e5f3e85ffa9aeefd797ee783872f956a",
+      "published": "2026-10-12",
+      "score": 82,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A Harvard working paper using Jellyfish data covering roughly 300 million work events at 718 firms finds AI coding agents raised lines of code per worker 30% but did not significantly increase finished tasks, while pull-request review time rose 49%. The authors conclude code review and integration, not code generation, are now the bottleneck.",
+      "title": "AI coding agents generate more code, but not more software",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software",
+      "why": "Quantifies a real productivity paradox in AI-assisted coding with a large, named dataset."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "14c69997e3371ed0ce5db38a7d5438e5f213ca82",
+      "published": "2026-10-12",
+      "score": 80,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "The .NET Blog walks through five durable-execution scenarios, from invoice approval to AI-assisted incident response, showing where it helps and where it just rebuilds what ARM, a queue, or idempotent writes already provide. It stresses that durable execution doesn't make an LLM call deterministic: model calls belong in activities behind a stable, auditable proposal.",
+      "title": "Durable Task in the Real World: What Problems Does It Actually Solve?",
+      "topics": [
+        "engineering",
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/dotnet/durable-task-in-the-real-world",
+      "why": "Names concrete failure modes and design rules for combining durable workflows with nondeterministic model calls."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "d5bcb2bb20a17fe72665c07ee787324543a2fbee",
+      "published": "2026-10-12",
+      "score": 75,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "The Azure AI Foundry Blog explains permission-aware hosted agents for SharePoint: the SharePoint tool uses on-behalf-of (OBO) authentication so retrieval reflects only documents the requesting user can access, even though the hosted agent itself runs under its own platform-assigned managed identity.",
+      "title": "Building Permission-Aware Hosted Agents for SharePoint in Foundry Agent Service",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-permission-aware-hosted-agents-for-sharepoint-in/ba-p/4562526",
+      "why": "A concrete OBO mechanism solving the enterprise retrieval-permissions problem for hosted agents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "92705331275526a8e0b1d0b4ec156bfb5025973f",
+      "published": "2026-10-12",
+      "score": 72,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "REA is an open-source MCP server letting agents like Claude Code or Cursor reverse engineer native binaries, Electron/JS apps, Android, firmware and more by calling tools backed by Hopper, Ghidra or IDA. Its README examples include reconstructing a DX-Ball sound calculation in C that reproduces all 63 original compiled function byte sequences.",
+      "title": "Reverse engineer anything with agents, from app behavior down to native binaries",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://github.com/morluto/rea",
+      "why": "A working, concrete tool that turns agents loose on real reverse-engineering tasks with evidence."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "87e3671af7e336f05157730ae8bdfa8ed084137d",
+      "published": "2026-10-12",
+      "score": 70,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "The Azure AI Foundry Blog covers delivering Agent Skills over MCP: skills live on a server so agents discover and load them instead of each getting its own copy. Related Microsoft guidance warns that extracting a skill archive writes remote content to local disk and needs guardrails like size and file-count limits.",
+      "title": "Delivering Agent Skills Over MCP",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/delivering-agent-skills-over-mcp/ba-p/4562722",
+      "why": "A standard way to share and version agent skills across multiple agents via MCP."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-13",
+      "id": "efadf9441346330ca7e03c6a292b992bfa873c12",
+      "published": "2026-10-12",
+      "score": 62,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison had Codex build web-edit, a small Python web app for browsing and editing files over Tailscale from his phone, so he can edit a credentials file without routing it through an LLM. It uses CodeMirror 6 over Monaco for better mobile editing, plus a file browser with upload, download and delete.",
+      "title": "web-edit 0.1a0",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/12/web-edit",
+      "why": "A concrete pattern for keeping secrets out of the model while still using an agent nearby."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-12",
       "id": "821afa65ec9650898166f44aacf9b4686d7b5f5f",
       "published": "2026-10-11",
@@ -316,6 +448,24 @@
       "why": "A real cross-vendor capability and price comparison with numbers, not just a leaderboard claim."
     },
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "e553e7fc2ae61566127b34f743278a41889a5889",
+      "published": "2026-10-08",
+      "score": 72,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Azure Architecture Center's baseline architecture puts Application Gateway with a WAF in front of a zone-redundant App Service, reaching SQL Database, Key Vault and Storage only through Private Link and NSG-segmented subnets. A failed Application Gateway instance takes six to seven minutes to replace, so it recommends at least two or three zone-redundant instances.",
+      "title": "Baseline highly available zone-redundant web application",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/baseline-zone-redundant",
+      "why": "A concrete, reviewable reference architecture with real availability and security tradeoffs."
+    },
+    {
       "deepened": false,
       "depth": "overview",
       "first_seen": "2026-10-08",
@@ -612,6 +762,43 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "a796dc99f00da0ab26a6bea4f8dc764f3e6c18bb",
+      "published": "2026-10-06",
+      "score": 60,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Azure Architecture Center's solution idea ingests sensor data through API Management into AKS microservices, which write to Cosmos DB and stream to Kafka on HDInsight for Splunk analysis, while a separate AKS service caches processed results in Redis for an App Service dashboard.",
+      "title": "Data streaming with AKS",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/solution-ideas/articles/data-streaming-scenario",
+      "why": "A concrete multi-service reference pipeline for real-time sensor data at scale."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "2aa0a5e5ddc5abd73203549b1310aa97c82e6e30",
+      "published": "2026-10-05",
+      "score": 85,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Azure Architecture Center proposes Agentic Behavior Engineering: versioned 'behavior contracts' define what an agent must and must not do, a scenario library turns contracts into testable cases, and replay reruns inference against recorded tool and API responses to catch behavioral drift from model, prompt or data changes.",
+      "title": "Agentic behavior engineering",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/guide/agentic-behavior-engineering",
+      "why": "A concrete, named methodology and vocabulary for testing and governing enterprise agent behavior."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-06",
       "id": "6731be75d3a1e6b4e9cb7d5c7c95c9fff553cb3a",
       "published": "2026-10-05",
@@ -706,6 +893,24 @@
     },
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "becac22199763fab58a9d586eedf494f83ed3537",
+      "published": "2026-10-05",
+      "score": 72,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Azure Architecture Center's cache-aside reference details read and write flows between App Service, Azure Managed Redis and PostgreSQL, including TTL and cache-key design, the write-then-invalidate race condition, and a durable-outbox pattern for invalidations that must survive a process crash. It also covers private endpoints, Entra authentication and cost levers like eviction policy and hit-ratio tracking.",
+      "title": "Cache-aside caching using Azure Managed Redis and Azure Database for PostgreSQL",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/databases/architecture/cache-aside-azure-managed-redis-postgresql",
+      "why": "Unusually thorough treatment of a common pattern's real failure modes, not just the happy path."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-10-06",
       "id": "2a01f0d16ca8636e2efa1fd8cf08af703bb3b6c2",
@@ -721,6 +926,24 @@
       "type": "article",
       "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
       "why": "A roundup with real numbers on swarm scaling and a concrete biology-watermarking mechanism, not just commentary."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-13",
+      "id": "bf7c96173f29dc10b832e4cddc3277d1b60343cf",
+      "published": "2026-10-05",
+      "score": 68,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Azure Architecture Center's decision guide groups Azure AI services into categories, including agents, RAG (Azure AI Search, Foundry IQ, Cosmos DB, Managed Redis vector search), language, speech, image/video, governance and local inference, to help pick the right service per use case.",
+      "title": "Choose an Azure AI technology",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/data-guide/technology-choices/ai-services",
+      "why": "A current, concrete map of which Azure AI service fits which job."
     },
     {
       "deepened": true,
@@ -4107,10 +4330,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-12T05:24:03Z",
-    "new_items": 11,
-    "run_date": "2026-10-12",
-    "total_items": 227,
+    "last_run": "2026-10-13T05:16:16Z",
+    "new_items": 12,
+    "run_date": "2026-10-13",
+    "total_items": 239,
     "window_days": 60
   }
 }
