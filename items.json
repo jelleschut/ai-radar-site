@@ -1,6 +1,100 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-14",
+      "id": "c034e042bbc66ff1e6bf4772b7d0695c0276e547",
+      "published": "2026-10-13",
+      "score": 86,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft tests five reflection models across four Foundry Agent Optimizer workloads to see which best turns evaluation failures into useful configuration changes. No single reflection model wins across all four workloads.",
+      "title": "Which Reflection Model Should Power your Agent Optimizer?",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/which-reflection-model-should-power-your-agent-optimizer/ba-p/4562671",
+      "why": "A described evaluation method comparing reflection models for agent optimization, with workload-specific results."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-14",
+      "id": "49aae9e462bc00ae9413a1223262edd2a1d8a2fb",
+      "published": "2026-10-13",
+      "score": 85,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Anthropic built a custom VCS, Scion, after merges grew from 2,500 to 30,000+ per day; CI alone does ~25M checkouts daily, which naive Git would turn into 600PB of daily traffic. Seven engineers built it over five months, skipping offline support since Claude, the heaviest user, is always online.",
+      "title": "Redesigning source control at Anthropic",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic",
+      "why": "A concrete scaling postmortem with real numbers on what agentic coding does to engineering infrastructure."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-14",
+      "id": "837e840d6faec8c28a0e46dbcd25a79e66e85d1a",
+      "published": "2026-10-13",
+      "score": 84,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "A Sam Newman excerpt walks through four DR patterns (backup/restore, pilot light, warm failover, active-active) plus AI-specific risks on top: provider outages, silent model behavior drift, GPU scarcity for failover, and fragile multivendor chains. Recommends functional tests plus evals, token-based timeouts, and tracking AI spend by team.",
+      "title": "Building resilient AI-powered software, and planning for when things go wrong",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/building-resilient-systems",
+      "why": "Named DR patterns plus the specific risks AI dependencies add to them — exactly how I'd build this."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-14",
+      "id": "858ce7e14d9130e534eadb21c6c881825f088b27",
+      "published": "2026-10-13",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Geoffrey Huntley's pre-commit hook greps the diff for direct calls to observability modules that should go through his diagnostics library, fails the commit, and injects a corrective prompt — taking agent compliance to ten out of ten. The lesson: enforce conventions as automated checks, not advisory docs.",
+      "title": "Quoting Geoffrey Huntley",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley",
+      "why": "A concrete, working hook that turns an advisory rule into one agents actually follow."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-14",
+      "id": "4a863ac766466900f2504f1741ff25f5e8bcfdf2",
+      "published": "2026-10-13",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "llm-gemini 0.35 adds Gemini 4 Argon, launched at $2/$10 per million input/output tokens — matching GPT-6 Sol, half of Opus 5.5 — before doubling on December 1st. Artificial Analysis's benchmark-run cost puts Argon at $2,407, near GLM-5.3 and far below Claude Opus 5.5's $8,708.",
+      "title": "llm-gemini 0.35",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/13/llm-gemini",
+      "why": "A model release with real launch and post-hike pricing plus an independent total-cost-to-run benchmark."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-10-13",
@@ -4330,10 +4424,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-13T05:16:16Z",
-    "new_items": 12,
-    "run_date": "2026-10-13",
-    "total_items": 239,
+    "last_run": "2026-10-14T05:16:10Z",
+    "new_items": 5,
+    "run_date": "2026-10-14",
+    "total_items": 244,
     "window_days": 60
   }
 }
