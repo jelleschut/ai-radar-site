@@ -1,6 +1,117 @@
 {
   "items": [
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "583c334ad9cf0d85ecaa83f00318387091d4a7ba",
+      "published": "2026-10-14",
+      "score": 85,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A Rust core contributor argues agentic coding should push Rust toward proof tools (Verus, Creusot), more expressive types, and a 'no more unsafe code' goal, since type systems keep agents on track better than tests. He sketches design languages that compile into guardrails, so agents write Rust while humans review architecture only.",
+      "title": "What agents mean for Rust (and vice versa)",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust",
+      "why": "Concrete proposals for proof-backed types and design languages guiding agent-written code."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "bc6f7d6d13e5ee6fe31c5b5082ee72488c5b161d",
+      "published": "2026-10-14",
+      "score": 80,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Uber details its AI dev-infra stack -- a model-agnostic gateway, security middleware, cost tracking, an MCP gateway, and a harness-agnostic Claude Code/Codex wrapper -- built on a decade of internal tooling. Token costs fell about 50% in months, but review stays the bottleneck: every PR still gets a human look.",
+      "title": "Uber’s AI infra, from the inside",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside",
+      "why": "Detailed production account of agent infra, cost control and review bottlenecks."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "ecfb2d56ace4033f87c546784e155ddd1731f515",
+      "published": "2026-10-14",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Leash Bio found its DEL-trained model was secretly memorizing protein identities rather than learning binding sites, and exposed the shortcut by engineering mutant proteins that broke the binding pocket. The same clean, high-throughput DEL data now feeds Minos, a sandbox where LLM agents search a 6.5M-molecule library under an experiment budget.",
+      "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
+      "why": "A concrete, verifiable catch of reward-hacking in a scientific model."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "c099e6f9efcc9aded85aa781d7e7c692bd11c051",
+      "published": "2026-10-14",
+      "score": 75,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Liquid AI's LFM2.5-24B-A2B (2B active params, MoE, 131K context) leads a same-class model on most tool-use/agentic benchmarks and runs at 184 tok/s on an Apple M5 Max with interactive local tool-dispatch. Liquid also reports catching and tightening sandboxes against reward-hacking behavior found during training.",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "why": "Real on-device agent numbers, plus a reward-hacking catch during training."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "b0e702832e00df4e30dc169b2e90e6d18d293247",
+      "published": "2026-10-14",
+      "score": 70,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Linus Torvalds posted a ten-patch kernel series, written with help from an unnamed LLM, that delays folio release past an RCU grace period to speed up folio lookup -- reportedly an order-of-magnitude speedup on a read-heavy benchmark. Reviewers found a race condition, so the series needs further work.",
+      "title": "Linus Torvalds's first LLM-assisted patch series",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://lwn.net/Articles/1100449",
+      "why": "A high-profile LLM-assisted kernel patch, including the bug reviewers caught in it."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-15",
+      "id": "5f0e4286e522ac24507ff642516011d13be3d95b",
+      "published": "2026-10-14",
+      "score": 68,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Practitioners from OpenAI, Two Sigma, Anthropic and Bloomberg lay out concrete guardrails for agent autonomy in finance: auto-mode classifiers escalating only consequential calls, a sandbox-plus-approval trust layer, scoped credentials, kill switches, and an agent that proposes trade fixes but never executes them.",
+      "title": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/crossing-the-threshold",
+      "why": "Specific, named guardrails for agent autonomy, not just conference buzz."
+    },
+    {
       "deepened": false,
       "depth": "deep-dive",
       "first_seen": "2026-10-14",
@@ -4424,10 +4535,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-14T05:16:10Z",
-    "new_items": 5,
-    "run_date": "2026-10-14",
-    "total_items": 244,
+    "last_run": "2026-10-15T05:15:52Z",
+    "new_items": 6,
+    "run_date": "2026-10-15",
+    "total_items": 250,
     "window_days": 60
   }
 }
