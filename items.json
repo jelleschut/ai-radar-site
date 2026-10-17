@@ -1,6 +1,44 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-17",
+      "id": "bdafb2e343131dc9b66576c3c1518b8dbc2331f1",
+      "published": "2026-10-16",
+      "score": 82,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft fine-tuned gpt-oss-20b/120b with Foundry Interactive Training for schema-guided invoice extraction; baseline open models missed fields or returned invalid JSON, and fine-tuning reportedly lifted F1 by 85% on a held-out 37-line-item invoice.",
+      "title": "Information Extraction with Low-Inference-Cost Models: 85% F1 Gain via Foundry Interactive Training",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/information-extraction-with-low-inference-cost-models-85-f1-gain/ba-p/4563661",
+      "why": "Reports a described method and a measured F1 gain for a concrete low-cost extraction pipeline."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-17",
+      "id": "50e25bfb1e8370f92ea85417fd3783834074078f",
+      "published": "2026-10-16",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Quotes the Claude Code team describing a shift from end-of-PR review to continuous review during development, where Claude reviews and fixes most changes before a human looks, freeing human attention for harder questions.",
+      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/16/code-review",
+      "why": "Describes a real practice change in how an agentic team runs code review."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-10-16",
@@ -18,6 +56,25 @@
       "type": "article",
       "url": "https://devblogs.microsoft.com/agent-framework/vector-stores-in-python-agent-framework-familiar-foundations-streamlined-for-agents",
       "why": "A concrete, typed RAG API spanning many backends, with agent tools and history built in."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-17",
+      "id": "2cf7b587d05289dbca99641df0fe10a06691a472",
+      "published": "2026-10-15",
+      "score": 72,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison had Claude Code (Opus 5.5 Extra) build a shareable LaTeX renderer that stores source in the URL fragment; pointing it at his existing SVG-sandbox and gist-loading tools let it reuse proven patterns, though he himself still had to flag the XSS risk.",
+      "title": "LaTeX renderer",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/15/latex",
+      "why": "Shows a concrete agentic build workflow, including prompt reuse and where human review was still needed."
     },
     {
       "deepened": true,
@@ -4610,10 +4667,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-16T05:15:09Z",
-    "new_items": 4,
-    "run_date": "2026-10-16",
-    "total_items": 254,
+    "last_run": "2026-10-17T05:11:57Z",
+    "new_items": 3,
+    "run_date": "2026-10-17",
+    "total_items": 257,
     "window_days": 60
   }
 }
