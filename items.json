@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-19",
+      "id": "a5bb32320853f4db899f960fab78f0afa3dea1e6",
+      "published": "2026-10-18",
+      "score": 85,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Proposes HybridAgents, which switch between latent and text-based reasoning via a trained HybridLink module, reporting across 11 benchmarks roughly 10% higher accuracy, 35-55% fewer tokens, up to 2.6x faster inference and up to 3.7x lower cost than frontier agent baselines, with code and data released.",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "why": "Reproducible agent-efficiency results with a direct implication for cost and latency in production agents."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-19",
+      "id": "79619743255e89a10aca34b40659d0156cc48c5c",
+      "published": "2026-10-18",
+      "score": 62,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Reports named sites (Yelp, eBay, Amazon blocking Meta's Muse agent, Walmart, Delta, United) restricting AI agent traffic, tied to a September 15 change in default crawler rules that split AI training access from other bot access.",
+      "title": "Websites are closing their doors to AI agents",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "why": "Concrete, named blocking cases worth knowing when building agents that act on the open web."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-19",
+      "id": "987754dece6755c3d22a17ffeadb199512a60709",
+      "published": "2026-10-17",
+      "score": 64,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Covers Meta's new Muse Spark Open (816B total/42B active params, 1M context) and closed Wonder models, with license terms requiring attribution and a separate license above $20M monthly revenue.",
+      "title": "Meta shakes up the frontiers, open and closed",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "why": "Actionable open-weight model specs and license terms, mixed with speculative market commentary."
+    },
+    {
       "deepened": false,
       "depth": "deep-dive",
       "first_seen": "2026-10-17",
@@ -4667,10 +4722,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-17T05:11:57Z",
+    "last_run": "2026-10-19T05:08:10Z",
     "new_items": 3,
-    "run_date": "2026-10-17",
-    "total_items": 257,
+    "run_date": "2026-10-19",
+    "total_items": 260,
     "window_days": 60
   }
 }
