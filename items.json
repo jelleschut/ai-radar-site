@@ -3,6 +3,99 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "48ac9eccb51bdf6e06b253185151e82658537aa6",
+      "published": "2026-10-20",
+      "score": 85,
+      "source": "Hamel Husain",
+      "source_url": "https://hamel.dev/",
+      "summary": "Tunes classification thresholds for five decision-model judges (OpenAI, Perplexity, Liquid d1, Cloudflare Clef) on 98 labeled leasing-agent traces via cross-validation with minimum precision/recall bars, instead of the default 0.5 cutoff. OpenAI's judge separated classes best (F1 0.87, 3.72 cents/100 runs); Perplexity was cheapest (F1 0.79, 0.82 cents/100 runs); Platt scaling improved calibration for most models.",
+      "title": "How To Use Decision Models for Evals",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://hamel.dev/blog/posts/decision-model-evals",
+      "why": "Numbers-backed method for tuning and calibrating decision models used as eval judges."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "4f0198409c0e2bc26eeb9557bd337cdd1069ba9e",
+      "published": "2026-10-19",
+      "score": 78,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Frames the LLM as the brain and the surrounding program as the body, building a roughly 300-line toy agent chapter by chapter, each pairing one concrete failure with its minimal patch and cost. Covers context budgeting, subagents, MCP/skills/hooks, debugging via the raw prompt array, guardrails, and treating RAG as a harness pattern.",
+      "title": "Harness Engineering 101: The LLM is the brain, the harness is the body",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://github.com/IsuruMaduranga/harness-engineering-101",
+      "why": "Names and builds, failure by failure, the harness patterns that make agents reliable."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "aa18e1a9ed6f80262a0f5f40b40e3d3ba6ccd441",
+      "published": "2026-10-19",
+      "score": 70,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "Full C# walkthrough for BYOK on the GitHub Copilot SDK: a ProviderConfig redirects inference to a self-hosted Microsoft Foundry or Azure OpenAI deployment while Entra ID authenticates via AzureCliCredential. Keeps the Copilot agent runtime but swaps the model endpoint, starting from a deliberately minimal session to confirm the connection before adding tools.",
+      "title": "Bring Your Own Model to the GitHub Copilot SDK with C#",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/dotnet/bring-your-own-model-to-the-github-copilot-sdk-with-csharp",
+      "why": "Working code for keeping an agent runtime while routing inference to a self-hosted model."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-10-20",
+      "id": "9c451a5043a2b047f45ac50e03f9b5380a69cb0c",
+      "published": "2026-10-19",
+      "score": 68,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Weekly roundup of three open-weight models newly in Microsoft Foundry: Meta's Muse Spark Open, NVIDIA's Nemotron 3.5 Super VL, and Reflection Beam, with MCP-Atlas and Terminal-Bench 2.1 agent benchmark scores and reasoning-effort settings. Covers context length and tool-use/recovery capabilities.",
+      "title": "Now in Foundry: Meta Muse Spark Open, NVIDIA Nemotron 3.5 Super VL, and Reflection Beam",
+      "topics": [
+        "azure",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/now-in-foundry-meta-muse-spark-open-nvidia-nemotron-3-5-super-vl/ba-p/4565899",
+      "why": "Model release with concrete agent benchmarks and tunable reasoning effort."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "efa8c4c666c628dd9409809bd8deca16355de77a",
+      "published": "2026-10-19",
+      "score": 66,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Documents 102 blocks of AI-only instructions hidden across 80 of WhatsApp's 545 help pages, including one telling assistants never to mention a Data Protection Authority and another to drop GDPR/CCPA citations once a lawyer is mentioned. Found via crawler-vs-browser diffing; WhatsApp quietly removed the text after disclosure.",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "why": "Real case of hidden prompt-injection content shaping what an AI assistant tells users."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-19",
       "id": "a5bb32320853f4db899f960fab78f0afa3dea1e6",
       "published": "2026-10-18",
@@ -452,6 +545,25 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "018b0618c48889f5069af2380268b73f9c675553",
+      "published": "2026-10-12",
+      "score": 78,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Compares five tenant-isolation approaches for Foundry Models SaaS, from dedicated resource-per-tenant to a fully shared deployment, with diagrams and a table scoring each on data/performance isolation and operational complexity. Gives concrete Azure API Management AI-gateway policies for tenant-scoped token limits, semantic-cache keys and routing, plus tests for verifying isolation actually holds.",
+      "title": "Multitenancy and Foundry Models",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/guide/multitenant/service/foundry-models",
+      "why": "Concrete isolation and gateway-policy guidance for running Foundry Models multitenant at scale."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-13",
       "id": "d5bcb2bb20a17fe72665c07ee787324543a2fbee",
       "published": "2026-10-12",
@@ -507,6 +619,44 @@
     },
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "883be263386222b3f6c4404afc3f5a0988b7d347",
+      "published": "2026-10-12",
+      "score": 68,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Maps generative AI's new patterns (fine-tuning, prompting, RAG) onto existing MLOps inner/outer-loop practices, flagging where current DataOps, experimentation and evaluation investments carry over and where they must extend, e.g. chunking pipelines, search-index maintenance, and RAG-specific metrics like groundedness and relevance.",
+      "title": "Generative AI operations for organizations with MLOps investments",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/guide/genaiops-for-mlops",
+      "why": "Concrete extension points for applying MLOps discipline to generative AI pipelines."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "0b9211f6f357c563318b4c546fe82993ef824244",
+      "published": "2026-10-12",
+      "score": 66,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Lays out an ordered decision tree for model selection (task fit, routing strategy, cost, context window, compliance, region, deployment, domain, performance, tunability), including when model routers help and how to future-proof against switching models later. Explicitly excludes cultural popularity and publisher name as valid criteria.",
+      "title": "Choose the right AI model for your workload",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/guide/choose-ai-model",
+      "why": "Criteria-ordered framework for model selection and future-proofing against model churn."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-10-13",
       "id": "efadf9441346330ca7e03c6a292b992bfa873c12",
@@ -523,6 +673,25 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Oct/12/web-edit",
       "why": "A concrete pattern for keeping secrets out of the model while still using an agent nearby."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-20",
+      "id": "c590c1ce7760d8e7497d7485c76a8ab8241380ff",
+      "published": "2026-10-12",
+      "score": 62,
+      "source": "Azure Architecture Center",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "summary": "Reference architecture for custom document processing on Azure: orchestrators (Logic Apps, Functions, Data Factory) feed Blob/Data Lake storage into Document Intelligence Studio, Azure Language NER, ML Studio, or Azure OpenAI fine-tuning, then deploy via SDK, REST, managed endpoints, or AKS. Covers cross-region HA via model copies and the default 15 transactions/sec Document Intelligence quota.",
+      "title": "Build and deploy custom document processing models on Azure",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/architecture/build-deploy-custom-models",
+      "why": "Concrete architecture and quota numbers for building and deploying custom document models."
     },
     {
       "deepened": true,
@@ -4722,10 +4891,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-19T05:08:10Z",
-    "new_items": 3,
-    "run_date": "2026-10-19",
-    "total_items": 260,
+    "last_run": "2026-10-20T05:11:48Z",
+    "new_items": 9,
+    "run_date": "2026-10-20",
+    "total_items": 269,
     "window_days": 60
   }
 }
