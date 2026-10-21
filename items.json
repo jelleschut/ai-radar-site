@@ -3,6 +3,42 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-21",
+      "id": "a6e1fb4e076b0df62e7c8ece227ec2c93146c403",
+      "published": "2026-10-21",
+      "score": 82,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Tenex describes its AI-native SDLC: a MetaHarness of agent skills and git-logged decisions, Opus 5.5 and Codex working in tandem, and outcome-based pay with a 4x spread across engineers. Enterprise data shows most companies have LLMs but only ~50% use coding agents and ~5% run agents in production outside engineering.",
+      "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/tenex",
+      "why": "Concrete numbers on agent-driven dev economics and enterprise agent adoption rates."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-21",
+      "id": "536d96aeb1a627285d22527a4c27a69d60abd3d0",
+      "published": "2026-10-20",
+      "score": 88,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Analyzing 27 companies, Gergely Orosz finds PR output up roughly 113-128% year over year on CodeRabbit's platform, but individual companies range from unchanged velocity to several times more PRs. AI spend doesn't track company size and has fallen since a summer peak as per-token costs halved.",
+      "title": "What's the ROI of software engineers' spending on AI?",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/whats-the-roi-of-software-engineers",
+      "why": "Rare cross-company data showing AI coding spend and velocity gains are uneven and hard to measure."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-20",
       "id": "48ac9eccb51bdf6e06b253185151e82658537aa6",
       "published": "2026-10-20",
@@ -17,6 +53,60 @@
       "type": "article",
       "url": "https://hamel.dev/blog/posts/decision-model-evals",
       "why": "Numbers-backed method for tuning and calibrating decision models used as eval judges."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-21",
+      "id": "34b84ef907f5fd9b956316ea05d9b3c1c79f4c43",
+      "published": "2026-10-20",
+      "score": 80,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Interconnects covers China's draft rule requiring approval before exporting frontier AI models and a US ban on DeepSeek in federal procurement, alongside DeepSeek's efficient new inference stack and its 552B-parameter V4.1-Flash model leading agentic-coding price-performance charts.",
+      "title": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+      "why": "Specific model and regulatory details with direct consequences for what's buildable and exportable."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-21",
+      "id": "4a35878a8746d200609aca11d26891beda926d19",
+      "published": "2026-10-20",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A Microsoft engineer builds Ami, an on-device Android voice companion using Azure AI Foundry Local that answers health questions from watch data without sending anything to the cloud.",
+      "title": "Building an On-Device Voice Companion with Foundry Local",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-an-on-device-voice-companion-with-foundry-local/ba-p/4563553",
+      "why": "A concrete Foundry Local build with on-device architecture and real constraints."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-21",
+      "id": "4dc8a56e037376de6e3b1d36b160566eb3cf8c69",
+      "published": "2026-10-20",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison's 321-commit Claude Code build of an RTS game surfaces real agentic quirks: an overnight 'Ultracode' run that simulated 1,000 AI-vs-AI matches to rebalance units, a cross-browser Math.sin() determinism bug, and a WebRTC failure fixed with a stateless relay.",
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones",
+      "why": "Specific failure modes and fixes from a long, unattended agentic coding session."
     },
     {
       "deepened": true,
@@ -4891,10 +4981,10 @@
     }
   ],
   "meta": {
-    "last_run": "2026-10-20T05:11:48Z",
-    "new_items": 9,
-    "run_date": "2026-10-20",
-    "total_items": 269,
+    "last_run": "2026-10-21T05:08:53Z",
+    "new_items": 5,
+    "run_date": "2026-10-21",
+    "total_items": 274,
     "window_days": 60
   }
 }
