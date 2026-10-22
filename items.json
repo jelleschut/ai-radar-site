@@ -3,6 +3,25 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-22",
+      "id": "7dadac6a05821def9aa1b46e467d94b43b3ab5ed",
+      "published": "2026-10-21",
+      "score": 85,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "DeepSeek's open-sourced DeepInfer engine disaggregates prefill and decode, uses a 100-PiB SSD KV-cache tier, and reports 155T tokens/day at 96% cache-hit rate on ~2,400 GPUs. Independent vLLM benchmarks confirm decode throughput within 6%, though the ~80% margin estimates are third-party and unaudited.",
+      "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+      "why": "Real architecture and measured numbers on inference economics, directly useful for cost/latency tradeoffs."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-21",
       "id": "a6e1fb4e076b0df62e7c8ece227ec2c93146c403",
       "published": "2026-10-21",
@@ -17,6 +36,79 @@
       "type": "podcast",
       "url": "https://www.latent.space/p/tenex",
       "why": "Concrete numbers on agent-driven dev economics and enterprise agent adoption rates."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-22",
+      "id": "0fff47054cc39cd597637787d50a6f0930d1fd1d",
+      "published": "2026-10-21",
+      "score": 76,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Argues that as models absorb the agent harness, what's left is an 'Attention Interface' deciding what surfaces to the human, and Claude Mods let users build that interface as code at any point in the loop. Gives examples, a measured per-check token cost, and a frequency test for whether a mod helps or becomes noise.",
+      "title": "Claude Mods: Flipping the Harness Inside Out",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://www.latent.space/p/claude-mods",
+      "why": "Names a genuine new concept (Attention Interface) with worked examples and honest cost/trust tradeoffs."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-22",
+      "id": "3980395922286a745f0875ebfe6b5708d015abd2",
+      "published": "2026-10-21",
+      "score": 72,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "LayerFS gives coding agents isolated, writable workspaces over a shared content-addressed store, with 5-20ms mounts versus minutes for a clone-and-install, plus lockfile-aware conflict rules and per-line blame. Real components are named (store, packs, .lww rules) but the mount mechanism and concurrency model aren't detailed.",
+      "title": "LayerFS: The filesystem for AI coding agents",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://layerfs.ai/",
+      "why": "Concrete architecture for a real agent-workflow pain point: slow per-agent setup."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-22",
+      "id": "90e3466f8031ffa0e28df4cd4e7b9c4402980bb0",
+      "published": "2026-10-21",
+      "score": 70,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Alter proxies agent API calls so a shared provider credential is never exposed to the agent, enforcing default-deny, per-parameter policies tied to the authorizing end user with a tamper-evident audit trail. One SDK call covers storage, refresh, policy and audit across 140 providers, though the proxy and policy-language internals aren't disclosed.",
+      "title": "Launch HN: Alter (YC S25) – Access control for multi-user agents",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://alterauth.com/",
+      "why": "Names a real pattern for agent-identity and credential scoping, not just a feature list."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-22",
+      "id": "2c3b02c2630def879ad45cc9ad31d20958acb5f0",
+      "published": "2026-10-21",
+      "score": 68,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Cohere Rerank V5 lands in Microsoft Foundry with Fast and Pro tiers and a Context Focus mode that returns only the most relevant passages, cutting tokens passed to the LLM. Calibrated, run-stable scores help set relevance thresholds for enterprise RAG across finance and healthcare.",
+      "title": "Cohere Rerank V5 is now available in Microsoft Foundry",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/cohere-rerank-v5-is-now-available-in-microsoft-foundry/ba-p/4566311",
+      "why": "Direct Azure AI Search/RAG retrieval improvement, though unverified beyond the source post."
     },
     {
       "deepened": true,
@@ -4960,31 +5052,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Aug/23/drew-breunig",
       "why": "A real, current account of deliberately routing coding-agent work by cost versus capability."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "686686b80dcf4d54eb5c0f7e3858bca133a2840a",
-      "published": "2026-08-22",
-      "score": 60,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Linus Torvalds credits AI assistance for grinding through a debug session on a GPU memory bug, noting the AI repeatedly claimed it was unsolvable yet kept adding useful debug code when pushed.",
-      "title": "Quoting Linus Torvalds",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
-      "why": "A candid, hard-won account of AI-assisted debugging on real kernel code, warts included."
     }
   ],
   "meta": {
-    "last_run": "2026-10-21T05:08:53Z",
+    "last_run": "2026-10-22T05:10:28Z",
     "new_items": 5,
-    "run_date": "2026-10-21",
-    "total_items": 274,
+    "run_date": "2026-10-22",
+    "total_items": 278,
     "window_days": 60
   }
 }
