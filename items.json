@@ -1,6 +1,79 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-23",
+      "id": "b55cd21f929346343d4d190e157731318f0d2ef9",
+      "published": "2026-10-22",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A RAG assistant can confidently give an outdated answer, such as a changed leave policy, even when storage, indexing and the model are all working correctly. The real failure is keeping chunks, embeddings and index entries in sync as source documents are updated or deleted.",
+      "title": "Building a Self-Updating RAG System: Handling Document Uploads, Updates and Deletions",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/building-a-self-updating-rag-system-handling-document-uploads/ba-p/4564036",
+      "why": "Names a concrete, common RAG failure mode: stale knowledge despite healthy infrastructure."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-23",
+      "id": "c9459f91d3e9b66b74051a8f2cb8fad5ae00ea3a",
+      "published": "2026-10-22",
+      "score": 75,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A Foundry demo builds a next-best-action workbench for sales reps, comparing rule-based logic, GPT-4o and Microsoft-Decision-1 against synthetic account scenarios such as a $76k expansion and a $210k cross-sell. The focus is how the sales question itself changes under each approach, not which model wins.",
+      "title": "Implementing Next Best Action (NBA) in Foundry with Microsoft-Decision-1",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/implementing-next-best-action-nba-in-foundry-with-microsoft/ba-p/4565653",
+      "why": "A concrete reference architecture comparing three decision approaches on realistic sales scenarios."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-23",
+      "id": "d636564ee5d912b3f83a70ffe92182703b3a5d1c",
+      "published": "2026-10-22",
+      "score": 72,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Modal's CEO explains how it leases GPUs across roughly 25 clouds on multi-year contracts and pools customer demand to smooth utilization. Sandboxes are now about a third of revenue, with fast startup and snapshotting being what agent workloads actually need.",
+      "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.latent.space/p/modal-d",
+      "why": "Concrete numbers on agent-cloud GPU economics and what sandbox performance agents actually require."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-10-23",
+      "id": "7bb2491ac449b0101b9a7ca36cc68a538976aac8",
+      "published": "2026-10-22",
+      "score": 62,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Foundry Managed Fine-Tuning adds four open-source models (Muse-Glimmer-30B, qwen3.8-27b, qwen3.6-35b-a3b, gpt-oss-120b) with supervised fine-tuning, plus Multi-LoRA Managed Compute in public preview, letting fine-tuned adapters share base-model weights and GPU capacity instead of separate serving allocations.",
+      "title": "Foundry Fine-Tuning: open-source model expansion, MAI-Code, and shared multi-LoRA deployments",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/foundry-fine-tuning-open-source-model-expansion-mai-code-and/ba-p/4565915",
+      "why": "Concrete serving-efficiency detail: shared GPU capacity across adapters, not just a model list."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-10-22",
@@ -36,6 +109,24 @@
       "type": "podcast",
       "url": "https://www.latent.space/p/tenex",
       "why": "Concrete numbers on agent-driven dev economics and enterprise agent adoption rates."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-23",
+      "id": "0ef7b7288d260e9a459e3bbfcd20cb5a4ecf425a",
+      "published": "2026-10-21",
+      "score": 78,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Argues that LLM-generated confidence scores are unreliable because they're produced as text, not measured — scores shift across repeated or reworded versions of the same question. Proposes building a rule from observable signals, calibrated against recorded outcomes, instead.",
+      "title": "Using LLM for confidence scoring is a bad idea",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+      "why": "A named anti-pattern with evidence, plus a concrete calibration-based alternative."
     },
     {
       "deepened": true,
@@ -5016,49 +5107,13 @@
       "type": "article",
       "url": "https://importai.substack.com/p/import-ai-470-no-rights-for-machines",
       "why": "A digest with actual method and numbers behind each item, not just headlines."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "id": "451496f8489c5cad64bee56b9be87cb775185f45",
-      "published": "2026-08-23",
-      "score": 75,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A personal agent.md enforcing terse comments, named constants over magic numbers, early returns over nested arrows, strict layered boundaries, and test-first bug fixes, because LLMs otherwise produce working but poorly structured code.",
-      "title": "My agent.md to improve LLM-assisted code quality",
-      "topics": [
-        "claude-code",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://fabiensanglard.net/agent.md/index.html",
-      "why": "Concrete, reasoned conventions plus the real failure mode - context dilution - that forces new sessions per feature."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "id": "02dbe79386a6916414afc264125769f5eb1ea546",
-      "published": "2026-08-23",
-      "score": 66,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Drew Breunig argues Fable's high cost ended the assumption that a cheaper future model would paper over prompt/context problems, pushing teams to route routine coding work to Opus, Sonnet or GLM and reserve Fable for what actually needs it.",
-      "title": "Quoting Drew Breunig",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig",
-      "why": "A real, current account of deliberately routing coding-agent work by cost versus capability."
     }
   ],
   "meta": {
-    "last_run": "2026-10-22T05:10:28Z",
+    "last_run": "2026-10-23T05:09:18Z",
     "new_items": 5,
-    "run_date": "2026-10-22",
-    "total_items": 278,
+    "run_date": "2026-10-23",
+    "total_items": 281,
     "window_days": 60
   }
 }
