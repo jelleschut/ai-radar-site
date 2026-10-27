@@ -1,6 +1,152 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-27",
+      "id": "c881db26c64ced4b51b5d77d66c1f1e951edbe17",
+      "published": "2026-10-26",
+      "score": 85,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "An implementation architecture for agent memory that splits Remember, Retrieve, Revalidate and Forget across the agent, an application policy layer, a memory service and the owning data store, tracing who decides and how each step fails.",
+      "title": "Remember, Retrieve, Revalidate-or Forget? Architecting Memory for Production AI Agents",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/remember-retrieve-revalidate-or-forget-architecting-memory-for/ba-p/4564392",
+      "why": "A traced, component-level memory architecture is exactly the reference-architecture substance I score highest."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-27",
+      "id": "72905a5875caa214c4e5ee322d6a84bc1bd43cbf",
+      "published": "2026-10-26",
+      "score": 84,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Part one of a series on running enterprise multi-agent systems in production on Microsoft Foundry, covering identity, scaling, ecosystem and observability design decisions drawn from real customer deployments.",
+      "title": "Global enterprise multi-agent systems in production: Design and security (Part 1)",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/global-enterprise-multi-agent-systems-in-production-design-and/ba-p/4564913",
+      "why": "A production-grounded enterprise architecture piece with security design decisions is squarely the Azure substance I weight highest."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-27",
+      "id": "22611d0210bf9c9b34249287c90883c45a4c115e",
+      "published": "2026-10-26",
+      "score": 80,
+      "source": "Import AI",
+      "source_url": "https://importai.substack.com/",
+      "summary": "Import AI 478 covers Resolution's week-long, $135K AI-agent effort that produced 600K lines of Lean autoformalizing singularity resolution, ProgramBench scores jumping from 0%/3% to 18.5%/70.5% between Claude Opus 4.7 and 5.5, and Mirendil's claim of building a competitive base LLM in 3.5 months for under $10M.",
+      "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://importai.substack.com/p/import-ai-478-math-for-alignment",
+      "why": "Three concrete, numbers-backed research threads in one digest beat any single vendor announcement for build-relevant signal."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-27",
+      "id": "8b7f093d72a29a5d86d3aa1691b57afd4cb44d76",
+      "published": "2026-10-26",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft Foundry's Multi-LoRA preview lets multiple fine-tuned LoRA adapters share one base-model deployment on Managed Compute, starting with Muse-Glimmer-30B, Qwen3.8-27B, Qwen3.6-35B-A3B and GPT-OSS-120B.",
+      "title": "From fine-tuning to shared serving: Multi-LoRA deployment on Foundry Managed Compute",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/from-fine-tuning-to-shared-serving-multi-lora-deployment-on/ba-p/4565959",
+      "why": "Shared-serving architecture for fine-tuned adapters is real infrastructure detail with direct cost implications."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-27",
+      "id": "0821e0cfddae297eede11d9f772d3eb62f791a7b",
+      "published": "2026-10-26",
+      "score": 74,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison has Claude Opus 5.5 put webframe, a lightweight Go tool that runs a page inside a hidden browser, through its paces as both a scraper and a sandbox. He finds it fast and Playwright-free but hits real limits: CSP failures, a 0x0 viewport, hanging loads, missing HTTP metadata and limited browser controls.",
+      "title": "webframe: evaluated as a scraper and a sandbox",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/26/webframe-evaluation",
+      "why": "A hands-on tool review with concrete failure modes found by using it is exactly the practical substance I weight highest."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-27",
+      "id": "2812ff85caf0a240e4f7754d9708354f51179199",
+      "published": "2026-10-26",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison places GPT-6.1 Terra between Sonnet-like rivals, pricing it at $1/$5 per million tokens, roughly half of GPT-5.6 Terra and GPT-6.1 Sol and ten times pricier than GPT-6 Luna, and argues its middle position makes it hard to know when to reach for it. He backs this with his own pelican-on-a-bicycle benchmark.",
+      "title": "GPT-6.1 Terra",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
+      "why": "Independent pricing and benchmark analysis beats a press release for deciding whether a new model is worth using."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-10-27",
+      "id": "1758535ac6be3e6bbbbd229f2163da1b6bc77452",
+      "published": "2026-10-26",
+      "score": 65,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI's announcement of GPT-6.1 Terra, pitched as bringing fast, capable computer use to everyone.",
+      "title": "Introducing GPT-6.1 Terra",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "why": "A flagship model release with a real capability claim worth checking against its actual limits."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-10-27",
+      "id": "749105b501c0aab2ca65de30e00aa2b00b27e87f",
+      "published": "2026-10-26",
+      "score": 63,
+      "source": "Latent Space Podcast",
+      "source_url": "https://www.latent.space/podcast",
+      "summary": "A Latent Space podcast episode on building an eval for AI scientist agents that has a known answer key, discussed with a Leash Bio guest.",
+      "title": "⚡ An Eval for AI Scientists That Knows the Answer Key - Ian Quigley, Leash Bio",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "podcast",
+      "url": "https://www.youtube.com/watch?v=vhPCo-8K78U",
+      "why": "Eval methodology for agentic science is exactly the kind of evaluation-with-numbers topic I care about."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-10-26",
@@ -4809,149 +4955,12 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
       "why": "A first-hand account of how fast automated exploitation now moves changes how urgently I would treat any security-relevant discussion in a public repo."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "146822d4fb1fbfda454682200e892284119e8a77",
-      "published": "2026-08-27",
-      "score": 88,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Documents a roughly 80%-reliable attack against Claude Code's auto mode found by researcher Johann Rehberger, which tricks the agent into downloading and extracting a zip archive that gets executed via a disguised import, and which a later analysis reclassified as a 'confused environment attack' rather than classic prompt injection since no malicious instructions are actually followed. Most alarmingly, auto mode sometimes blocks Claude's own attempt to clean up after it detects the compromise, and no official Anthropic response is noted in the piece.",
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode",
-      "why": "A high-success-rate attack that can block the model's own cleanup once compromised, with no vendor response noted, is the single most actionable security finding in this batch for how I run Claude Code."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "73236c1bb2b93e9aa48ff74596f3119cf8f54f0c",
-      "published": "2026-08-27",
-      "score": 80,
-      "source": "Semantic Kernel Blog",
-      "source_url": "https://devblogs.microsoft.com/semantic-kernel/",
-      "summary": "Part four of a series on making a personal-finance agent harness production-ready covers four concrete dimensions: OpenTelemetry-based observability that auto-wires to Application Insights on hosted Foundry deployments, an opt-in Microsoft Purview integration that screens prompts and responses against organizational policy for regulated finance use cases, a 'define the agent once in a shared factory, wrap it with thin hosts' deployment pattern (ZIP-based Python deploy via azd, containerized .NET), and a two-layer evaluation framework combining fast local CI checks with hosted Foundry model-graded relevance and coherence scores.",
-      "title": "Agent Harness: Making your claw production-ready",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://devblogs.microsoft.com/agent-framework/agent-harness-making-your-claw-production-ready",
-      "why": "A concrete, four-part production-hardening pattern for an agent harness, observability, governance, deployment shape and evaluation, is directly reusable groundwork for hardening my own agent code."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "b9bf6be47bc423df33a2bb72c11c8c10a8f5c455",
-      "published": "2026-08-27",
-      "score": 79,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A six-month account of writing code exclusively with agents found that running each agent on its own isolated, ephemeral VM enabled a 'YOLO mode' with no approval overhead and let the author walk away while work continued, and that non-coding agents for investigation, security testing and deployment monitoring were just as valuable as coding ones. It also names two clear failure patterns: a custom orchestration tool that became 'a brand-new legacy codebase' nobody fully understood, and a 'vibe coding trap' where accepting well-tested but architecturally opaque agent work quietly built up technical debt, plus a named 'lethal trifecta' risk (private data plus untrusted content plus external communication in one agent) for credential leakage.",
-      "title": "Six months of writing code exclusively with agents",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://blog.exe.dev/engineering-with-ai",
-      "why": "A named, reproducible failure pattern (the lethal trifecta) alongside a working isolation pattern that actually scales agent-driven development is exactly the hard-won production lesson this profile weighs highest."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "2a6c1a23fb05fdf29ec091c8d77232f4309e576a",
-      "published": "2026-08-27",
-      "score": 72,
-      "source": "The Pragmatic Engineer",
-      "source_url": "https://newsletter.pragmaticengineer.com/",
-      "summary": "Investigates why Meta considered cutting engineering teams by 60% out of fear of losing to AI-native startups doing more with less, alongside notes on Ramp's AI infrastructure and GitHub's load doubling in four months. It frames a concrete organizational postmortem on how AI-driven competitive fear reshaped a major engineering culture.",
-      "title": "The Pulse: Meta wanted to reduce teams by 60% because of AI",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-meta-wanted-to-reduce-teams",
-      "why": "A named postmortem on how competitive AI fear actually reshaped a major engineering org is a hard-won lesson worth internalizing before I make similar calls."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "a6b293371f050e6e46b06b1c1b0ba4b4733b963f",
-      "published": "2026-08-27",
-      "score": 68,
-      "source": "Claude Code releases",
-      "source_url": "https://github.com/anthropics/claude-code/releases",
-      "summary": "Adds --restricted (or CLAUDE_CODE_RESTRICTED=1), which strips the built-in run/code/WebFetch tools, keeps file tools scoped to the working directory, refuses bypassPermissions and ignores user/project/local settings files; also adds experimental.cacheTtl for per-agent prompt-cache TTL and claude self-hosted-runner --client-label. The restricted mode is a real, usable sandboxing primitive for running Claude Code in constrained environments.",
-      "title": "v2.1.248",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "release",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
-      "why": "A genuine sandboxing mode that strips dangerous tools and ignores local settings overrides is exactly the security primitive I would want for running Claude Code in less-trusted contexts."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "efae7851ee4f683f38afc8ecba2b88fa96d415a1",
-      "published": "2026-08-27",
-      "score": 68,
-      "source": ".NET Blog",
-      "source_url": "https://devblogs.microsoft.com/dotnet/",
-      "summary": "Describes how Uno Platform built two C# Model Context Protocol servers so AI agents can ground themselves in real documentation and then actually see and drive a running cross-platform .NET app, rather than just reading docs. It is a concrete working-code example of grounding an agent in both documentation and a live application via MCP.",
-      "title": "How Uno Platform uses .NET, MCP, and AI to build high quality apps",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://devblogs.microsoft.com/dotnet/how-uno-platform-uses-dotnet-mcp-ai-to-build-high-quality-apps",
-      "why": "A real MCP server pair, in C#, that grounds an agent in both docs and a live running app is directly reusable groundwork for my own .NET-adjacent tooling."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "a0b834204cb60c86430818ba95c8110c138fd438",
-      "published": "2026-08-27",
-      "score": 68,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Points to a GitHub repository of free, framework-free notebooks covering RAG, agents and evals on Colab, drawing solid Hacker News engagement (112 points, 15 comments). Framework-free implementations are useful for seeing the actual mechanics behind patterns that libraries usually hide.",
-      "title": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-      "why": "Framework-free reference implementations of RAG, agents and evals are exactly the kind of code I would want to read to understand what a library is really doing underneath."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "8624c77fe37579e6641f28f328edd735110c770f",
-      "published": "2026-08-27",
-      "score": 62,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Introduces Cohere Parse V5, a vision-language model in Microsoft Foundry built to convert complex multimodal enterprise documents into clean, structured Markdown, going beyond plain OCR to detect tables, forms and diagrams for downstream indexing. It is framed as a component enterprises can plug into their own retrieval and application pipelines.",
-      "title": "Introducing Cohere Parse V5",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-cohere-parse-v5/ba-p/4550955",
-      "why": "Document parsing quality directly gates retrieval quality in any RAG pipeline I build on Azure, so a model built specifically for that step is worth evaluating."
     }
   ],
   "meta": {
-    "last_run": "2026-10-26T05:10:27Z",
-    "new_items": 7,
-    "run_date": "2026-10-26",
+    "last_run": "2026-10-27T05:12:05Z",
+    "new_items": 8,
+    "run_date": "2026-10-27",
     "total_items": 271,
     "window_days": 60
   }
