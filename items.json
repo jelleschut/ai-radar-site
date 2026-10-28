@@ -1,6 +1,79 @@
 {
   "items": [
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "62b1fcdba263ec2da2b2a051c1fe220065c7bfb5",
+      "published": "2026-10-27",
+      "score": 82,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "An offline desktop app pairs a hardware-tiered local LLM with a cited, locally indexed reference library, capping reasoning tokens and deduplicating retrieval to avoid runaway loops. Ships blind-graded accuracy scores per model tier and documents failure modes like fabricated citation formats.",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.brangus.io/survival-llm",
+      "why": "A concrete, cited local-RAG deployment pattern with measured tradeoffs by hardware tier."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "3bd3315ede2e153c4a4fa59ab2282d8fc034f25f",
+      "published": "2026-10-27",
+      "score": 80,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Traces ResolveAI's three on-call-agent architectures in two years, from a scripted pipeline to a multi-agent design with investigator, verifier and communicator roles that fixed a single agent's self-confirmation bias. Covers concrete failure modes, timing data from Stripe, and design lessons across Monzo, OpenAI, Stripe and Google, though the deepest accuracy evidence sits behind a paywall.",
+      "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+      "why": "Grounded in real multi-company architecture evolution and named failure modes."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "92d59b5f29cbe931f5d3b9ed91f3b96db54c9e88",
+      "published": "2026-10-27",
+      "score": 70,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Part 2 of a Foundry series on hosted multi-agent systems, giving seven practices for proving a tested release reaches users across regions, protecting diagnostic data, measuring real outcomes, and rehearsing recovery. Could not fetch the full page or find it via search, so this score rests on the excerpt alone.",
+      "title": "Global enterprise multi-agent systems in production: Release and operations (Part 2)",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/global-enterprise-multi-agent-systems-in-production-release-and/ba-p/4564916",
+      "why": "Reads as solid production-ops guidance, but unverified beyond the excerpt."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "8af34d90d669e0eb5175a0f0f34708f215ce5606",
+      "published": "2026-10-27",
+      "score": 64,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Argues that owning agent-built systems depends on knowing enough to spot trouble, illustrated by two anecdotes: untangling an agent's correct-but-tangled single-file code, and re-architecting a failing agent orchestrator around a level-triggered state machine. Mostly opinion on engineer training, with two concrete fixes as evidence.",
+      "title": "Here be monsters: What do you still need to know when agents do the work?",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+      "why": "Two real debugging anecdotes behind a broader, more speculative argument."
+    },
+    {
       "deepened": false,
       "depth": "deep-dive",
       "first_seen": "2026-10-27",
@@ -149,6 +222,25 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "c45c68dc9fe27319a2fa5d0add6b78dd9d68ee22",
+      "published": "2026-10-25",
+      "score": 74,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Argues commodity competition, not cheaper inference, mainly drove recent 75-80% LLM price cuts, backed by OpenRouter provider counts and a Vercel gateway dataset showing cost-per-token fell to 43% of its April level. Notes cache reads can be 96-99% of agentic-coding spend, so cache pricing matters more than headline rates.",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://minimaxir.com/2026/10/cheap-llms",
+      "why": "A data-backed cost analysis with a concrete lesson on cache-read pricing."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-26",
       "id": "d1a3b4fa5d93fb49d3ffb0461ed4419c6c113f01",
       "published": "2026-10-24",
@@ -258,6 +350,25 @@
       "type": "podcast",
       "url": "https://latent.space/p/modal-d",
       "why": "Concrete numbers on the infrastructure economics behind running agents at scale."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "4dcdb955782720745c63884f1e5a19f3e6e44932",
+      "published": "2026-10-22",
+      "score": 78,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "NVIDIA's sandboxed runtime isolates each agent with kernel-level file and syscall controls, injects credentials only into approved outbound requests, and requires human review before a policy change grants new host or API access. Early (0.1.x) release with SDKs for four languages but no described fleet scheduling.",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "why": "A concrete sandboxing and policy-review mechanism for unattended agents."
     },
     {
       "deepened": false,
@@ -405,6 +516,25 @@
       "type": "article",
       "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
       "why": "A named anti-pattern with evidence, plus a concrete calibration-based alternative."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-28",
+      "id": "b328ea6101ebd16615b9afe2cb13cda16cf11dc2",
+      "published": "2026-10-21",
+      "score": 76,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Open-source platform runs agents as durable services: stateless workers resume any agent from Postgres after a crash or disconnect, machines can be sandboxes or your own host via an outbound-only daemon, and each tool call can require approval. Compares itself to Claude Managed Agents and the OpenAI Agents API on hosting, data retention and pricing.",
+      "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://github.com/omnara-ai/omnara",
+      "why": "A concrete, self-hostable architecture for running unattended agents durably."
     },
     {
       "deepened": true,
@@ -4887,81 +5017,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Aug/29/hy4",
       "why": "Reading the actual chat template rather than trusting the spec sheet is a useful habit for judging what a new open model can really do."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "6f0715608976cb6d921f956ecf1c0311bdad4677",
-      "published": "2026-08-28",
-      "score": 83,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Describes discovering that Datalog, a declarative logic-programming language, solves LLM long-term memory by splitting the problem in two: the LLM acts as a fuzzy front-end converting natural language, code and debugger output into structured facts, while a deterministic Datalog engine (built into a tool called Lemmalog) derives and tracks conclusions through explicit rules, automatically invalidating dependent conclusions when an underlying fact is retracted. On memory benchmarks this cuts context tokens per query 38x on LongMemEval and 6x on LoCoMo (F1 0.533, with 0.579 F1 on the Knowledge Update category it was designed for).",
-      "title": "I accidentally turned LLM memory into program analysis",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://pwning.systems/posts/llm-memory-program-analysis",
-      "why": "A working technique that turns memory into deterministic, retraction-aware program analysis with concrete benchmark numbers changes how I would build any agent memory system, not just note it as a curiosity."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "88e336f93728da40c8857f90a5561fb57b30fbfb",
-      "published": "2026-08-28",
-      "score": 72,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Announces Terminal-Bench-Science, a benchmark for evaluating AI agents on scientific research workflows, drawing strong Hacker News engagement (117 points, 36 comments). As a named benchmark with a described evaluation domain, it is the kind of reproducible eval this profile weighs over a bare leaderboard number.",
-      "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.terminal-bench-science.ai/announcement",
-      "why": "A benchmark specifically targeting scientific-research workflows gives me a concrete yardstick for judging model claims in that domain, rather than a generic leaderboard score."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "4eb68756e4d20a1e0bb4ca7b36e54314d36e4aba",
-      "published": "2026-08-28",
-      "score": 70,
-      "source": "Claude Code releases",
-      "source_url": "https://github.com/anthropics/claude-code/releases",
-      "summary": "Adds PreModelSwitch/PostModelSwitch hooks to block, confirm or annotate a model switch, live streaming of a foreground subagent's tool calls to Remote Control clients (background subagents still show status only), and a spend-limit bar in /usage plus a rate_limits.spend_limit status-line field for teams behind a gateway with spend limits. These are meaningful new hooks and visibility for anyone running agents at scale.",
-      "title": "v2.1.251",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "release",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
-      "why": "The model-switch hooks and spend-limit visibility are exactly the controls I would want for running unattended agent routines responsibly."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "20919fd9c0f9478e1baa2a853e9751a951921a06",
-      "published": "2026-08-28",
-      "score": 65,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "A Cambridge computer science professor and OCaml maintainer reports that security issues in OCaml projects are now seeing attempted exploits within minutes of a fix being merely discussed publicly, down from the usual few days to a release. The post frames this as a signal of how fast automated, likely AI-assisted scanning has gotten at turning a rumoured vulnerability into a working exploit.",
-      "title": "Just a rumour of a bug is enough to find a security exploit these days",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
-      "why": "A first-hand account of how fast automated exploitation now moves changes how urgently I would treat any security-relevant discussion in a public repo."
     }
   ],
   "meta": {
-    "last_run": "2026-10-27T05:12:05Z",
-    "new_items": 8,
-    "run_date": "2026-10-27",
-    "total_items": 271,
+    "last_run": "2026-10-28T05:09:56Z",
+    "new_items": 7,
+    "run_date": "2026-10-28",
+    "total_items": 274,
     "window_days": 60
   }
 }
