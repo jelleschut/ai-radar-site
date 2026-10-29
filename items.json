@@ -3,6 +3,79 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-29",
+      "id": "45f878f3f6da2df148a0c4a2c6dd2f60dc5e9a1e",
+      "published": "2026-10-28",
+      "score": 80,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Nathan Lambert argues independent benchmarking is inherently shaped by weighting choices, using Artificial Analysis v5's move to private evals and odd model rankings as evidence that trust is the real constraint.",
+      "title": "Artificial Analysis v5 and the benchmarker's dilemma",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+      "why": "A well-evidenced critique of benchmark trustworthiness that changes how I'd read leaderboards."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-29",
+      "id": "d6316526146016648924f0aa6a158baa8209f764",
+      "published": "2026-10-28",
+      "score": 78,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison reports a capability jump in Claude Opus 5.5 for vibe-coded games, building four playable games with minimal manual coding and judging fun as the new differentiator.",
+      "title": "The October inflection point for vibe game development",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development",
+      "why": "Hands-on evidence of a real model capability shift, backed by concrete build examples."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-29",
+      "id": "a075480e28a06b3080f6feaeee1b82ebf97ccaf5",
+      "published": "2026-10-28",
+      "score": 76,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Supabase founders detail agent-friendly changes: a Docker-free local runtime, git-tracked declarative schemas instead of migration history, and Compute for embedding and chunking workloads near the database.",
+      "title": "Why Agents Love Supabase",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://latent.space/p/supabase",
+      "why": "Concrete architecture patterns for building reliable AI agent backends, not just a feature list."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-29",
+      "id": "94bdedac0696aac15663941b60b0f1d2a5da08a0",
+      "published": "2026-10-28",
+      "score": 64,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "GitHub's Octoverse 2026 report shows merged PRs tripling to 220 million per month and commits tripling to 7.38 billion, which Willison calls a stark sign of agentic engineering's impact.",
+      "title": "GitHub Octoverse 2026",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026",
+      "why": "Real usage numbers quantifying agentic coding's industry-wide impact, with a disclosed methodology."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-28",
       "id": "62b1fcdba263ec2da2b2a051c1fe220065c7bfb5",
       "published": "2026-10-27",
@@ -35,6 +108,25 @@
       "type": "article",
       "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
       "why": "Grounded in real multi-company architecture evolution and named failure modes."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-29",
+      "id": "6dd70bb9a79dbb69f3a20df4780c544753e309a0",
+      "published": "2026-10-27",
+      "score": 74,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Walks through running OpenCode against a local Qwen3.5 model via Ollama fully offline, with concrete config for context length, approvals and blocked web tools, verified by fixing a bug under an existing test.",
+      "title": "Coding From the Himalayas With an Offline AI Agent",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/offline-coding",
+      "why": "Reproducible offline-agent setup with real config and a verified lesson on keeping tasks small."
     },
     {
       "deepened": false,
@@ -4966,64 +5058,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
       "why": "A clear, independently-verified explainer of a genuinely confusing product surface saves me from working out the same confusion myself."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "dbe16c4760584b306fc6bde3cfd8bdfe3267772e",
-      "published": "2026-08-29",
-      "score": 72,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Argues for a domain-driven design approach to structuring agent systems, drawing solid Hacker News engagement (96 points, 21 comments). It names a specific architectural pattern for organizing agent responsibilities rather than treating agents as an undifferentiated blob of prompts and tools.",
-      "title": "Domain-Driven Agents",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://coldtake.dev/blog/domain-driven-agents",
-      "why": "A named architectural pattern for structuring agent systems is exactly the kind of thing that changes how I would organize my own agent codebase."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "ce496cd82092696a127776ab9c3978388c149889",
-      "published": "2026-08-29",
-      "score": 70,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Anthropic's blog post on how terminal tool Warp built self-improving agents on Claude, drawing strong Hacker News engagement (58 points, 59 comments). It is framed as a workflow someone actually built and explains, matching this profile's positive signal for real agentic-tooling case studies.",
-      "title": "Warp builds self-improving agents on Claude",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
-      "why": "A named workflow that a real product team built and explains is more useful to me than a generic capability claim."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "bf0f613e910ac8fdf40c5511b53aaef524a08ce8",
-      "published": "2026-08-29",
-      "score": 60,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Covers Tencent's new open-weight Hy4 Preview model: 770B total parameters with 49B active (up from Hy3's 295B/21B), a 1M-token context window, and 1.56TB on Hugging Face. The author also digs into Hy4's chat template on Hugging Face to understand how its reasoning-mode formatting actually works.",
-      "title": "Introducing Hy4 Preview",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/29/hy4",
-      "why": "Reading the actual chat template rather than trusting the spec sheet is a useful habit for judging what a new open model can really do."
     }
   ],
   "meta": {
-    "last_run": "2026-10-28T05:09:56Z",
-    "new_items": 7,
-    "run_date": "2026-10-28",
-    "total_items": 274,
+    "last_run": "2026-10-29T05:08:54Z",
+    "new_items": 5,
+    "run_date": "2026-10-29",
+    "total_items": 276,
     "window_days": 60
   }
 }
