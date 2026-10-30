@@ -3,6 +3,79 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-10-30",
+      "id": "a80dd20eaec84f5f341eb60fdeaab95020df3189",
+      "published": "2026-10-29",
+      "score": 88,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Spawn, a multiplayer game built by autonomous Fable-class agents costing over $3M/month in tokens, ships to production hourly; a triage agent classifies bugs, broken changes roll back in about 30 seconds, and an hour without a ship counts as the team's top-severity incident.",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world",
+      "why": "Concrete numbers and operational detail on running agents unattended at real production scale."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-30",
+      "id": "a5473c65429db84b9302da944c122a0f7afe8097",
+      "published": "2026-10-29",
+      "score": 85,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft Foundry's Agent Service provides managed memory primitives, but production design still needs application-level policy for consent, scope, write-admission and deletion, laid out here as a governed-memory reference architecture.",
+      "title": "Architecting Governed Memory State for Production AI Agents with Microsoft Foundry",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/architecting-governed-memory-state-for-production-ai-agents-with/ba-p/4566999",
+      "why": "Exactly the reference architecture and decision record the Azure area rewards."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-30",
+      "id": "271134257c4af766939cc6ec20ee0e8c3957e2cf",
+      "published": "2026-10-29",
+      "score": 78,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Claude Code sends each background agent's full transcript to its model every ~30 seconds just to update the status line, with no setting to disable it; one user's telemetry put these summary calls at roughly 16-20% of total spend and API requests.",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "topics": [
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "why": "A real, measured cost and privacy quirk from actually running the tool, with a documented workaround."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-10-30",
+      "id": "d28967fce9c692cd06eccf3709b27a584532abf2",
+      "published": "2026-10-29",
+      "score": 62,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI describes layered monitoring it uses to catch frontier-model misalignment and unauthorized agent behaviour before it escalates into an incident.",
+      "title": "How we detect frontier model misalignment",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "why": "Direct relevance to running agents safely, if the detail goes beyond marketing."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-10-29",
       "id": "45f878f3f6da2df148a0c4a2c6dd2f60dc5e9a1e",
       "published": "2026-10-28",
@@ -54,6 +127,24 @@
       "type": "podcast",
       "url": "https://latent.space/p/supabase",
       "why": "Concrete architecture patterns for building reliable AI agent backends, not just a feature list."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-10-30",
+      "id": "97373eedda74b8cd62be18654abeb2c2a1bd8276",
+      "published": "2026-10-28",
+      "score": 68,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Dayjob: Tax grades AI agents pass@1 on 50 expert-reviewed tax scenarios across eight practice areas, requiring 95% of each task's rubric to pass; Claude Sonnet 5.5 leads at a 10.8% pass rate, with case studies showing where models miss deadlines or assumptions.",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "why": "A real expert-reviewed eval with a grading method, and pass rates sobering enough to be useful."
     },
     {
       "deepened": true,
@@ -5041,30 +5132,13 @@
       "type": "article",
       "url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
       "why": "This source regularly surfaces research-adjacent developments with independent framing, which is useful for spotting things worth digging into further."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "d20b99a49a7d386ef819daef56dc8285744b69db",
-      "published": "2026-08-30",
-      "score": 72,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Untangles what ChatGPT Work actually is since its July 9th launch, explaining that it is really two separate products: a cloud version accessible via chatgpt.com and the mobile apps ('Work Cloud'), and a separate desktop-app version formerly called Codex. The author works through the confusing product surface based on what he has personally figured out so far.",
-      "title": "Understanding ChatGPT Work",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
-      "why": "A clear, independently-verified explainer of a genuinely confusing product surface saves me from working out the same confusion myself."
     }
   ],
   "meta": {
-    "last_run": "2026-10-29T05:08:54Z",
+    "last_run": "2026-10-30T05:09:25Z",
     "new_items": 5,
-    "run_date": "2026-10-29",
-    "total_items": 276,
+    "run_date": "2026-10-30",
+    "total_items": 280,
     "window_days": 60
   }
 }
