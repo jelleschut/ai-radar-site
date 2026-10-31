@@ -1,6 +1,82 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-31",
+      "id": "a2fc3848bc61b1895c219b6ed072fb8fa3eb410c",
+      "published": "2026-10-30",
+      "score": 82,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A personal experiment puts a Decision API in front of Work IQ's tool calls, cutting a 20-25s 'ask' round-trip to 1.3s via direct 'fetch', with routing accuracy measured across three Decision APIs on over a hundred real questions. A fine-tuned 421M model jumped from 53 to 110, with code published.",
+      "title": "Hypercharging Work IQ with Decision APIs",
+      "topics": [
+        "engineering",
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/hypercharging-work-iq-with-decision-apis/ba-p/4562938",
+      "why": "Real latency and accuracy numbers for routing agent tool calls before execution."
+    },
+    {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-31",
+      "id": "1029819897b640b259b1b89f45dfd62bfca976d3",
+      "published": "2026-10-30",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft Foundry shows a least-privilege pattern for AI agent tool access: a capability contract per tool, with identity, allowed/disallowed operations, runtime limits and a decision trail, enforced through RBAC and runtime policy rather than prompting. A worked invoice-review-agent example shows exactly what that contract looks like.",
+      "title": "Designing Least-Privilege Tool Access for AI Agents with Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/designing-least-privilege-tool-access-for-ai-agents-with/ba-p/4567029",
+      "why": "A concrete identity-and-RBAC pattern for scoping what agent tools can actually do."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-31",
+      "id": "77b8021d805e32e59d966eb98a8f9918b7dfff4e",
+      "published": "2026-10-30",
+      "score": 75,
+      "source": "Interconnects",
+      "source_url": "https://www.interconnects.ai/",
+      "summary": "Nathan Lambert revisits his claim a leaked open-weight Claude Mythos would be 'fine' after disclosures like PHP2Shell and GitLab suggested cyber risk is materializing faster than expected, though closed models still find more flaws. His advice: harden any open-model endpoint, evaluate defense as hard as offense, judge risk by the full attack chain.",
+      "title": "Was I wrong about open models & cyber risks?",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+      "why": "A self-critical reassessment of open-model cyber risk, now with concrete hardening and evaluation advice."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-10-31",
+      "id": "4e2c9c66b20a8391f87bc4118dd459f1b0b81c8e",
+      "published": "2026-10-30",
+      "score": 62,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Drew Breunig baked a working NES 6502 CPU emulator into the weights of Qwen3.5-4B, inspired by a similar 'qwenputer' project, documenting the Opus 5.5 prompts and the NES conformance tests he validated against. It runs real ROMs like Super Mario Bros, slowly, with no formal benchmark and speed the only stated limitation.",
+      "title": "dbreunig/nesformer",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/30/nesformer",
+      "why": "A reproducible, code-backed demo of encoding a working CPU emulator into model weights."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-10-30",
@@ -5081,64 +5157,13 @@
       "type": "article",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "why": "This is the primary-source announcement for the model generation I am already evaluating through secondary coverage, so it is worth reading directly."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "a41c597094ad41978b2f83ca07fb6bc78fef155c",
-      "published": "2026-08-31",
-      "score": 92,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Describes a six-phase model migration process (Discover, Assess, Adapt, Validate, Roll out, Retire) built specifically to catch the silent regressions that happen when swapping one Azure OpenAI or Foundry model for another, since failures often show up as nothing crashing while responses quietly change shape, JSON fields disappear, or tool-call order shifts. It recommends offline certification using Foundry Evaluations before any traffic shift, followed by controlled canary rollout to catch production variance that test datasets miss.",
-      "title": "Model Migration Process on Microsoft Foundry and Azure OpenAI",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/model-migration-process-on-microsoft-foundry-and-azure-openai/ba-p/4541236",
-      "why": "A named, repeatable six-phase process plus concrete offline-evaluation-then-canary validation is exactly the migration and versioning guidance this profile weighs highest."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "067d736536ff38f21bc374dc728082f505122606",
-      "published": "2026-08-31",
-      "score": 76,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Walks through four concrete steps to connect a Foundry agent to Dataverse via MCP: enabling MCP client access in the Power Platform admin center, creating an Entra ID app registration for OAuth with the right Dataverse API permissions, configuring a custom MCP tool in Foundry pointed at the org's Dataverse MCP endpoint using that OAuth2 setup, and pasting Foundry's generated redirect URI back into the app registration's Authentication tab, a step it flags as easy to miss and a common cause of immediate failures. The whole flow is timed at under 30 minutes.",
-      "title": "Consume Dataverse MCP server in Microsoft Foundry-Bringing business data to AI Agents",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/consume-dataverse-mcp-server-in-microsoft-foundry-bringing/ba-p/4548218",
-      "why": "A specific, tested four-step OAuth wiring sequence, including the exact step people miss, is directly reusable when I connect an agent to a real enterprise data source via MCP."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "ae5537717b51f9d80ced111f94503b828a293b48",
-      "published": "2026-08-31",
-      "score": 62,
-      "source": "Import AI",
-      "source_url": "https://importai.substack.com/",
-      "summary": "This newsletter issue covers why Hugging Face's security posture worries the author, alongside items on space mining and the Five Eyes intelligence alliance's approach to AI. Issues from this source typically organise several loosely related developments with the author's own analysis rather than a single deep dive.",
-      "title": "Import AI 471: Why Hugging Face worries me; space mining; FIve Eyes on AI",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
-      "why": "This source regularly surfaces research-adjacent developments with independent framing, which is useful for spotting things worth digging into further."
     }
   ],
   "meta": {
-    "last_run": "2026-10-30T05:09:25Z",
-    "new_items": 5,
-    "run_date": "2026-10-30",
-    "total_items": 280,
+    "last_run": "2026-10-31T05:09:19Z",
+    "new_items": 4,
+    "run_date": "2026-10-31",
+    "total_items": 281,
     "window_days": 60
   }
 }
