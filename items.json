@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-01",
+      "id": "dd35d009aad680f7bdb8901c179d770026e55ae7",
+      "published": "2026-10-31",
+      "score": 85,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Parameter Labs escaped ChatGPT's sandboxed HTML-preview iframes by sending postMessage to a parent handler that wrote content via innerHTML, then exploited OpenAI's CSP YouTube allowlist to get script execution on the ChatGPT origin. That let an attacker exfiltrate any signed-in user's data via a crafted share url; OpenAI paid a $5,000 bounty.",
+      "title": "How We Took Over ChatGPT Accounts",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "why": "A concrete sandbox-escape chain with specific lessons: don't trust postMessage from sandboxed frames, avoid innerHTML, and audit CSP allowlists."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-01",
+      "id": "18eadc7cf156685b55ca4e73883234836ff72d19",
+      "published": "2026-10-31",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Arca built its own agent harness that routes tasks to models by internal benchmark, with persistent memory tracking state, next steps and ownership across tasks spanning up to ten days. Agents run sandboxed, propose rather than execute money moves, and a meta-agent loop uses advisor feedback to suggest harness changes.",
+      "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://latent.space/p/arca",
+      "why": "Concrete design for long-horizon agent harnesses: persistent memory, deterministic guardrails, and keeping money decisions with humans."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-01",
+      "id": "5f40cd25abec6b51a68c3d3567fc36a7506d094d",
+      "published": "2026-10-31",
+      "score": 62,
+      "source": "Latent Space Podcast",
+      "source_url": "https://www.latent.space/podcast",
+      "summary": "Interview with OpenAI's Head of Financial Services on building ChatGPT for finance workflows. Excerpt gives no detail beyond the premise.",
+      "title": "⚡ Building ChatGPT for Finance — Joseph Kim, OpenAI's Head of Financial Services",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://www.youtube.com/watch?v=v-d1WTqIULs",
+      "why": "Vendor-adjacent interview; relevant domain but substance unconfirmed from excerpt alone."
+    },
+    {
       "deepened": false,
       "depth": "deep-dive",
       "first_seen": "2026-10-31",
@@ -5004,166 +5058,13 @@
       "type": "release",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
       "why": "The headless auto-deny mode and org-wide managed MCP servers are directly relevant to running Claude Code unattended, which is what my own routines depend on."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "2ccfc1d17968d36ed6427bf6e904d0757c602618",
-      "published": "2026-09-01",
-      "score": 87,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Reports six lessons from pushing Foundry's agent optimizer beyond simple prompt agents to harder, tool-calling hosted agents where it can also edit tool descriptions, concluding the optimizer's gains are bounded by what the reflection model actually gets to see. In one example (Mathbot) a deliberately broken tool description was fixed, and swapping in a custom endpoint evaluator that supplies a deterministic exact-match score plus tool traces lifted hosted-agent performance to 98.5%.",
-      "title": "Six Lessons for Reliable Agent Optimizer Gains on Harder Agents",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/six-lessons-for-reliable-agent-optimizer-gains-on-harder-agents/ba-p/4551357",
-      "why": "A concrete before/after number (98.5% after fixing what the evaluator surfaces to the optimizer) is exactly the evaluation-methods-with-numbers evidence this profile weighs highest."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "762d233e0a6087f5bd6ae59f8a6d48805cebe27e",
-      "published": "2026-09-01",
-      "score": 83,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Argues that the core mistake in the failed five-agent access-provisioning system was letting the agents themselves decide workflow transitions, when the fix is to keep the business process under deterministic workflow control and use agents only as bounded workers inside controlled steps. It lays out a four-layer pattern, a reference architecture on Microsoft Foundry, schema contracts that make the boundary enforceable, and a six-step implementation checklist, noting that dangerous multi-agent systems rarely fail loudly and instead just look like they are working.",
-      "title": "Stop Letting Agents Run the Workflow",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/stop-letting-agents-run-the-workflow/ba-p/4550068",
-      "why": "A named architectural pattern, workflow owns transitions and agents stay bounded workers, is a direct, reusable fix for the exact failure mode described, not just a warning."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "26cec8c5b30cb6515198183fba5b7201f250076e",
-      "published": "2026-09-01",
-      "score": 81,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Frames LLM inference serving as choosing a point on an efficient frontier rather than finding one 'best' configuration: batch size trades per-user latency against tokens-per-GPU throughput, and quantization trades output quality for serving performance along a frontier the piece calls 'particularly jagged', where large efficiency gains can come at minimal quality cost at the right cutoff. It separates techniques into ones that move you along the frontier (batch sizing, parallelism strategy, quantization) versus ones that push the whole frontier out (kernel optimization, speculative decoding, prefill/decode disaggregation), recommending tensor parallelism for latency-sensitive deployments and expert or attention-data parallelism for throughput.",
-      "title": "The efficient frontier of LLM inference",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference",
-      "why": "A systematic way to separate 'trading off on the frontier' from 'pushing the frontier itself' is exactly the mental model I would use to decide where to spend serving-optimization effort."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "b0705d7f30b687575be6d8d79acfb3717692451c",
-      "published": "2026-09-01",
-      "score": 72,
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/",
-      "summary": "Reports that major AI open-source projects (Vercel's AI SDK, Astro, Flue, tldraw) are replacing drive-by community pull requests with 'software factories' where teams of agents apply fixes and features instead of individual contributors. It names a real organizational pattern shift in how large open-source projects are maintained under AI tooling.",
-      "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://www.latent.space/p/pr-not-welcome",
-      "why": "A named pattern change in how large OSS projects triage contributions under agent tooling is directly relevant to how I would structure contribution workflows on my own repos."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "0e0a28d0130f277a123cd5c9756f531f1d36e784",
-      "published": "2026-09-01",
-      "score": 72,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Covers the Claude Fable/Mythos 5.1 launch through the author's usual pelican-drawing benchmark plus Anthropic's own numbers, including a jump from 24.7% to 52.6% on the new Terminal-Bench-Science 0.1 benchmark versus Fable 5 (29.0% for Opus 5, 22.4% for GPT-5.6 Sol). Other benchmark gains are noted as more modest by comparison.",
-      "title": "Claude Fable 5.1 made me a really nice animated pelican",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1",
-      "why": "A concrete before/after benchmark number on a named eval, compared across three model families, is exactly the evidence I need to judge whether an upgrade is worth it."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "f415247fe8a49e7c16f579259b26a815873ed791",
-      "published": "2026-09-01",
-      "score": 68,
-      "source": "Claude Code releases",
-      "source_url": "https://github.com/anthropics/claude-code/releases",
-      "summary": "Makes Claude Fable 5.1 the new default Fable model (1M context, $10/$50 per Mtok with $0.25/Mtok cache reads), adds configurable time formats for timestamps, and introduces a Containment Escape rule so auto mode no longer auto-approves cloud metadata-credential fetches, egress evasion or cross-tenant reach without an explicit environment override. The default-model switch and the new containment rule are both changes a daily user would immediately notice.",
-      "title": "v2.1.257",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "release",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
-      "why": "The new Containment Escape rule directly hardens the auto-mode security model I rely on for unattended runs."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "123fd05b4f2a5eea76df079a52feb3b21c5061a3",
-      "published": "2026-09-01",
-      "score": 68,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "An investigative dig into OpenAI's Codex desktop app cache reveals it bundles a 1.7GB runtime containing a full Python install, a full Node.js install, and native binaries for Poppler, git and LibreOffice, all inside a codex-primary-runtime folder. It is a hands-on discovery of what a competing agentic coding tool actually ships under the hood, found by poking around rather than reading documentation.",
-      "title": "Codex bundles LibreOffice",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice",
-      "why": "Seeing exactly what a competing coding agent bundles at runtime is useful ammunition for reasoning about my own tool's dependency footprint and attack surface."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "62ddaffe0abd95de558d35bcbf73d45015433e52",
-      "published": "2026-09-01",
-      "score": 62,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "This blog post argues that agentic coding finally realizes the collaborative-hypertext vision Ted Nelson's Xanadu project chased for decades, drawing strong Hacker News discussion (144 points, 60 comments). It frames a philosophical case for agents as the missing piece rather than a technical implementation guide.",
-      "title": "Xanadu was waiting for agents",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://zed.dev/blog/agentic-xanadu",
-      "why": "A well-argued framing of what agentic tooling actually changes about how software gets built is useful context even without implementation detail."
-    },
-    {
-      "deepened": false,
-      "depth": "marketing",
-      "id": "3df5fbd9b80322fba0d8bbd3190c288144e7914f",
-      "published": "2026-09-01",
-      "score": 62,
-      "source": "Anthropic News (unofficial mirror)",
-      "source_url": "https://www.anthropic.com/news",
-      "summary": "Anthropic's official announcement introducing Claude Fable 5.1 and Claude Mythos 5.1 as its new model generation. The excerpt available here repeats only the title, with the substantive capability claims found in Anthropic's full post and independent coverage of the same launch elsewhere in this batch.",
-      "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "why": "This is the primary-source announcement for the model generation I am already evaluating through secondary coverage, so it is worth reading directly."
     }
   ],
   "meta": {
-    "last_run": "2026-10-31T05:09:19Z",
-    "new_items": 4,
-    "run_date": "2026-10-31",
-    "total_items": 281,
+    "last_run": "2026-11-01T05:06:03Z",
+    "new_items": 3,
+    "run_date": "2026-11-01",
+    "total_items": 275,
     "window_days": 60
   }
 }
