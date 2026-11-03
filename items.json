@@ -3,6 +3,117 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-03",
+      "id": "69a46671059b3147b8530a16495739ac35e75dce",
+      "published": "2026-11-02",
+      "score": 82,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Legora's written deep-dive details evals built from LLM-paraphrased client interactions sorted into 10-20 known failure modes, a tabular-review grid that scales to a million cells but starts at 10 rows to catch bad prompts early, and routine legal work shifting from billable hours to flat project fees.",
+      "title": "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora",
+      "why": "The most concrete version of the eval-without-traces pattern, with the technique behind large-scale document review."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-03",
+      "id": "e33216d0e243d7ea6cc851b9e51d93219780711e",
+      "published": "2026-11-02",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Legora's CTO explains building and evaluating legal agents without ever seeing client traces: simulated 10,000-file data-room tests built by engineer-lawyer pairs, paraphrased-trace evals sorted into 10-20 failure modes, and one release that took citation accuracy from 70% to 99%.",
+      "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora",
+      "why": "A named pattern for building reliable agents under a hard privacy constraint, with real before/after numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-03",
+      "id": "16b2bf81a005b85078b02cbcb21ac6a0ba8f5b13",
+      "published": "2026-11-02",
+      "score": 80,
+      "source": "Latent Space Podcast",
+      "source_url": "https://www.latent.space/podcast",
+      "summary": "Legora's CTO explains building and evaluating legal agents without ever seeing client traces: simulated 10,000-file data-room tests built by engineer-lawyer pairs, paraphrased-trace evals sorted into 10-20 failure modes, and one release that took citation accuracy from 70% to 99%.",
+      "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora",
+      "why": "A named pattern for building reliable agents under a hard privacy constraint, with real before/after numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-03",
+      "id": "9091e4453210d34ceca715c6b8d8e9abb542d37c",
+      "published": "2026-11-02",
+      "score": 78,
+      "source": "Import AI",
+      "source_url": "https://importai.substack.com/",
+      "summary": "Import AI 479 covers Realtime-Bench, a 50-task benchmark where even strong models pass only 36% of time-sensitive tasks on the wall clock versus 70-80% with unlimited reasoning time. It also covers Metis's 'reasoning core' proposal and Google DeepMind's still-janky real-time world model Genie 4.",
+      "title": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency",
+      "why": "Hard numbers on why agents struggle under real time pressure, with a named benchmark and method."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-03",
+      "id": "db8b36c17feae8fa22685322bf1d58e518a68163",
+      "published": "2026-11-02",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison's llm 0.37 adds models gpt-6.1-sol/terra and a 'llm openai endpoint add' command, switches the no-config default model to gpt-6-luna (half the price of gpt-5.6-luna), and extends embeddings to mixed content types for models like Gemini Embedding 2.",
+      "title": "llm 0.37",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/2/llm",
+      "why": "Concrete CLI release notes with real default-model and pricing changes for a daily LLM tool."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-03",
+      "id": "efcf00e7bea340afc3a624890c635b15ac10dc92",
+      "published": "2026-11-02",
+      "score": 64,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison re-ran his Census Bureau AI-adoption chart with GPT-6 Astra and found large-firm 'yes' answers rose from about 12% to 40% in a year. The survey question wording changed meanwhile, adding a 'Super Intelligence' reference under EO 14434, so the two series aren't directly comparable.",
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
+      "why": "A concrete lesson in checking survey question changes before trusting an AI-adoption trend line."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-01",
       "id": "dd35d009aad680f7bdb8901c179d770026e55ae7",
       "published": "2026-10-31",
@@ -4853,114 +4964,12 @@
       "type": "article",
       "url": "https://devblogs.microsoft.com/agent-framework/native-memory-for-microsoft-agent-framework-with-azure-cosmos-db",
       "why": "Cross-session memory backed by a real Azure data store is a concrete building block for the kind of grounded agent systems I build."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "529d909104511295870bff74d2011fd86b70af84",
-      "published": "2026-09-03",
-      "score": 77,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Explains that Fireworks on Microsoft Foundry pairs Fireworks' low-latency, high-throughput open-model inference layer with Foundry acting as the unified system of record and control plane for models, agents, evaluation, deployment and governance. The architecture is designed to scale from a single serverless model endpoint upward as traffic demands, keeping model discovery, governance and billing in one control plane so a team never has to stand up its own GPU clusters, and it supports bringing your own model weights onto Fireworks' on-demand GPU infrastructure with Azure governance and access controls intact.",
-      "title": "Bringing Open Models to Fireworks on Microsoft Foundry",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/bringing-open-models-to-fireworks-on-microsoft-foundry/ba-p/4550173",
-      "why": "A concrete pattern for scaling from a serverless endpoint to bring-your-own-model on managed GPU infrastructure, without ever operating my own clusters, is directly the enterprise-AI-on-Azure architecture this profile values."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "id": "ad408c639885d3f9364e52cb1cad34760ab46070",
-      "published": "2026-09-03",
-      "score": 76,
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/",
-      "summary": "Reports on an experiment using GPT-6 Astra as an autonomous AI engineer that handled model selection and training, active-learning data labeling, pipeline saturation monitoring, system instrumentation and log analysis, and full deployment and debugging, while managing 20-50 parallel subagents. The authors calculate its cost at roughly $6/hour (at $50/million tokens, 33 tokens/second throughput) versus $200-1,000/day for a human engineer, though they note missing data from one competition they ran out of time to finish evaluating.",
-      "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://www.latent.space/p/astra",
-      "why": "A named cost calculation ($6/hour versus $200-1,000/day) backed by a real list of completed engineering tasks is concrete practical-impact evidence, not just a capability claim."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "dec831e363ffd23d0572c1c98c0b356ba25e904b",
-      "published": "2026-09-03",
-      "score": 68,
-      "source": "The Pragmatic Engineer",
-      "source_url": "https://newsletter.pragmaticengineer.com/",
-      "summary": "Reports that moving simpler workloads to open AI models is turning out to be the easiest way for companies to cut roughly half their AI bill, alongside notes on automated software-maintenance experience. It frames a concrete cost-control pattern rather than just naming the trend.",
-      "title": "The Pulse: tech companies move to open AI models",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-tech-companies-move-to",
-      "why": "A described cost-cutting pattern for LLM workloads is directly the kind of practical build-vs-buy tradeoff I weigh."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "8d16badc12aeebd43b5cf12643e2efb1def36945",
-      "published": "2026-09-03",
-      "score": 65,
-      "source": "Claude Code releases",
-      "source_url": "https://github.com/anthropics/claude-code/releases",
-      "summary": "Adds a diff panel next to the conversation that shows uncommitted changes live as Claude edits, a likely-cause hint for prompt-cache misses in /cost and the status line, /reload-plugins for headless sessions, and a text form of /advisor. These are behaviour changes a daily Claude Code user would notice immediately.",
-      "title": "v2.1.260",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "release",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
-      "why": "The live diff panel and prompt-cache-miss diagnosis are things I would use in every session to understand what Claude is doing and why costs spike."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "d7b11e7817581777769df47dc500ae7504ecea43",
-      "published": "2026-09-03",
-      "score": 62,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "This first-look post on GPT-6 Astra notes its staged rollout to ChatGPT tiers and the API, and flags that its pricing ($10/million input, $50/million output) matches Claude Fable 5/5.1, framing it as OpenAI's direct Fable competitor. The author states plainly he has not tried the model yet, so this is a pricing/positioning note rather than a hands-on review.",
-      "title": "GPT‑6 Astra",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra",
-      "why": "Knowing GPT-6 Astra is priced at parity with Fable tells me the two are now direct substitutes on cost, which matters for model choice."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "id": "351e020d2441a918ba1c6c34bc75996bd3d251cb",
-      "published": "2026-09-03",
-      "score": 60,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A first-hand account of porting a 1993 Amiga game from MC68000 assembly to Godot using Claude Fable 5 in one evening, followed by weeks of refining feel and shipping, then analysing what the model actually did using the author's 33 years of memory of the original build. It is a detailed practitioner account rather than a vendor case study.",
-      "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
-      "why": "A genuine, warts-and-all account of using an LLM on an unusual low-level porting task tells me more about real model capability limits than any vendor benchmark."
     }
   ],
   "meta": {
-    "last_run": "2026-11-02T05:05:25Z",
-    "new_items": 0,
-    "run_date": "2026-11-02",
+    "last_run": "2026-11-03T05:09:15Z",
+    "new_items": 6,
+    "run_date": "2026-11-03",
     "total_items": 269,
     "window_days": 60
   }
