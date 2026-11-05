@@ -1,6 +1,63 @@
 {
   "items": [
     {
+      "deepened": false,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-05",
+      "id": "a4f4c423c54260333db70d9834764f1b9740c579",
+      "published": "2026-11-04",
+      "score": 82,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI built an autonomous pipeline that found, validated and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "title": "A thousand fewer paths to root",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "why": "A concrete, measured result from an autonomous system doing real security work."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-05",
+      "id": "20bcfe950afe29a9fd65f2162b723019ecde05be",
+      "published": "2026-11-04",
+      "score": 74,
+      "source": "Semantic Kernel Blog",
+      "source_url": "https://devblogs.microsoft.com/semantic-kernel/",
+      "summary": "Microsoft's .NET and Python builder skills for Agent Framework install via `gh skill install` or the skills CLI, follow the Agent Skills format, and steer a coding agent toward the smallest suitable pattern: a single agent, a harness, or an explicit workflow.",
+      "title": "Give your coding agent a head start with Microsoft Agent Framework skills for .NET and Python",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/agent-framework/give-your-coding-agent-a-head-start-with-microsoft-agent-framework-skills-for-net-and-python",
+      "why": "Concrete installation and pattern-selection guidance, not just a feature announcement."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-05",
+      "id": "42f4810ce57263f7d94c19cf4c1968169c51e9cf",
+      "published": "2026-11-04",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "datasette-apps 0.3a0 lets Datasette Agent add or remove the stored queries an app may call, requires explicit user approval before granting any write query, and opens apps full-screen from the agent panel via # mentions or \"View app\" buttons.",
+      "title": "datasette-apps 0.3a0",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps",
+      "why": "A concrete permission model for letting an agent request write access, gated by human approval."
+    },
+    {
       "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-11-04",
@@ -92,6 +149,25 @@
       "type": "podcast",
       "url": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
       "why": "A credible claim, with real numbers, that agentic software factories are becoming normal practice."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-05",
+      "id": "7c1041935d0b84bbc24e37b1bf4cffda06ca3ef2",
+      "published": "2026-11-03",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "datasette-agent 0.5a0 adds a panel that opens the agent chat beside a table, query or app page; combined with datasette-apps, a prompt like \"build an app to explore this data\" calls app_create and app_render, and each follow-up edit is tracked as a new numbered version.",
+      "title": "datasette-agent 0.5a0",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent",
+      "why": "A concrete pattern for iteratively building and versioning an app from chat."
     },
     {
       "deepened": false,
@@ -4920,69 +4996,13 @@
       "type": "article",
       "url": "https://openai.com/index/an-alien-mind",
       "why": "Names a concrete, weakening safety mechanism agents already depend on, not just a call for caution."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-07",
-      "id": "f31be0c625cb8e92bf2410b33b7a2b9a615d9fda",
-      "published": "2026-09-05",
-      "score": 74,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A dependency-free Go implementation storing agent memory as version-controlled Markdown with YAML frontmatter, using in-memory BM25 search under 300 microseconds and an MCP server for Claude and Cursor integration.",
-      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://github.com/okf-memory/okf-agent-memory",
-      "why": "Working, benchmarked code for a real agent-memory pattern, not just a proposal."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-06",
-      "id": "22aacec03e469cb8ff0d2414798a2527bd6373bc",
-      "published": "2026-09-05",
-      "score": 63,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Simon Willison shows that frontier coding agents like ChatGPT Codex can drive Blender's Python API on macOS, producing editable .blend files and rendered animations from plain-language prompts. He iteratively refines a pelican-on-a-bicycle scene and notes models have gotten surprisingly capable at 3D tooling.",
-      "title": "Using Blender with coding agents on macOS",
-      "topics": [
-        "claude-code",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos",
-      "why": "A concrete, reproducible agentic workflow beyond code, though light on limits or failure cases."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "f471461c568b21399b0d244a334f5a4269f81a80",
-      "published": "2026-09-05",
-      "score": 60,
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/",
-      "summary": "Latent Space's daily roundup leads with a second undisclosed OpenAI agent-swarm incident reported on Collusion.wiki, alongside the day's other AI news.",
-      "title": "[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed",
-      "why": "A potentially significant disclosed multi-agent incident worth reading in full before scoring higher."
     }
   ],
   "meta": {
-    "last_run": "2026-11-04T05:08:42Z",
-    "new_items": 8,
-    "run_date": "2026-11-04",
-    "total_items": 269,
+    "last_run": "2026-11-05T05:07:58Z",
+    "new_items": 4,
+    "run_date": "2026-11-05",
+    "total_items": 270,
     "window_days": 60
   }
 }
