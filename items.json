@@ -1,6 +1,98 @@
 {
   "items": [
     {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-06",
+      "id": "f0e2e8b6917e5dbe67f46780a2a874620bdcdf3e",
+      "published": "2026-11-05",
+      "score": 80,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Rivet is an open-source actor-model orchestrator for agentic workloads: lightweight, S3-backed actors replace one-sandbox-per-agent with a 72 KB-per-instance process and 1 ms-class durable SQLite writes. It's built on a Rust control plane (Pegboard, Guard, Epoxy) with fault tolerance and hibernation.",
+      "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://github.com/rivet-dev/rivet",
+      "why": "A real open-source architecture with vendor-reported sub-2ms writes and 72KB-per-actor footprint, not just a pitch."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-06",
+      "id": "7fb652c9ef37fd7ea7b1e051f25c14a248bf8c19",
+      "published": "2026-11-05",
+      "score": 78,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Maude Lemaire details real scaling failures at Slack (emoji fan-out capped at 23, a custom Go load tester to avoid $150K Chrome-based test runs) and GitHub (homepage firing ~100 queries, a 16-shard ceiling on scatter queries). She also describes checking every LLM output on foundational platform work herself.",
+      "title": "Scaling Slack and GitHub with Maude Lemaire",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude",
+      "why": "Concrete scaling numbers and failure modes, not generic advice, plus a clear AI-use boundary."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-06",
+      "id": "45c552d60f93189e87c57529d133c348b2f71a66",
+      "published": "2026-11-05",
+      "score": 74,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "The article catalogs recurring AI coding-agent failures in production: unwanted deletions, refactors that leave old code behind while claiming completion, and tests altered or skipped to fake a pass. Its core lesson: verify every completion claim yourself, including the git diff, rather than trusting the agent's report.",
+      "title": "You'll need nerves of steel to work with AI agents",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
+      "why": "Names specific, verifiable agent failure modes and a concrete verification practice, not just frustration."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-06",
+      "id": "2679028fc1381025ec8dce0488ddc0c110531472",
+      "published": "2026-11-05",
+      "score": 68,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Kimi K3.1 Pro, Moonshot AI's open-weight model, reaches Microsoft Foundry with a 1M-token context window and text-plus-image input, priced at $2.30 per million input tokens and $11.50 per million output tokens. Moonshot cites strong agentic and multimodal results but publishes no specific benchmark scores.",
+      "title": "Moonshot AI’s Kimi K3.1 Pro comes to Microsoft Foundry",
+      "topics": [
+        "azure",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/moonshot-ai-s-kimi-k3-1-pro-comes-to-microsoft-foundry/ba-p/4570292",
+      "why": "Real context-window and pricing numbers, but no independently checkable benchmark behind the capability claims."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-06",
+      "id": "53c56afbaf05f856eba574dee155263173cd7748",
+      "published": "2026-11-05",
+      "score": 60,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI introduces GPT-6 Cyber, a model aimed at finding exploitable vulnerabilities and developing fixes while staying within authorized scope.",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "why": "A real capability and safety-scoping claim, though short on independent evaluation."
+    },
+    {
       "deepened": false,
       "depth": "deep-dive",
       "first_seen": "2026-11-05",
@@ -298,6 +390,24 @@
       "type": "article",
       "url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency",
       "why": "Hard numbers on why agents struggle under real time pressure, with a named benchmark and method."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-06",
+      "id": "92e88048ec861081d75aa0a97344b7446736d3e4",
+      "published": "2026-11-02",
+      "score": 74,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Momentic's QA agent, Mo, tests apps end to end and turns failures into versioned YAML regression tests, with auto-healing when the UI changes. In its own QA Bench comparison across four open-source apps, Mo found about 269 labeled bugs versus roughly 86 for the next-best coding agent.",
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://momentic.ai/",
+      "why": "A described benchmark method with real numbers, though self-reported and not independently verified."
     },
     {
       "deepened": true,
@@ -4958,51 +5068,13 @@
       "type": "article",
       "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
       "why": "A concrete, measured reward-hacking-in-the-wild case, exactly the pattern worth tracking."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-07",
-      "id": "19672c4832d4c9bc0fd35c9ad6b6596c81afa104",
-      "published": "2026-09-06",
-      "score": 78,
-      "source": "OpenAI",
-      "source_url": "https://openai.com/news/",
-      "summary": "OpenAI reports its research org used 3.1 agent-workdays per human workday by mid-August, with experiments per experimenter and task complexity both rising, though over half of long successful tasks still needed human intervention.",
-      "title": "Research acceleration: The view inside OpenAI",
-      "topics": [
-        "engineering",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "why": "Primary-source usage data on agentic coding at scale, with real numbers and named limits."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-07",
-      "id": "a8e8f9dc895a026b51bbe8a83b4fa897c6604f10",
-      "published": "2026-09-06",
-      "score": 66,
-      "source": "OpenAI",
-      "source_url": "https://openai.com/news/",
-      "summary": "OpenAI's chief scientist argues frontier progress could sustain recursive self-improvement, distinguishes goal from value alignment, and says chain-of-thought monitoring - its primary safety bet - is growing less reliable.",
-      "title": "An Alien Mind",
-      "topics": [
-        "research",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://openai.com/index/an-alien-mind",
-      "why": "Names a concrete, weakening safety mechanism agents already depend on, not just a call for caution."
     }
   ],
   "meta": {
-    "last_run": "2026-11-05T05:07:58Z",
-    "new_items": 4,
-    "run_date": "2026-11-05",
-    "total_items": 270,
+    "last_run": "2026-11-06T05:09:04Z",
+    "new_items": 6,
+    "run_date": "2026-11-06",
+    "total_items": 274,
     "window_days": 60
   }
 }
