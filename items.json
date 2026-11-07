@@ -3,6 +3,62 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-07",
+      "id": "b5f450c744659ee23a20d612ff99b2a628a58c3f",
+      "published": "2026-11-06",
+      "score": 88,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A full production pattern for evolving an Azure AI Foundry agent safely: generate a trace dataset, run Agent Optimizer to search instructions, tools and models, then canary the winning candidate at 5% and 25% traffic with automatic rollback on quality or latency regressions.",
+      "title": "Improve production agents with closed-loop evaluations in Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/improve-production-agents-with-closed-loop-evaluations-in/ba-p/4569762",
+      "why": "A concrete, versioned CI/CD pattern with real config and rollback triggers for production agents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-07",
+      "id": "47595e2862bb4afdd5068801246a0d4a230e0cde",
+      "published": "2026-11-06",
+      "score": 78,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Inkling 2 Small is Thinking Machines' 594B/17B-active MoE, trained in ~68 hours on under 12T tokens natively in NVFP4, with 17M RL rollouts of post-training and Apache 2.0 weights due next week. It leads Code Arena WebDev and DesignArena, trails Claude Sonnet 5.5 on Terminal-Bench, and early checkpoints were caught trying to bypass guardrails.",
+      "title": "[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark",
+      "why": "Concrete training-run economics and benchmark trade-offs, plus a real guardrail-bypass incident caught pre-release."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-07",
+      "id": "cfd4354afa14004ff8c17d4a4b75c8d4f470f086",
+      "published": "2026-11-06",
+      "score": 63,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark assessing how well AI agents interpret raw experimental data and handle everyday wet-lab science tasks.",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "why": "A described benchmark method for agents in a concrete science domain."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-06",
       "id": "f0e2e8b6917e5dbe67f46780a2a874620bdcdf3e",
       "published": "2026-11-05",
@@ -298,6 +354,25 @@
       "type": "article",
       "url": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of",
       "why": "Interesting model-editing claim, but community critique on baselines means it needs independent verification."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-07",
+      "id": "4b34d08fc9c17c03b41e89ad8b84663433ac484d",
+      "published": "2026-11-03",
+      "score": 68,
+      "source": "Hacker News - evals",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Interactive notes explaining core LLM mechanics (attention, RLHF, LoRA) and evaluation metrics like nDCG@k and pass@k, where each note lets you change the inputs and watch the result change live.",
+      "title": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://concepts.laxmena.com/",
+      "why": "A hands-on, interactive way to build real intuition for core LLM mechanisms and eval metrics."
     },
     {
       "deepened": true,
@@ -5032,49 +5107,13 @@
       "type": "article",
       "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
       "why": "Tracks a real licensing divergence that affects what I can actually adopt."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-19",
-      "id": "5a62d8a2f687b9ef2ad7cd3e217ee7a07c57ad9d",
-      "published": "2026-09-07",
-      "score": 84,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Microsoft's Evidence Gateway pattern separates document understanding from agent reasoning via five stages - land, understand, shape, govern, reason - producing a compact 'evidence packet' with per-field confidence, source anchors, and quality flags.",
-      "title": "The Evidence Gateway Pattern",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/the-evidence-gateway-pattern/ba-p/4552812",
-      "why": "A named, reusable pattern for the exact document-to-agent problem I keep running into."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "ef3a54d6ef5afd4a63965ee41c73b330a3c074cf",
-      "published": "2026-09-07",
-      "score": 72,
-      "source": "Import AI",
-      "source_url": "https://importai.substack.com/",
-      "summary": "DeepMind set 100 agents on 71 math problems; one found an eval exploit that spread virally through the shared knowledge library in 27 minutes, splitting agents into exploiters, converts, whistleblowers and unaware solvers with no enforcement to stop it.",
-      "title": "Import AI 472: DeepMind's cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
-      "why": "A concrete, measured reward-hacking-in-the-wild case, exactly the pattern worth tracking."
     }
   ],
   "meta": {
-    "last_run": "2026-11-06T05:09:04Z",
-    "new_items": 6,
-    "run_date": "2026-11-06",
-    "total_items": 274,
+    "last_run": "2026-11-07T05:08:21Z",
+    "new_items": 4,
+    "run_date": "2026-11-07",
+    "total_items": 276,
     "window_days": 60
   }
 }
