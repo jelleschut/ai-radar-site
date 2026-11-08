@@ -3,6 +3,25 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-08",
+      "id": "165bc3ea617136955339e295f0a931ed36fc911c",
+      "published": "2026-11-07",
+      "score": 80,
+      "source": "Azure Architecture Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
+      "summary": "An Azure reference architecture for accountable AI agents separates reasoning from action into three planes: the model only proposes, trusted services act after deterministic policy checks, and a measurement plane tracks completion evidence via correlation IDs rather than sensitive-data copies. Illustrated with a housing-repair scenario, with human handoffs outside automated scope.",
+      "title": "The Model Isn’t the Boss: An Azure Architecture for Accountable AI Agents",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/the-model-isn-t-the-boss-an-azure-architecture-for-accountable/ba-p/4571335",
+      "why": "A concrete control pattern for letting agents act safely without model authority over consequential steps."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-07",
       "id": "b5f450c744659ee23a20d612ff99b2a628a58c3f",
       "published": "2026-11-06",
@@ -37,6 +56,24 @@
       "type": "article",
       "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark",
       "why": "Concrete training-run economics and benchmark trade-offs, plus a real guardrail-bypass incident caught pre-release."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-08",
+      "id": "3e6877da8a5bdf5d94bd98b4743cb5c66d25d0d9",
+      "published": "2026-11-06",
+      "score": 75,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Shows exactly how to deploy fal's MiniMax H3 Max video model and Foundry image models into ComfyUI via two full custom nodes with keyless Microsoft Entra ID auth (DefaultAzureCredential), including working az CLI deployment and role-assignment commands. Notes real caveats: ~80s pipeline latency, a 900s polling timeout, and undiscussed cost or quota.",
+      "title": "Direct your next shot with fal on Microsoft Foundry and ComfyUI",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/direct-your-next-shot-with-fal-on-microsoft-foundry-and-comfyui/ba-p/4570230",
+      "why": "A working, step-by-step walkthrough wiring Foundry image/video models into ComfyUI with real keyless-auth code."
     },
     {
       "deepened": false,
@@ -5053,67 +5090,13 @@
       "type": "podcast",
       "url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
       "why": "First-hand architecture tradeoffs behind a comparable agentic coding tool."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-19",
-      "id": "fbb79928f7d9c05194cccec7498bcabed16824b6",
-      "published": "2026-09-08",
-      "score": 82,
-      "source": "OpenAI",
-      "source_url": "https://openai.com/news/",
-      "summary": "OpenAI's agents found a finite-time blowup solution to Navier-Stokes and published a 165-page proof plus a machine-checkable Lean formalization, produced by roughly 10,000 parallel agents over 88 hours; OpenAI says it will not claim the prize.",
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://openai.com/index/navier-stokes-solution",
-      "why": "A reproducible, formally verified result, not just a headline claim."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "8fca408ec7e0dc8fe09c824eba0ac97b3fb27cf5",
-      "published": "2026-09-08",
-      "score": 65,
-      "source": "The Pragmatic Engineer",
-      "source_url": "https://newsletter.pragmaticengineer.com/",
-      "summary": "AI-generated PRs grew fivefold in three years, and the piece surveys six replacement patterns for review - from risk-based triage (94% more merged PRs at one company) to reviewing database schemas and test plans instead of code.",
-      "title": "What is happening with code reviews?",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
-      "why": "Names concrete replacement patterns for a review process visibly breaking today."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "2089fa5ad760cf485cbb75689664d0cc11f8e186",
-      "published": "2026-09-08",
-      "score": 65,
-      "source": "Interconnects",
-      "source_url": "https://www.interconnects.ai/",
-      "summary": "Interconnects surveys Motif-3 (MIT-licensed, efficient training), GLM-5.3 (Zhipu's new license requiring security review above $10B revenue), and Tencent's still-overthinking Hy4-preview, noting Western labs go permissive while Chinese frontier labs add revenue-gated licensing friction.",
-      "title": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
-      "why": "Tracks a real licensing divergence that affects what I can actually adopt."
     }
   ],
   "meta": {
-    "last_run": "2026-11-07T05:08:21Z",
-    "new_items": 4,
-    "run_date": "2026-11-07",
-    "total_items": 276,
+    "last_run": "2026-11-08T05:07:41Z",
+    "new_items": 2,
+    "run_date": "2026-11-08",
+    "total_items": 275,
     "window_days": 60
   }
 }
