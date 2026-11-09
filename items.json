@@ -3,6 +3,43 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-09",
+      "id": "6ee1dee33e4bfc63f2ee02d6b1844bbbe908de31",
+      "published": "2026-11-09",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison argues coding-agent PR descriptions are accurate but exhausting to read, so he writes a short human opener and hides the agent's full write-up inside a <details><summary> block naming the model. Real datasette and llm PR examples show the pattern in practice.",
+      "title": "Hide your slop PR descriptions behind",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary",
+      "why": "A concrete, reusable pattern for making AI-generated PR descriptions reviewable without losing information."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-09",
+      "id": "3e62264ffb8eefe59ef9911f257834565683dc29",
+      "published": "2026-11-08",
+      "score": 80,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison and Claude built four parse_number() SQLite extensions in C and Rust, finding Rust's faster float parsing explained early speed differences until a custom C decimal parser cut per-row cost to 16-19ns, beating Rust. Results held across 8 million fuzz checks.",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust",
+      "why": "A reproducible benchmark showing the real bottleneck (float parsing) rather than the language itself."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-08",
       "id": "165bc3ea617136955339e295f0a931ed36fc911c",
       "published": "2026-11-07",
@@ -4978,125 +5015,13 @@
       "type": "article",
       "url": "https://openai.com/index/introducing-the-agents-api",
       "why": "A major new managed primitive for building agents, directly relevant to how agent systems get built."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-19",
-      "id": "4b468e25fd7997449f80cdf3ad7b8debe2ff8670",
-      "published": "2026-09-09",
-      "score": 88,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Microsoft's red team ran 35,877 attacks from 2,200 professionals against a guardrailed agent, finding 16 techniques collapse into 5 families (elicitation and transformation alone are 75% of traffic) and that persistent multi-turn 'grinders' won 100% of the time.",
-      "title": "Can a Harmless Prompt Break an AI Guardrail?",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/can-a-harmless-prompt-break-an-ai-guardrail/ba-p/4553727",
-      "why": "The clearest data yet on which attack families actually break guardrails, and why persistence beats clever payloads."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-19",
-      "id": "44084287147f6737176b69adf6e595baa9748e77",
-      "published": "2026-09-09",
-      "score": 80,
-      "source": "Ahead of AI",
-      "source_url": "https://magazine.sebastianraschka.com/",
-      "summary": "The piece separates looped-transformer architecture (reusing block stacks, per papers like Universal Transformers and Mixture-of-Recursions) from GPT-6 Astra's shorter reasoning traces, arguing the latter reflects efficiency gains rather than hidden computation - OpenAI's chief scientist says Astra's depth is within 2x of GPT-4.",
-      "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "why": "Separates real architecture research from a rumor about Astra hiding its reasoning."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-23",
-      "id": "23dc7c531ac96d86253adf2a528303e0817a97f3",
-      "published": "2026-09-09",
-      "score": 78,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A self-hosted platform for running Claude Code/Codex agents unattended as scheduled or webhook-triggered 'digital employees', each session kernel-sandboxed with network isolation blocking LAN and cloud metadata, credentials encrypted and injected only per session.",
-      "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
-      "topics": [
-        "claude-code",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://github.com/OtoDock/oto-dock",
-      "why": "Concrete sandboxing and scheduling architecture for running coding agents unattended."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "983ad42361e481e305f5b4633600a0aa2d1dd3d1",
-      "published": "2026-09-09",
-      "score": 70,
-      "source": "Azure Architecture Center",
-      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
-      "summary": "A full reference architecture for an industrial dataspace on Azure: OPC UA edge gateways feed Azure IoT Operations and Event Hubs into Azure Data Explorer, producing Digital Product Passports with a carbon footprint via a Swagger-exposed UA Cloud Library API.",
-      "title": "Enable an industrial dataspace on Azure",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://learn.microsoft.com/azure/architecture/guide/iot/how-to-enable-industrial-dataspaces",
-      "why": "A real, deployable reference architecture with diagrams and API detail, not just a guide title."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "9ced8937b2f35686d138e5d85418c02bbd89e8e8",
-      "published": "2026-09-09",
-      "score": 68,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Procedural Graphs store (procedure, relation, procedure) triplets that guide an LLM agent's next action; an LLM refiner edits the graph's topology by contrasting failed and successful trajectories, committing changes only when validation improves, beating memory-based and even hand-designed baselines.",
-      "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
-      "topics": [
-        "research",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://arxiv.org/abs/2609.09153",
-      "why": "A concrete, evaluated alternative to ad hoc agent memory and fixed prompt chains."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-19",
-      "id": "bd9f5944e4459618f345b2e6a943b4eb2e7f7fb8",
-      "published": "2026-09-09",
-      "score": 68,
-      "source": "The Pragmatic Engineer",
-      "source_url": "https://newsletter.pragmaticengineer.com/",
-      "summary": "Tibo Sottiaux explains why Codex is written in Rust despite models being stronger at Python - performance and scale over model fit - and how the harness sheds 'crutches' as underlying models improve, plus Codex's default access to Slack and internal docs.",
-      "title": "Building Codex with Tibo Sottiaux",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "podcast",
-      "url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
-      "why": "First-hand architecture tradeoffs behind a comparable agentic coding tool."
     }
   ],
   "meta": {
-    "last_run": "2026-11-08T05:07:41Z",
+    "last_run": "2026-11-09T05:06:59Z",
     "new_items": 2,
-    "run_date": "2026-11-08",
-    "total_items": 275,
+    "run_date": "2026-11-09",
+    "total_items": 271,
     "window_days": 60
   }
 }
