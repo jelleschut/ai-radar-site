@@ -2,6 +2,184 @@
   "items": [
     {
       "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-11",
+      "id": "d46e4b8dae9178c9e143672faf8583fd0cc7eb8f",
+      "published": "2026-11-11",
+      "run_date": "2026-11-11",
+      "score": 60,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "A Codex Summit recap covers cloud handoff of local tasks, voice as a control plane, and 'dots' (personal agents with standing context), but admits the local-to-cloud handoff is still confusing.",
+      "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/codex-work",
+      "why": "Real quirks and failure modes of agentic coding tools, though light on concrete detail."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "02b01549b9569dbf0f57599fe2faffd052dd42bd",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 78,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Azure Speech's multilingual real-time transcription reaches GA on a new native LLM streaming engine, cutting final-result latency to about 100ms and expanding to 61 locales (148 for the monolingual mode), with phrase-list limits and region availability spelled out.",
+      "title": "Native real-time multilingual transcription is now generally available, and faster",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/native-real-time-multilingual-transcription-is-now-generally/ba-p/4569665",
+      "why": "Concrete architecture change plus real latency and locale numbers for a production workload."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "6f6fff482120edafdf852ed13e31c73dc13944a7",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 76,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Anthropic's own testing shows telling Claude Fable 5.2 a codebase is \"its own\" roughly quintuples how often it consolidates duplicated code (about half of tries versus under a tenth without that framing).",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52",
+      "why": "A named prompting pattern backed by concrete before/after numbers."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "3e1919c777ea2db32cfa239c681334494e65c0a9",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 74,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "A hands-on test gives NaiveAI, DeepSeek and GLM the same three app-building prompts and measured response times, finding NaiveAI fastest on median latency but slower on hard questions and generating far more reasoning tokens.",
+      "title": "NaiveAI Promises 2,100 Tokens per Second. How Well Does It Code?",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/naiveai",
+      "why": "A described benchmark method with real numbers, not a vendor leaderboard screenshot."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "d2378f701b6fd9d5cda09fe8b7039a6c08e51928",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 74,
+      "source": "Latent Space Podcast",
+      "source_url": "https://www.latent.space/podcast",
+      "summary": "Resend's founder details agent-facing doc practices -- markdown variants, llms.txt, FAQ pages, MCP/CLI/SDK parity -- and a concrete bug where an agent misquoted Resend's pricing until a markdown pricing page fixed it.",
+      "title": "Designing for Agents — Zeno Rocha, Resend",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/designing_for_agents_zeno_rocha_resend",
+      "why": "Specific, verifiable doc-design practices and a real before/after fix for an agent's wrong answer."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "583511bb3ad1ffcc43e2c26e31a09406c59e68ad",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 72,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Sean Allen argues for making illegal states unrepresentable via type systems over relying on tests, and describes fault-injection 'workloads' like a concurrent-transfer Bank Test that distributed databases (per Jepsen/Antithesis) often fail.",
+      "title": "Software correctness & supply chain security, with Sean Allen",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-correctness",
+      "why": "Concrete patterns -- exhaustive pattern matching, property-based workloads -- for building correct systems."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "1afd9e573768b3f104a213ec2f7fa1c83a2d3e2e",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 72,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Meta's small Muse Ember model prices between GPT-6 Luna and Claude Haiku 5.5 at scale, but hands-on testing finds output quality doesn't track its six reasoning levels cleanly, failing an SVG task at \"high\".",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember",
+      "why": "A model release with real pricing comparisons and a concrete quirk found by using it."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "096f075e11080075a0e306c97f7fe06ab6ca19d9",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Gemini 4 Carbon reaches general availability at launch prices matching GPT-6.1 Sol and Sonnet 5.5, but is scheduled to double on December 1st; informal pelican and 3D-animation tests probe its coding and generation skill.",
+      "title": "llm-gemini 0.36",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini",
+      "why": "A model release with concrete pricing, a documented price hike, and hands-on capability checks."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-11",
+      "id": "2ec4f6ad3a8db2e8799e6730e13fb79b3221a7d9",
+      "published": "2026-11-10",
+      "run_date": "2026-11-11",
+      "score": 68,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Resend's founder describes serving docs as markdown for agents, running an 80-tool MCP server, and watching Claude Code recommend Resend first in most of a sampled set of email-provider questions.",
+      "title": "Designing for Agents — Zeno Rocha, Resend",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://latent.space/p/resend",
+      "why": "Concrete agent-facing documentation practices plus a real measurement of a coding agent's behaviour."
+    },
+    {
+      "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-11-10",
       "id": "baaf713b11e387f5b65769226381068c2d5d4743",
@@ -5034,68 +5212,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
       "why": "A real, evidenced AI-agent security incident with forensic detail, a stark failure-mode case study."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-22",
-      "id": "2d0aff2903a72c8b45441b6f66b7758a759c035c",
-      "published": "2026-09-11",
-      "score": 88,
-      "source": "Hacker News - evals",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Dan Luu shows how popular benchmarks mislead: a widely used latency table ignores memory-level parallelism and page-cache effects, and re-grading identical SWE-Bench solutions with the same LLM judge flips about 20% of tastefulness verdicts.",
-      "title": "Bad benchmarks and evals: Senior SWE-Bench, napkin math, and winter tires",
-      "topics": [
-        "engineering",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://danluu.com/exercise-7",
-      "why": "Hard numbers proving benchmark grading is far noisier than its confident leaderboard numbers suggest."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "a2193a1e2c9f0fa804eacdb529ec3c6475e75463",
-      "published": "2026-09-11",
-      "score": 65,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Datasette's security patches came from an audit run collaboratively with Claude Fable 5.1, GPT-5.6 and GPT-6 Astra, splitting work so one person wrote a failing test and another implemented the fix, catching subtle bugs neither model alone likely would.",
-      "title": "Datasette 1.0a39 and 0.65.4 security releases",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/11/datasette-security",
-      "why": "A concrete, repeatable process for using multiple frontier models together on a real security audit."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "3149e64f7f8b62ea40d5e2463b75c96d68c27b08",
-      "published": "2026-09-11",
-      "score": 60,
-      "source": "Interconnects",
-      "source_url": "https://www.interconnects.ai/",
-      "summary": "Interconnects publishes a curated reading list for getting up to speed on open-source AI and open models and their implications.",
-      "title": "Open-Source AI & Open Models Reading List",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-      "why": "A survey that organizes a field the profile explicitly values, though it's a link list rather than original analysis."
     }
   ],
   "meta": {
-    "last_run": "2026-11-10T05:10:43Z",
-    "new_items": 7,
-    "run_date": "2026-11-10",
-    "total_items": 275,
+    "last_run": "2026-11-11T05:09:26Z",
+    "new_items": 9,
+    "run_date": "2026-11-11",
+    "total_items": 281,
     "window_days": 60
   }
 }
