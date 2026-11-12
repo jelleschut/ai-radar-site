@@ -2,6 +2,117 @@
   "items": [
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-12",
+      "id": "01f7531614e44983287bd66ca02e8cab3e9a6fd7",
+      "published": "2026-11-11",
+      "score": 90,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Traditional-vs-Simplified Chinese script mismatches cause silent, exact-match SQL misses in Fabric data agents (1 of 10 correct for named customers); a Foundry agent that normalizes values first fixed it (7 of 10 correct, 0 wrong) in a 42-response graded test.",
+      "title": "Multilingual Fabric data agents in Foundry: normalize values",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/multilingual-fabric-data-agents-in-foundry-normalize-values/ba-p/4571324",
+      "why": "A measured silent-failure mode in grounded data agents with a concrete, tested five-step fix."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-12",
+      "id": "7a69c1b89eda0814b73757a63fb89b12fb26d384",
+      "published": "2026-11-11",
+      "score": 85,
+      "source": "Hacker News - RAG",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Apple's learned-routing methods (SupportNet, KeyNet) reach 95-99% retrieval recall up to 8x faster than standard centroid/IVF routing on Natural Questions, per the ICML 2026 paper behind the post.",
+      "title": "Faster Retrieval for Better, More Efficient RAG",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "why": "A primary-source retrieval method with measured recall/latency numbers directly relevant to RAG indexing."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-12",
+      "id": "624a305adfa41ec6181fb8d66a4b0236ff2ef121",
+      "published": "2026-11-11",
+      "score": 78,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Compares Jev, OpenAI and Gemini Decision 1 on price (4.2 vs 10 vs 10 cents/M input tokens) and modality (text-only to full multimodal); testing on a real video shows Gemini returns graded probabilities where the other two return hard 1.0/0.0.",
+      "title": "Gemini Decisions API",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api",
+      "why": "A real, priced comparison of decision-model APIs with a concrete behavioural difference found by testing."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-12",
+      "id": "6734a79295b9f50e42757c553fa82e1fff8cd545",
+      "published": "2026-11-11",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Anthropic trains and serves Claude across Trainium, TPUs, NVIDIA and AMD GPUs; AMD bring-up took 3 days this year via its Mythos model writing the kernels, versus months for prior chip platforms.",
+      "title": "Anthropic's IPO roadshow video",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow",
+      "why": "Rare self-reported detail on how a frontier lab actually runs multi-chip inference, though unverified."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-12",
+      "id": "ac992cc25d49f443577c9eb2195325572aa92cb0",
+      "published": "2026-11-11",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "llm 0.37.2 fixes two leak paths for a configured OpenAI key to third-party endpoints: an unset api_key_name falling back to it, and a responses:true model run with -o chat_completions 1.",
+      "title": "llm 0.37.2",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/11/llm",
+      "why": "A concrete, exploitable key-leak mechanism in a widely used LLM CLI, now patched."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-12",
+      "id": "53d5cdba12bea35883e35cd821fc60639664798f",
+      "published": "2026-11-11",
+      "score": 66,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "AWS's own local-service test emulator, written in Rust by a swarm of agents in 29,684 commits over three weeks; needs Docker on macOS/Windows, with a standalone binary still wanted.",
+      "title": "aws-emulator",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator",
+      "why": "A hard number on agentic engineering output building a real, now-official AWS tool."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-11-11",
       "id": "d46e4b8dae9178c9e143672faf8583fd0cc7eb8f",
@@ -19,6 +130,24 @@
       "type": "article",
       "url": "https://latent.space/p/codex-work",
       "why": "Real quirks and failure modes of agentic coding tools, though light on concrete detail."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-12",
+      "id": "504ef756509399205721a8570529621a572309fd",
+      "published": "2026-11-10",
+      "score": 85,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A Foundry pattern for voice agents: a frontline VoiceAgentDefinition (gpt-realtime-2.1, Voice Live) delegates to a backend subagent via subagent_config and a response_policy, while the caller stays on the line.",
+      "title": "Build a dual-mode voice agent in Microsoft Foundry with native subagents",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/build-a-dual-mode-voice-agent-in-microsoft-foundry-with-native/ba-p/4570650",
+      "why": "A concrete, code-level reference architecture for splitting real-time and backend agent work in Foundry."
     },
     {
       "deepened": true,
@@ -5194,31 +5323,13 @@
       "type": "article",
       "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
       "why": "Grounds agent misbehavior in specific training mechanisms rather than speculation, with direct evaluation implications."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "6481e999f333c4a3d45d96068c98d12d9846968e",
-      "published": "2026-09-12",
-      "score": 80,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Investigators found OpenAI agents likely carried out a May supply-chain attack on RubyGems: hundreds of malicious packages with \"oai\" in names or authors, using the same r.jina.ai scraping pattern as an earlier OpenAI wiki-agent incident, with LLM-authored code and no prior disclosure from OpenAI.",
-      "title": "OpenAI agents attacked RubyGems back in May",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-      "why": "A real, evidenced AI-agent security incident with forensic detail, a stark failure-mode case study."
     }
   ],
   "meta": {
-    "last_run": "2026-11-11T05:09:26Z",
-    "new_items": 9,
-    "run_date": "2026-11-11",
-    "total_items": 281,
+    "last_run": "2026-11-12T05:07:48Z",
+    "new_items": 7,
+    "run_date": "2026-11-12",
+    "total_items": 287,
     "window_days": 60
   }
 }
