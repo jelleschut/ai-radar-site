@@ -58,6 +58,24 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-14",
+      "id": "62504a285b7d6b02cc6db251dde328af9ace0f9a",
+      "published": "2026-11-11",
+      "score": 86,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Werner Vogels describes AWS Emulator, a free offline AWS clone built by coding agents from 400+ API models, tested against agent-written fidelity tests that record real AWS behavior as the spec. It argues the engineer's job becomes writing the specs, tests and merge gates that decide whether agent code is actually correct.",
+      "title": "AWS Emulator and the engineer's job when agents write the code",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+      "why": "Concrete evidence that spec-and-test infrastructure, not code review, is what makes agent-written code trustworthy."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-12",
       "id": "7a69c1b89eda0814b73757a63fb89b12fb26d384",
       "published": "2026-11-11",
@@ -5229,106 +5247,13 @@
       "type": "article",
       "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
       "why": "A rare, detailed look at operating agents unattended end-to-end in production, including the infrastructure strain that causes."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "edd11236488da7661b3564ab8dd8e426cadc2f0e",
-      "published": "2026-09-14",
-      "score": 85,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Microsoft let about 2,200 security professionals attack a word-guarding agent at BlueHat IL 2026 for two days; in six of ten successful jailbreaks the winning message carried no adversarial signal at all, and players who won used 5.65 distinct techniques on average versus 1.56 for those who didn't.",
-      "title": "Can a Harmless Prompt Break an AI Guardrail?",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/can-a-harmless-prompt-break-an-ai-guardrail/ba-p/4555111",
-      "why": "Rare, large-scale red-team data on what actually breaks AI guardrails in practice, not a synthetic benchmark."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "625bfcb4dbe7a0a6ccb8158dbbdec847e373952d",
-      "published": "2026-09-14",
-      "score": 78,
-      "source": "Azure Architecture Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
-      "summary": "A refund agent that returns HTTP 200 with normal latency still sends the wrong dollar amount, which traditional monitoring can't catch. Microsoft Foundry's tracing, evaluation and monitoring layers, paired with Application Insights, are built to answer which tool an agent called, with what arguments, and whether it honored approval thresholds.",
-      "title": "Microsoft Foundry Observability: How to Trace, Evaluate, Monitor, and Secure AI Agents",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/microsoft-foundry-observability-how-to-trace-evaluate-monitor/ba-p/4555846",
-      "why": "A concrete failure example makes the case for agent-specific observability beyond uptime and latency."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "fae876fac8835eed140720b15d979bf19a16c98d",
-      "published": "2026-09-14",
-      "score": 70,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Agreement between LLM judges isn't automatically trustworthy if they share training lineage; a dependence-aware aggregation method that accounts for judge correlation beat plain majority vote by 9-14% accuracy across three eval tasks.",
-      "title": "When LLM judges agree, should we believe them?",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://www.amazon.science/blog/when-llm-judges-agree-should-we-believe-them",
-      "why": "Directly actionable for anyone building an LLM-as-judge pipeline, with numbers and a concrete fix."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "df1c0beb84f2c626b6a262f906a809c835d1f021",
-      "published": "2026-09-14",
-      "score": 65,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "Amazon Science asks why ML research agents don't overfit despite reusing the same validation set: winning strategies compress into 16-32 token prompts that a memory-less agent can reproduce, proving they capture real structure rather than memorized noise.",
-      "title": "Why don't machine learning research agents overfit?",
-      "topics": [
-        "engineering",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
-      "why": "A rigorous, reproducible answer to a real agent-evaluation puzzle with a usable compression diagnostic."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "b401eeebb1cd378566880cb7d88ba34fa414c7b3",
-      "published": "2026-09-14",
-      "score": 62,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "OpenArch is a collection of single-file, hand-written PyTorch implementations of modern LLM architectures (Llama, DeepSeek R1, Gemma 3, Qwen 3, GLM 4.5 and others), built for comparing attention, normalization and MoE routing choices side by side.",
-      "title": "OpenArch – PyTorch implementations of modern LLM architectures",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://github.com/anuj0456/OpenArch",
-      "why": "Reproducible, readable code that makes architectural differences between current models explicit and comparable."
     }
   ],
   "meta": {
-    "last_run": "2026-11-13T05:07:21Z",
-    "new_items": 2,
-    "run_date": "2026-11-13",
-    "total_items": 287,
+    "last_run": "2026-11-14T05:07:51Z",
+    "new_items": 1,
+    "run_date": "2026-11-14",
+    "total_items": 283,
     "window_days": 60
   }
 }
