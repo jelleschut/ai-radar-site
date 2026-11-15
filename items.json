@@ -2,6 +2,24 @@
   "items": [
     {
       "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-15",
+      "id": "f9a3c449e5989b1d35e5805bde68b8ad845f3218",
+      "published": "2026-11-14",
+      "score": 65,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "datasette-llm 0.1a11 adds OpenAI-compatible endpoint support, letting a Datasette Agent run against a local model (demoed with LM Studio's Qwen3-27B) instead of a cloud API. The demo agent calls real SQL tools against a local database and returns actual row counts.",
+      "title": "datasette-llm 0.1a11",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "why": "A working local-LLM-backed agent demo, not just an announcement."
+    },
+    {
+      "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-11-13",
       "id": "9f0b516152c12ca0ff7116a74c236de15431d15a",
@@ -5209,51 +5227,13 @@
       "type": "article",
       "url": "https://learn.microsoft.com/azure/architecture/aws-professional/data-ai",
       "why": "Solid reference for migrating or comparing AI services between AWS and Azure."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "c55b35558332099f34ef397eb14d48a710c5b0b2",
-      "published": "2026-09-15",
-      "score": 88,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Standard schema-guided agent evals hand the model the one correct schema; adding realistic distractors dropped accuracy from 58% to 18% on real registries, and neither a bigger model nor better prompting recovered it. A $150 fine-tuning job won back two-thirds of the gap and beat a prompted larger model at a fraction of the cost.",
-      "title": "Your Agent Found the Right Schema. Then Ignored It.",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/your-agent-found-the-right-schema-then-ignored-it/ba-p/4553775",
-      "why": "A rare eval methodology finding with hard numbers, showing a common benchmark assumption is unrealistic and cheap to fix."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "557dcb769a02356f6826f34d74e30722aa541a81",
-      "published": "2026-09-15",
-      "score": 68,
-      "source": "The Pragmatic Engineer",
-      "source_url": "https://newsletter.pragmaticengineer.com/",
-      "summary": "OpenAI's internal Codex-based delivery pipeline runs specification through implementation, CI, multi-agent review, deployment monitoring and even incident triage; non-engineering teams went from near-zero to 90% usage in four months, and PR volume rose roughly 10x in six months, straining build and deploy infrastructure.",
-      "title": "Inside OpenAI’s agentic software factory",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
-      "why": "A rare, detailed look at operating agents unattended end-to-end in production, including the infrastructure strain that causes."
     }
   ],
   "meta": {
-    "last_run": "2026-11-14T05:07:51Z",
+    "last_run": "2026-11-15T05:06:13Z",
     "new_items": 1,
-    "run_date": "2026-11-14",
-    "total_items": 283,
+    "run_date": "2026-11-15",
+    "total_items": 282,
     "window_days": 60
   }
 }
