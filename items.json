@@ -2,6 +2,24 @@
   "items": [
     {
       "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-16",
+      "id": "950ac38f23f2d5a7b62eb3e171ad86cac2083969",
+      "published": "2026-11-15",
+      "score": 82,
+      "source": "Ahead of AI",
+      "source_url": "https://magazine.sebastianraschka.com/",
+      "summary": "Surveys how LLMs encode token position - learned absolute, sinusoidal, RoPE, partial RoPE, NoPE and learned relative bias - with equations, worked diagrams and a PyTorch RoPE implementation, plus a 2025-vs-2026 model-adoption survey. Concludes RoPE still dominates for long-context practicality.",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "why": "A reproducible, code-backed survey of positional-encoding choices that directly shapes context-length and retrieval design."
+    },
+    {
+      "deepened": true,
       "depth": "overview",
       "first_seen": "2026-11-15",
       "id": "f9a3c449e5989b1d35e5805bde68b8ad845f3218",
@@ -5172,68 +5190,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries",
       "why": "A concrete, measured example of a failure mode in long-running agent context management, exactly the kind of hard-won lesson the profile wants."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-18",
-      "id": "8230bbfb30d6fe8294f687319f7797ee5895d095",
-      "published": "2026-09-16",
-      "score": 75,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "HarnessTax tests 21 model-harness pairs across 30 SWE-bench and Terminal-Bench tasks: only one of 42 harness comparisons was statistically significant, meaning harness choice barely affects success rate but can change cost dramatically, e.g. the same model costing 71% less on one harness than on Claude Code.",
-      "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://harnesstax.github.io/",
-      "why": "Direct, measured evidence on when a coding-agent harness matters and when it's just a cost lever."
-    },
-    {
-      "deepened": false,
-      "depth": "overview",
-      "first_seen": "2026-09-18",
-      "id": "bbe6c30a33c9c72e5780274d2c816d8c53a3bebe",
-      "published": "2026-09-16",
-      "score": 62,
-      "source": "OpenAI",
-      "source_url": "https://openai.com/news/",
-      "summary": "OpenAI publishes a framework for tracking, investigating and disclosing model misalignment, alongside six real reports including the compaction-summary self-injection case.",
-      "title": "Our framework for reporting model misalignment",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://openai.com/index/model-misalignment-reporting-framework",
-      "why": "A structured, evidence-based approach to reporting concerning model behavior rather than a PR statement."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-22",
-      "id": "a774c465b8c99b5ce5ca83d2c61e7fa3edd75746",
-      "published": "2026-09-16",
-      "score": 62,
-      "source": "Azure Architecture Center",
-      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
-      "summary": "A detailed service-by-service mapping of AWS and Azure AI/ML offerings - SageMaker, Rekognition, Polly, Comprehend, Textract, OpenSearch - noting where Azure has no single equivalent and where AI Search adds hybrid retrieval and RAG enrichment beyond OpenSearch.",
-      "title": "Compare AWS and Azure AI and machine learning services",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://learn.microsoft.com/azure/architecture/aws-professional/data-ai",
-      "why": "Solid reference for migrating or comparing AI services between AWS and Azure."
     }
   ],
   "meta": {
-    "last_run": "2026-11-15T05:06:13Z",
+    "last_run": "2026-11-16T05:05:54Z",
     "new_items": 1,
-    "run_date": "2026-11-15",
-    "total_items": 282,
+    "run_date": "2026-11-16",
+    "total_items": 280,
     "window_days": 60
   }
 }
