@@ -3,6 +3,304 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "1d1a401b992e9d15b778f52b390ce7aaa7ac722e",
+      "published": "2026-11-18",
+      "score": 88,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "An open-source deployment puts Anthropic's Claude apps gateway in front of Foundry's Claude models on Azure Container Apps, handling Entra sign-in, per-role model access and spend caps, with a documented table of real permission errors (Graph grants, Referer headers, LinkedAuthorizationFailed) and their fixes.",
+      "title": "Claude Code on Microsoft Foundry with Claude apps gateway and UI Console",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/claude-code-on-microsoft-foundry-with-claude-apps-gateway-and-ui/ba-p/4574066",
+      "why": "A real deployed architecture for running Claude Code against Foundry with concrete, reproducible permission fixes."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "91036d9057485725f56e1709082e4f3e95998aa5",
+      "published": "2026-11-18",
+      "score": 82,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft-Decision-1, a probability-only judge model, ran a 2,621-check benchmark against 12 chat judges: 0.59s and $0.12 per 1,000 calls versus 2-9s and $0.70-$34.39, at 74% accuracy against about 78% for the best chat judges.",
+      "title": "Microsoft-Decision-1 as a judge in Foundry Evaluations",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/microsoft-decision-1-as-a-judge-in-foundry-evaluations/ba-p/4572676",
+      "why": "A rigorous, described benchmark with real cost and speed tradeoffs for evaluation infrastructure."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "3bffaa6d6eb2c070091b47ab043d70327d06603e",
+      "published": "2026-11-18",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "A team replaced a multi-stage LLM pipeline (extract, clean, batch, merge) with one Azure Content Understanding analyzer per document, fixing fidelity loss from token-bounded batching and silently-truncated JSON.",
+      "title": "Turning Messy Documents into Structured Requirements with Azure Content Understanding",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/turning-messy-documents-into-structured-requirements-with-azure/ba-p/4574333",
+      "why": "A real migration with a described custom analyzer schema and concrete lessons on batching failure modes."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "0190cc919b127c9f9905749d8e31671e4b940344",
+      "published": "2026-11-18",
+      "score": 80,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Foundry's Skill Optimization turns labeled production traces into verified Agent Skills in three stages (learn, decide, write), averaging a 9.2-point benchmark gain while showing skills fix procedural failures but not deep reasoning or missing tool access.",
+      "title": "Learning agent skills from production traces",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/learning-agent-skills-from-production-traces/ba-p/4573041",
+      "why": "A concrete named pattern with a real failure example (a wrong refund) and measured gains and limits."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "569017a70fd8b933cb5ec0d9a883a78034391c5d",
+      "published": "2026-11-18",
+      "score": 78,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "curl's maintainer contrasts AI agents converting 185,000 lines of C into 340,000 lines of Rust against the real curl project's 300+ commits and 200+ bugfixes merged in the same three weeks, none of which the rewrites have.",
+      "title": "Quoting Daniel Stenberg",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg",
+      "why": "A sharp, numbers-backed anti-pattern: AI output volume versus real maintenance work, named directly."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "f7bfd04d60285012e057a259eadce34c3f335abc",
+      "published": "2026-11-18",
+      "score": 76,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "CodeRabbit's CEO describes shipping 5,000 PRs a month by having agents handle janitorial work and a from-scratch CI replacement, while betting that line-by-line human review of agent code is ending in favor of reviewing plans and outcomes.",
+      "title": "Software factories and code reviews with Harjot Gill",
+      "topics": [
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+      "why": "A numbers-backed account of restructuring code review around agents, with named verification tactics like TLA+ and staged rollouts."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "62d3183b56d1978902dfd4abb290fb87bd7eac09",
+      "published": "2026-11-18",
+      "score": 76,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Foundry's Rubric Evaluators combine quality, ASSERT-based safety and trace-derived task-level rubrics into one LLM-judged run, shown via a reservation agent checking party size and a refund case that missed a stated deadline.",
+      "title": "Evaluate AI Agents in Microsoft Foundry with Quality, Safety, and Task-Level Rubrics",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/evaluate-ai-agents-in-microsoft-foundry-with-quality-safety-and/ba-p/4572665",
+      "why": "A well-specified evaluation method with a real regression example, matching the eval positive signal directly."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
+      "published": "2026-11-18",
+      "score": 68,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "Codex's sandbox restricts filesystem writes and network access by default, using Seatbelt on macOS, bubblewrap with Landlock and seccomp-BPF on Linux, and a restricted token with ACL-based boundaries on Windows.",
+      "title": "Inside the Codex sandbox",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "why": "Concrete per-platform sandboxing mechanisms directly relevant to running coding agents unattended."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-19",
+      "id": "f50dc3f973fe30432f5a5e7d141c34865e5ea1ae",
+      "published": "2026-11-18",
+      "score": 62,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Microsoft Foundry's human-in-the-loop evaluation preview turns reviewer judgments on production traces into reusable evaluation datasets and tests, instead of leaving them in a spreadsheet.",
+      "title": "Turn Human Feedback into a Reusable Quality Bar for AI Agents",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/turn-human-feedback-into-a-reusable-quality-bar-for-ai-agents/ba-p/4574554",
+      "why": "A real pattern for closing the loop between human review and automated evals, though light on implementation detail."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "21a7c776349918e19da0bdb76035007faab39c93",
+      "published": "2026-11-18",
+      "score": 62,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Foundry's Programmed Training preview exposes a five-call Python API (sample, forward_backward, optim_step, save_weights) so you write the RL or fine-tuning loop while Foundry runs the GPUs, with LoRA support for four named open models.",
+      "title": "Programmed Training: You write the loop, Foundry runs the GPUs",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/programmed-training-you-write-the-loop-foundry-runs-the-gpus/ba-p/4573299",
+      "why": "A real SDK with named primitives and supported models, useful if training loops become relevant."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "c60558e98558e0e78eb2b5031d637972770c4378",
+      "published": "2026-11-17",
+      "score": 86,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Three open-source sandbox servers (WebAssembly/v86, Apple Containers, Microsoft Quicksand) share one localhost API so Claude Code, Codex or Pi can run agent-executed code isolated from the host, with optional network allow-listing and credential replacement so the agent never holds secrets.",
+      "title": "External sandboxes for coding agents",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "why": "A workflow someone built and explains for running agents unattended safely, matching the claude-code area directly."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "5cbc55e1b429d883f78c81fdfac82c5a2fba5a1d",
+      "published": "2026-11-17",
+      "score": 83,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison's independent comparison puts GPT-6.2 Astra at $8/$40 per million tokens, 80% of its predecessor and matching Claude Fable 5.2, with Sol unchanged at $2/$10, while informal pelican and mech tests found Astra's communication confusing and no model handling the mech prompt well.",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "why": "An independent price and capability comparison with real numbers and honestly-labeled limits, beating the vendor's own announcement."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "6c265f6b8d49da6893d35b8c00f6fde214ac9e09",
+      "published": "2026-11-17",
+      "score": 82,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "A deep dive on when to leave frontier-lab APIs covers comparing costs per task rather than per token, building a private eval set since public benchmarks miss your traffic, and why stateless APIs push KV-cache efficiency onto providers, causing latency tails from cold caches and noisy neighbors.",
+      "title": "Inference engineering for software engineers",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
+      "why": "Exactly the practical build-vs-buy and cost-latency tradeoff analysis the profile rewards."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "6e090bb95c89cabb3a2f7a633da6d50669fdfedd",
+      "published": "2026-11-17",
+      "score": 80,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "A Harvard working paper across 718 firms finds AI coding agents raised commits and PRs by 20-23%, but finished work barely moved because review time rose 49% and change-request rates rose 12 points, with AI review tools covering under 11% of PRs.",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review",
+      "why": "A rigorous empirical result with a described method and a real implication for deploying coding agents."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "39e9943447463a62c3be2c238db8a03a916711ee",
+      "published": "2026-11-17",
+      "score": 78,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "An open-source inference engine for AWS Trainium serves GLM-5.3-Flash with fused NKI decode kernels and a radix-tree FP8 KV cache, hitting 3.57M tokens/minute at $0.040 per million tokens on a single trn2.48xlarge box.",
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "why": "A reproducible, benchmarked open-source engine with real throughput and cost figures for self-hosted inference."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-19",
+      "id": "b8930a9a56df63fc87e339b0b09cd1a8f60cf195",
+      "published": "2026-11-17",
+      "score": 75,
+      "source": "Hacker News - LLM",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "PostHog's production use of small decision models, gating PII-scrubbing LLM calls, routing to the cheapest model likely to succeed, and reranking search, skips the LLM on 98.7% of cases while flagging where chained decision calls overloaded a shared model server.",
+      "title": "Not Everything Needs an LLM",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.posthog.com/p/decision-models",
+      "why": "A named anti-pattern, defaulting to an LLM, backed by production numbers and an honest failure mode."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-17",
       "id": "d51fa65c9eb6426c7a7aecc69b614264d53745ed",
       "published": "2026-11-16",
@@ -5136,31 +5434,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui",
       "why": "A small but concrete security pattern for keeping API keys out of agent context while remaining fetchable on demand."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-20",
-      "id": "00e72da2b937ce6608206f3322d07454c5bd978a",
-      "published": "2026-09-19",
-      "score": 74,
-      "source": "Interconnects",
-      "source_url": "https://www.interconnects.ai/",
-      "summary": "Nathan Lambert argues current frontier progress is inference-time scaling and agent parallelization, not true recursive self-improvement, given exponential compute costs and human-bottlenecked post-training. He draws implications for evals, agent architecture, and where near-term R&D value actually concentrates.",
-      "title": "Why I still haven’t bought into true RSI",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
-      "why": "Substantive, evidence-based case against near-term RSI, with direct implications for eval design and agent architecture."
     }
   ],
   "meta": {
-    "last_run": "2026-11-18T05:10:08Z",
-    "new_items": 0,
-    "run_date": "2026-11-18",
-    "total_items": 278,
+    "last_run": "2026-11-19T05:14:18Z",
+    "new_items": 16,
+    "run_date": "2026-11-19",
+    "total_items": 293,
     "window_days": 60
   }
 }
