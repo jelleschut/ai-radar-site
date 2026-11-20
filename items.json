@@ -2,6 +2,43 @@
   "items": [
     {
       "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-20",
+      "id": "e486efe85b2a356aa43128591517552b7733f889",
+      "published": "2026-11-20",
+      "score": 60,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison summarizes a YouTube account from ChatPRD's founder describing systematic free-trial abuse: groups reselling tokens and running commercial workloads, including a prompt likely used to fingerprint the underlying model via pelican SVGs. The post gives no hard numbers on scale or detection method.",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
+      "why": "A real abuse pattern and its operational fallout, though light on hard evidence."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-20",
+      "id": "6687f7be62c34e4af8b14ad1fa0bb36ceef40b28",
+      "published": "2026-11-19",
+      "score": 72,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "Secondary reporting describes OpenAI's Perf Factory as a Codex-driven loop that monitors production alerts, groups duplicate signals, flags latency regressions and proposes fixes, plus a synthetic A/B framework for pre-merge performance checks. One cited benchmark shows a 741-turn thread's load time dropping from 27.62s to 1.66s.",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "why": "A real automated performance-remediation pattern with a concrete before/after benchmark number."
+    },
+    {
+      "deepened": true,
       "depth": "deep-dive",
       "first_seen": "2026-11-19",
       "id": "1d1a401b992e9d15b778f52b390ce7aaa7ac722e",
@@ -130,6 +167,24 @@
       "type": "article",
       "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/evaluate-ai-agents-in-microsoft-foundry-with-quality-safety-and/ba-p/4572665",
       "why": "A well-specified evaluation method with a real regression example, matching the eval positive signal directly."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-20",
+      "id": "c3c7756f62d48d7aa6dfd32658fd6a2e2f1477a8",
+      "published": "2026-11-18",
+      "score": 70,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison untangles Gemini 4's confusing pricing after the Neon release: Carbon costs $2/$10 now but doubles to $4/$20 on December 1st, against Neon's $3/$15 and Hydrogen's $1.50/$7.50. His pelican-on-a-bicycle benchmark across Neon's three reasoning levels shows more tokens, cost and detail at higher effort.",
+      "title": "llm-gemini 0.38",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "why": "A real price and capability change validated with the author's own reproducible benchmark."
     },
     {
       "deepened": true,
@@ -5396,51 +5451,13 @@
       "type": "article",
       "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
       "why": "Concrete numbers behind a real shift in which open models are worth building on."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-22",
-      "id": "f6e31ebaae9750cfb034df0d01a787102abca76d",
-      "published": "2026-09-20",
-      "score": 68,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Willison argues MCP still earns its place even for fully agentic coding tools, since it gives fine-grained control over which services an agent can reach, keeps API keys away from the agent, offers a friendly connection UI, and logs everything for audit.",
-      "title": "MCP was always a bad idea?",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/20/hn-49779718",
-      "why": "A reasoned case for MCP's value in constrained deployments, though light on implementation detail."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-21",
-      "id": "6aa47ed911e4b48e709364c6510a17bb77a92ab0",
-      "published": "2026-09-20",
-      "score": 65,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "llm-keys-ui gives coding-agent sessions (e.g. Codex Remote) a local web UI, reachable over Tailscale, for storing API keys instead of pasting them into the agent chat. Existing key values are never displayed, and agents later fetch a key at runtime with `llm keys get <name>`.",
-      "title": "llm-keys-ui 0.1",
-      "topics": [
-        "engineering",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui",
-      "why": "A small but concrete security pattern for keeping API keys out of agent context while remaining fetchable on demand."
     }
   ],
   "meta": {
-    "last_run": "2026-11-19T05:14:18Z",
-    "new_items": 16,
-    "run_date": "2026-11-19",
-    "total_items": 293,
+    "last_run": "2026-11-20T05:08:25Z",
+    "new_items": 3,
+    "run_date": "2026-11-20",
+    "total_items": 294,
     "window_days": 60
   }
 }
