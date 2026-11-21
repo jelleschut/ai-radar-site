@@ -3,6 +3,174 @@
     {
       "deepened": true,
       "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "a461f9a68ffb54e8898aad24ccf2043cc09afeb8",
+      "published": "2026-11-21",
+      "score": 66,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Microsoft's GitHub-built Copilot harness, the common agent runtime behind Copilot Code and the GitHub Copilot app, reached public preview in Foundry Agent Service, selectable from the VS Code Foundry Toolkit's agent builder. You must pick it at creation since switching harnesses afterward isn't supported yet, and billing starts December 1, 2026.",
+      "title": "[In preview] Public Preview: Microsoft Copilot harness support in Foundry Toolkit for VS Code",
+      "topics": [
+        "azure",
+        "claude-code"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=581468",
+      "why": "A real constraint (no post-creation harness switching) and a billing start date, not just a feature blurb."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "f03764e801e5068cf30a92c56be4310c19e88094",
+      "published": "2026-11-21",
+      "score": 62,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Foundry's new governance layer pushes organizations toward Entra ID RBAC and an Azure Policy rule that can block preview-status model deployments outright, with a deny effect on noncompliant creates. It surfaces this guidance directly in Foundry Canvas and the VS Code toolkit so agent builders see policy warnings in context.",
+      "title": "[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code",
+      "topics": [
+        "azure"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=581463",
+      "why": "A concrete enforcement mechanism (deny-effect Azure Policy) for keeping preview models out of production."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-21",
+      "id": "1fa64136a1e4a7a59623e9788f56332999d28eda",
+      "published": "2026-11-20",
+      "score": 82,
+      "source": ".NET Blog",
+      "source_url": "https://devblogs.microsoft.com/dotnet/",
+      "summary": "AI agents (13 agent identities, 58 hours of model time, about 3.29 billion tokens) rewrote a .NET MAUI app into separate iOS/Android platform-UI versions, roughly halving startup time while shared code fell from 99% to under 60%. A follow-up feature showed verification coordination, not implementation, was the dominant added cost.",
+      "title": "AI is Changing the Cross-Platform Decision Matrix",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://devblogs.microsoft.com/dotnet/ai-cross-platform-decision-matrix",
+      "why": "Rare real cost, token, and runtime-latency numbers for an AI-driven rewrite, not a vendor claim."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-21",
+      "id": "c989db0d32fd28d8ec2c9d0d55ff16e276099bed",
+      "published": "2026-11-20",
+      "score": 80,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "Formal-verification tools like Lean and cvc5 are becoming AI's error-checking backstop: Harmonic's Aristotle and Axiom's AxiomProver pair an LLM with a proof checker so correctness doesn't depend on trusting the model. The piece names the resulting pattern 'veri-coding': pin a precise spec first, then let the agent work against a verifier instead of tests.",
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://latent.space/p/formal-verification",
+      "why": "Names a concrete building pattern (veri-coding) with real tools and a measured solve-rate example."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-21",
+      "id": "0184a201fb9d1add9e3a2e2706ebd3f606b23bc9",
+      "published": "2026-11-20",
+      "score": 74,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Gulf Air built its Foundry evaluation set from roughly 10,000 candidate questions targeting real aviation and management logic, ran scored batches, reviewed traces for failure patterns, and compared fixes against baseline on quality, token cost and latency. The process surfaced business logic the agent had misunderstood and fed fixes back in as a versioned skill.",
+      "title": "Gulf Air's Continuous Improvement Journey with Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/gulf-air-s-continuous-improvement-journey-with-microsoft-foundry/ba-p/4574913",
+      "why": "A concrete, repeatable eval-and-fix loop with cost and latency tradeoffs, not just a case-study headline."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "c5b7d92919e2c43fa19f4feab150820802e3ddeb",
+      "published": "2026-11-20",
+      "score": 72,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Foundry's Multi-turn evaluation, now in public preview, scores whole agent conversations rather than single replies, covering context carryover and end-to-end task success with either simulated or sampled-real conversations. The portal exposes a dedicated 'Full conversations' mode alongside per-turn and trace-level evaluation.",
+      "title": "[In preview] Public Preview: Multi-turn evaluation in Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=581746",
+      "why": "Directly matches the eval positive signal: conversation-level grading, not just single-turn accuracy."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-21",
+      "id": "3ea993db7e3c60d1925ec70cc8db101a60f4b500",
+      "published": "2026-11-20",
+      "score": 70,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "OpenAI describes a layered defense against reasoning-extraction attacks: adversarial training on known attack patterns, classifiers that scan tool-call arguments too, and reasoning bound to the conversation that produced it so edits drop it. Measured attack success on extracting prior-request reasoning fell from 54.0% (GPT-6 Astra) to 0.2% (GPT-6.2 Astra).",
+      "title": "Combatting adversarial distillation",
+      "topics": [
+        "engineering",
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "why": "Concrete before/after attack-success numbers and an API-level mitigation, not a generic safety statement."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "1e7651cd0e9beff1a5a2ed1b63db5d5042a7c4fb",
+      "published": "2026-11-20",
+      "score": 64,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Programmed Training is a new public-preview API in Microsoft Foundry for running your own post-training loop over open-weight models, rather than relying on a fully managed training job. The update note cuts off before describing when a custom loop is worth the extra control over a managed job.",
+      "title": "[In preview] Public Preview: Programmed Training in Microsoft Foundry",
+      "topics": [
+        "azure"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=581713",
+      "why": "A custom post-training API is a real build primitive, even though the excerpt is incomplete."
+    },
+    {
+      "deepened": false,
+      "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "c90bb4f5f48d8d340aef41a28a450d2f17e906bd",
+      "published": "2026-11-20",
+      "score": 62,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Support for the Azure Functions OpenAI extension ends April 20, 2027; Microsoft directs teams to migrate to the OpenAI, Microsoft Foundry, or Azure AI Search SDKs directly, depending on scenario, before then. .NET apps using the extension need to plan that move now.",
+      "title": "Retirement: Support for Azure Functions OpenAI Extension ends on April 20, 2027",
+      "topics": [
+        "azure"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=579952",
+      "why": "A concrete migration deadline and named replacement SDKs, the kind of versioning guidance the profile wants."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
       "first_seen": "2026-11-20",
       "id": "e486efe85b2a356aa43128591517552b7733f889",
       "published": "2026-11-20",
@@ -17,6 +185,24 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad",
       "why": "A real abuse pattern and its operational fallout, though light on hard evidence."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-21",
+      "id": "a4ea85254a88a37938f7e50e3123fd07a30590ef",
+      "published": "2026-11-19",
+      "score": 92,
+      "source": "Eugene Yan",
+      "source_url": "https://eugeneyan.com/",
+      "summary": "A teardown of 12 public benchmarks finds grader errors in 8 of them: Terminal Bench 4.0 graded 41 of 65 tasks on unstated requirements, and 44 of 65 tasks there could be passed by cheating. It recommends reporting pass^k reliability alongside average pass rate and auditing graders with negative tests.",
+      "title": "How Public Evals Work and Fail, and What Should Change",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://eugeneyan.com/writing/public-evals",
+      "why": "Exactly the eval-methodology teardown with numbers that the profile rewards most highly."
     },
     {
       "deepened": true,
@@ -185,6 +371,25 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
       "why": "A real price and capability change validated with the author's own reproducible benchmark."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-21",
+      "id": "724823e096fd2a66338e394691c0d131b6dfb276",
+      "published": "2026-11-18",
+      "score": 68,
+      "source": "Hacker News - agents",
+      "source_url": "https://news.ycombinator.com/",
+      "summary": "Maritime (YC F26) runs each AI agent in its own persistent microVM, handling sleep/wake, spend caps (enforced as HTTP 429 to the model provider), and patching, claiming $1/month for an idle 2GB agent. HN commenters pushed on unanswered questions: egress allowlists, credential scoping, and whether a restored snapshot can repeat side effects like a charge.",
+      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://news.ycombinator.com/item?id=50549188",
+      "why": "Names real unattended-agent failure modes (patching, snapshot replay, spend caps) the profile flags as interesting."
     },
     {
       "deepened": true,
@@ -5360,104 +5565,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe",
       "why": "A working pattern for cheap structured classification via CLI, worth stealing for triage tasks."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-22",
-      "id": "5d6dae0dda9c1bc33439b62961ae5956178707de",
-      "published": "2026-09-21",
-      "score": 78,
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/",
-      "summary": "TypeSafe AI's CEO explains Jev's System One models: trained via RLCD instead of RLHF for calibrated probabilities, with structured JSON in/out mapped to programming primitives (choice, Noulli, score), prioritizing robustness over determinism and rejecting public benchmarks.",
-      "title": "Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI",
-      "topics": [
-        "engineering"
-      ],
-      "type": "podcast",
-      "url": "https://www.latent.space/p/jev",
-      "why": "A founder unpacking the training methodology and API design behind a genuinely new model category."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-22",
-      "id": "660bf03ca86fc1b5d9877fdd1dc9991550694f71",
-      "published": "2026-09-21",
-      "score": 78,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "The Foundry Models router picks the best LLM per request in real time, and RouteLab is a companion playground with Balanced, Cost and Quality modes for manually evaluating routing decisions, set up locally by cloning a repo and running its start script.",
-      "title": "Demystifying Dynamic AI Routing: Exploring the model router in Foundry Models with RouteLab",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/demystifying-dynamic-ai-routing-exploring-the-model-router-in/ba-p/4557388",
-      "why": "Concrete routing modes and a runnable playground for testing model-selection tradeoffs firsthand."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "1ded2d5c0d34b3aa54d204aa176f74bc5e95a02a",
-      "published": "2026-09-21",
-      "score": 78,
-      "source": "Azure Architecture Center",
-      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
-      "summary": "Compares six Azure vector search services (AI Search, Cosmos DB NoSQL, DocumentDB, PostgreSQL, Managed Redis, SQL Database) on indexing algorithms (DiskANN, HNSW, IVFFlat), hybrid search, dimension limits and Foundry integration, with a decision flowchart.",
-      "title": "Choose an Azure service for vector search",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/vector-search",
-      "why": "Detailed, current decision guidance directly relevant to retrieval architecture choices on Azure."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-22",
-      "id": "82b7c1ad7628107c5442f8a3aa61528a75ba7795",
-      "published": "2026-09-21",
-      "score": 76,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Jev returns typed probabilistic decisions instead of text - yes/no confidence, multiple-choice distributions, and ratings computed in parallel in one context window - priced at $0.042 per million input tokens with free output, cheaper than GPT-5 Nano.",
-      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
-      "topics": [
-        "engineering",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/21/jev",
-      "why": "A genuinely different LLM interface and pricing model, not just another chat endpoint."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-22",
-      "id": "9a319be2f7489d1b385bd8105dc35b48db588c5a",
-      "published": "2026-09-21",
-      "score": 70,
-      "source": "Interconnects",
-      "source_url": "https://www.interconnects.ai/",
-      "summary": "Expanded Congressional testimony arguing Chinese open-weight models (GLM-5.3, Kimi K3) now lead American ones on benchmarks and adoption, with over 80% of open-inference usage and a 1.6B-download Hugging Face lead over the US.",
-      "title": "The current balance of power in open models",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "why": "Concrete numbers behind a real shift in which open models are worth building on."
     }
   ],
   "meta": {
-    "last_run": "2026-11-20T05:08:25Z",
-    "new_items": 3,
-    "run_date": "2026-11-20",
-    "total_items": 294,
+    "last_run": "2026-11-21T05:10:36Z",
+    "new_items": 11,
+    "run_date": "2026-11-21",
+    "total_items": 300,
     "window_days": 60
   }
 }
