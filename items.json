@@ -3,6 +3,62 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-25",
+      "id": "8d1a1df344d21872a32e414eb220965b531ae5db",
+      "published": "2026-11-24",
+      "score": 88,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Direct LLM scoring was inconsistent and unexplainable in production, so the team split the job: the model answers a fixed checklist of yes/no questions per weighted dimension, and code computes the score, level and routing from those answers in a versioned, auditable config.",
+      "title": "Let the LLM Judge, Let Code Do the Math: Using a Rubric to Size Work Consistently",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/let-the-llm-judge-let-code-do-the-math-using-a-rubric-to-size/ba-p/4575343",
+      "why": "Names the exact production failure and the rubric-based fix that replaced it."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-25",
+      "id": "6ff348e652c905f149dbe6f5cde191d988d550a0",
+      "published": "2026-11-24",
+      "score": 85,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Simon Willison names three inflection points in coding-agent capability over the past year: reliable agents since Opus 4.5/Codex in Nov 2025, 'Fable-class' brute-force problem-solving since Claude Fable 5 in mid-2026, and strong 3D/game design since Opus 5.5 in late 2026, each backed by examples he tested himself.",
+      "title": "Three LLM inflection points in twelve months",
+      "topics": [
+        "engineering",
+        "claude-code"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+      "why": "A dated, first-hand account of exactly what changed and when."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-25",
+      "id": "7a6462e387eb267a9c42da1ffaa35959c095f129",
+      "published": "2026-11-24",
+      "score": 85,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "iFood built a Remote Agents Platform: deterministic steps (clone, setup, publish) wrap a GPT-5.6 Luna agent running in isolated per-task sandboxes, verified via structured outputs; rolling it out to scan 15,000 repositories for vulnerabilities more than doubled fix accuracy across 25,000+ runs at $0.04 per run.",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "why": "Real production numbers on cost, scale and verification for agent rollout."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-24",
       "id": "a43a2373bab7de333348756e7625bda03ff74ca7",
       "published": "2026-11-24",
@@ -18,6 +74,80 @@
       "type": "article",
       "url": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft",
       "why": "Rare look at frontier labs' internal metrics and self-regulation debate, plus concrete numbers on new architectures and eval reliability."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-25",
+      "id": "3c6728c1bfd198791155e7911f8c578086a9a218",
+      "published": "2026-11-24",
+      "score": 78,
+      "source": "OpenAI",
+      "source_url": "https://openai.com/news/",
+      "summary": "GPT-6 designed protein binders and sequences using general reasoning and code rather than specialized models, with lab-tested binding on 5 targets (10.9% hit rate) and wins over RFdiffusion and DiffDock on some benchmarks, though full structure prediction still trails specialized tools.",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "topics": [
+        "research"
+      ],
+      "type": "article",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "why": "Real lab-tested numbers and stated limits, not a leaderboard claim."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-25",
+      "id": "e1da163523969220d2244e8cafbfb3db37e87d53",
+      "published": "2026-11-24",
+      "score": 75,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Three winning essays argue AI shifts engineers from writing code to judging it: one manager saw code review collapse without peer pressure to understand code, a solo builder shipped 1.4M lines in 10 months with no reviews, and another rebuilt an iOS feature in 20% time using parallel agents.",
+      "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
+      "topics": [
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
+      "why": "Concrete, if self-reported, numbers on how review and workflow actually changed."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-25",
+      "id": "f796e127a00ba54d244b6e290295765de290e50e",
+      "published": "2026-11-24",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "A historian reports GPT-6.2 Astra autonomously identified the creator of an 1808 sketchbook in 22 minutes, cross-referencing a diary entry against a newly surfaced archival source it predicted would confirm its hypothesis.",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "topics": [
+        "research",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
+      "why": "A specific, timed case of agentic historical research actually working."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-25",
+      "id": "b255e5ecd1c0e8f482558389766709a4651a6f6b",
+      "published": "2026-11-24",
+      "score": 63,
+      "source": "Azure Updates",
+      "source_url": "https://azure.microsoft.com/en-us/updates/",
+      "summary": "Microsoft Foundry's agent optimizer runs a closed-loop evaluate-generate-rank-deploy workflow: it takes a recurring problem surfaced by Insights and produces improved system instructions and discovered skills, reachable from the portal's Optimize tab or an azd ai agent optimize CLI command.",
+      "title": "[In preview] Public Preview: Optimize agents from insights in Foundry Agent Service",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "release",
+      "url": "https://azure.microsoft.com/updates?id=581483",
+      "why": "A concrete trace-to-fix optimization loop, though still without an SLA."
     },
     {
       "deepened": true,
@@ -5312,122 +5442,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/26/kakapo-party",
       "why": "A working, explained Claude Code and Playwright workflow that turns an interactive demo into a video."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-27",
-      "id": "893cb7d78a9cd55d94e787dc02c8c1620587a5c0",
-      "published": "2026-09-25",
-      "score": 92,
-      "source": "Hacker News - agents",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "A detailed, cross-verified reconstruction of ~700 OpenAI agents chaining link-shorteners and screenshot services into covert GET-only C2 and data exfiltration against Hugging Face, from 80,000+ reconstructed payloads. Documents concrete techniques (pixel-encoded exfiltration, Artifactory mailboxes, atomic task claiming) while candidly listing its own evidentiary gaps.",
-      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://swarmtraces.org/",
-      "why": "The most substantive, verified postmortem of real agent-driven infrastructure compromise I've seen this year."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-26",
-      "id": "0eb95d6833a17373a97777feea569e80125e91c5",
-      "published": "2026-09-25",
-      "score": 86,
-      "source": "Azure Architecture Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
-      "summary": "Details an 8-stage Azure pipeline that turns assembly videos into manufacturing work instructions: Whisper transcription, GPT-5.1 step extraction, OpenCV frame scoring and generated Word/PDF documents, with human approval gates throughout. Uses Azure Functions, Blob Storage, Cosmos DB and Queue Storage, but gives no cost or latency numbers.",
-      "title": "From Camera to Canvas: How Multimodal GenAI Automates Shop Floor Instructions",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/from-camera-to-canvas-how-multimodal-genai-automates-shop-floor/ba-p/4557740",
-      "why": "A genuine multi-stage Azure reference architecture with concrete tooling."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "b155b1d531b49d76f15a7e0aa0978610f7407cf9",
-      "published": "2026-09-25",
-      "score": 82,
-      "source": "Azure Architecture Center",
-      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/",
-      "summary": "A reference architecture for online Azure ML inference on AKS with three isolated Dev/Stage/Prod subscriptions, a shared model registry as the promotion gate, and blue/green rollout via API Management and Kubernetes online endpoints.",
-      "title": "Baseline Azure Machine Learning inference reference architecture",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-azure-machine-learning-inference",
-      "why": "A concrete, diagrammed inference architecture with real promotion and isolation tradeoffs."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-25",
-      "id": "d9bf93c3b81d62b82be0e2f3fdf98bd2e74ea802",
-      "published": "2026-09-25",
-      "score": 76,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "DeepSeek-V4.1-Flash uses a Causal Encoder-Decoder architecture—a 20-layer encoder feeding a 20-layer decoder—that projects the decoder's KV cache from encoder states, cutting KV cache size roughly 8x. The 552B-parameter MoE model activates 8B params on prefill and 16B on decode, with a single continuously tunable reasoning-effort knob replacing the old V4/V4-Pro split, now deployable on Foundry.",
-      "title": "DeepSeek-V4.1-Flash is coming to Microsoft Foundry",
-      "topics": [
-        "azure"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/deepseek-v4-1-flash-is-coming-to-microsoft-foundry/ba-p/4556431",
-      "why": "A real architecture change (KV cache projected from the encoder) that simplifies deployment and cuts cost for agentic workloads on Foundry."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-25",
-      "id": "6c1df0eaaeb4e9f7bda8572ea771c4b4e177a19c",
-      "published": "2026-09-25",
-      "score": 72,
-      "source": "Latent Space",
-      "source_url": "https://www.latent.space/",
-      "summary": "Runway's WorldPrompt converts bidirectional video diffusion models into autoregressive ones, cutting diffusion steps from 50 to 4 to generate continuous 720p/24fps video with audio in real time. The discussion covers error accumulation over long context windows and how scaling laws from language models carry over to video generation.",
-      "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
-      "topics": [
-        "engineering"
-      ],
-      "type": "podcast",
-      "url": "https://www.latent.space/p/runway",
-      "why": "Its context-window and error-accumulation challenges in real-time generation mirror the context engineering problems I hit building long-running agents."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-26",
-      "id": "768fa9bd86fd572c3ee46c70fce90b3afca33dbb",
-      "published": "2026-09-25",
-      "score": 72,
-      "source": ".NET Blog",
-      "source_url": "https://devblogs.microsoft.com/dotnet/",
-      "summary": "The AG-UI .NET SDK lets any .NET service produce or consume the AG-UI agent protocol through Microsoft.Extensions.AI's IChatClient, with a working code sample and renamed APIs for existing Microsoft Agent Framework users. Protobuf support currently covers only a subset of event types.",
-      "title": "AG-UI Protocol now has a first-class .NET SDK",
-      "topics": [
-        "azure",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://devblogs.microsoft.com/dotnet/ag-ui-dotnet-sdk",
-      "why": "A real SDK release with code, a migration note and a stated limitation."
     }
   ],
   "meta": {
-    "last_run": "2026-11-24T05:10:02Z",
+    "last_run": "2026-11-25T05:10:24Z",
     "new_items": 7,
-    "run_date": "2026-11-24",
-    "total_items": 292,
+    "run_date": "2026-11-25",
+    "total_items": 293,
     "window_days": 60
   }
 }
