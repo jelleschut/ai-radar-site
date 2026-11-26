@@ -3,6 +3,81 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-26",
+      "id": "05c9b6411c6b6ac957da64a247c29a9bd0f25eec",
+      "published": "2026-11-25",
+      "score": 92,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Walks through five concrete checks - subnet delegation, Cosmos DB/Key Vault private DNS, firewall TLS exclusions for Entra sign-in, peered-VNet routing, and soft-deleted-account subnet cleanup - for diagnosing a timed-out Foundry Agents page in a locked-down VNet.",
+      "title": "Hosted agents in your own virtual network: five checks when the Agents page times out",
+      "topics": [
+        "azure"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/hosted-agents-in-your-own-virtual-network-five-checks-when-the/ba-p/4575468",
+      "why": "Exactly the networked-identity reference architecture and real commands this profile rewards."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-26",
+      "id": "8bc07deb0c8ad96d540a295db0b9c96d8760c173",
+      "published": "2026-11-25",
+      "score": 90,
+      "source": "The Pragmatic Engineer",
+      "source_url": "https://newsletter.pragmaticengineer.com/",
+      "summary": "Anthropic's API team describes rewriting the Python Messages API in Rust over five months using shadow-traffic comparison instead of strict review, plus Claude agents that now triage code review, on-call alerts and onboarding.",
+      "title": "How Anthropic builds software in 2026 with Katelyn Lesse",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "podcast",
+      "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "why": "A detailed, numbers-backed account of how AI agents are reshaping Anthropic's own engineering process."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-26",
+      "id": "92bfef0c827b78941ebba666d4cb325e62d73f27",
+      "published": "2026-11-25",
+      "score": 75,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Compares agents with inline tools against ones sharing a centrally managed, MCP-exposed Toolbox, showing Tool Search let a model discover and call tools on demand instead of loading them all upfront.",
+      "title": "From inline tools to a shared Toolbox in Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/from-inline-tools-to-a-shared-toolbox-in-microsoft-foundry/ba-p/4575475",
+      "why": "A named pattern with a concrete (if unquantified) token-usage tradeoff."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
+      "first_seen": "2026-11-26",
+      "id": "1fe3a95ec105b2c5258527bd1d79c05db56bf1bf",
+      "published": "2026-11-25",
+      "score": 63,
+      "source": "Azure AI Foundry Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
+      "summary": "Shows a fal-on-Foundry pipeline chaining four video models (LTX 2.5 Fast/Pro, Kling v3 Pro, MiniMax H3 Max) through shared Python polling helpers and Entra auth, picking a model per creative stage.",
+      "title": "Build a multi-model video generation workflow with fal on Microsoft Foundry",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/build-a-multi-model-video-generation-workflow-with-fal-on/ba-p/4573786",
+      "why": "Concrete multi-model workflow code, though without cost or latency figures."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-25",
       "id": "8d1a1df344d21872a32e414eb220965b531ae5db",
       "published": "2026-11-24",
@@ -5405,50 +5480,13 @@
       "type": "article",
       "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
       "why": "A sharp framing critique, though built mostly on quoted reporting rather than original investigation."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-27",
-      "id": "912908644fe88d1dfc145e675b50aea3fa7272ab",
-      "published": "2026-09-26",
-      "score": 88,
-      "source": "Hacker News - LLM",
-      "source_url": "https://news.ycombinator.com/",
-      "summary": "An empirical study across 7 models finds LLM watermarking shifts tool-calling and refusal decisions, not just token style — average churn of 6.5%, spiking to 23.5% under prompt injection. Tested with 11 watermark keys and reproducible benchmarks (BFCL v4, HarmBench), revealing safety-relevant drift invisible to ordinary evaluation.",
-      "title": "Understanding the Impact of LLM Watermarking on AI Agent Behavior",
-      "topics": [
-        "engineering",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
-      "why": "Rigorous evidence that watermarking silently changes agent tool-use and safety behavior, exactly the kind of eval methodology I care about."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-27",
-      "id": "63394656335488e4c75abda57b39e3ad66e8c7b1",
-      "published": "2026-09-26",
-      "score": 68,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Simon Willison has Claude Opus generate a pixel-art kākāpō party as an HTML5 canvas animation, then has Claude Code write a short Playwright script to load it, click through the confetti effect, and record a 15-second video. A concrete, reproducible example of Claude Code driving browser automation for a real deliverable.",
-      "title": "Kākāpō Party",
-      "topics": [
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/26/kakapo-party",
-      "why": "A working, explained Claude Code and Playwright workflow that turns an interactive demo into a video."
     }
   ],
   "meta": {
-    "last_run": "2026-11-25T05:10:24Z",
-    "new_items": 7,
-    "run_date": "2026-11-25",
-    "total_items": 293,
+    "last_run": "2026-11-26T05:07:15Z",
+    "new_items": 4,
+    "run_date": "2026-11-26",
+    "total_items": 295,
     "window_days": 60
   }
 }
