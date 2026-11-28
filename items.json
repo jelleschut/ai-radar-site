@@ -3,6 +3,80 @@
     {
       "deepened": true,
       "depth": "deep-dive",
+      "first_seen": "2026-11-28",
+      "id": "5991c895a760aff22c87f900f8ce952f0fd84d00",
+      "published": "2026-11-27",
+      "score": 92,
+      "source": "Azure Architecture Blog",
+      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog",
+      "summary": "ARROW is an Azure reference implementation where agents assess an airline disruption and deterministic code prices and executes the plan, with duty managers approving anything above a cost or passenger threshold. In its Lisbon scenario, delaying a grounded aircraft's rotation costs €8,422 more than cancelling but leaves 247 fewer passengers stranded.",
+      "title": "Agentic disruption recovery for airlines on Azure",
+      "topics": [
+        "azure",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/agentic-disruption-recovery-for-airlines-on-azure/ba-p/4577378",
+      "why": "A quantified reference architecture and decision-threshold design for real operational trade-offs, exactly what I build toward."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-28",
+      "id": "68cfb35a007a7c133d0832975acd1516ad42138f",
+      "published": "2026-11-27",
+      "score": 68,
+      "source": "Simon Willison",
+      "source_url": "https://simonwillison.net/",
+      "summary": "Willison had Claude Opus 5.5 build an experimental chart-type plugin to stress-test datasette-charts' plugin hook, which surfaced friction points this release fixes. It also launches a tutorial site and a demo gallery for plugin authors.",
+      "title": "datasette-charts 0.4a0",
+      "topics": [
+        "claude-code",
+        "engineering"
+      ],
+      "type": "article",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts",
+      "why": "A concrete agentic-coding workflow whose friction points reshaped a real plugin API."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-28",
+      "id": "42f8ff418476e850d8eb79a33594d31ecded97f6",
+      "published": "2026-11-27",
+      "score": 68,
+      "source": "Latent Space",
+      "source_url": "https://www.latent.space/",
+      "summary": "G2i's founder explains how frontier labs weigh exclusive vs shared data deals, price tasks by estimated handling time, and design tasks just beyond a model's current ability so they do not become evals. He also covers when building training data in-house makes sense.",
+      "title": "Inside the AI Training Data Market — Gabe Greenberg, G2i",
+      "topics": [
+        "research"
+      ],
+      "type": "podcast",
+      "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i",
+      "why": "Concrete pricing and task-design mechanics behind the data that trains the models I use."
+    },
+    {
+      "deepened": true,
+      "depth": "overview",
+      "first_seen": "2026-11-28",
+      "id": "06aa5b081465b88bd6d12b17b52e8461afe2d495",
+      "published": "2026-11-27",
+      "score": 68,
+      "source": "Latent Space Podcast",
+      "source_url": "https://www.latent.space/podcast",
+      "summary": "G2i's founder explains how frontier labs weigh exclusive vs shared data deals, price tasks by estimated handling time, and design tasks just beyond a model's current ability so they do not become evals. He also covers when building training data in-house makes sense.",
+      "title": "Inside the AI Training Data Market — Gabe Greenberg, G2i",
+      "topics": [
+        "research"
+      ],
+      "type": "podcast",
+      "url": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/inside_the_ai_training_data_market_gabe_greenberg_g2i",
+      "why": "Concrete pricing and task-design mechanics behind the data that trains the models I use."
+    },
+    {
+      "deepened": true,
+      "depth": "deep-dive",
       "first_seen": "2026-11-27",
       "id": "bb56c3fed4b216467c1ed2f77c45f62a2da59b58",
       "published": "2026-11-26",
@@ -5296,143 +5370,13 @@
       "type": "article",
       "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber",
       "why": "A concrete, verified client-side AI-built tool with a clear privacy use case."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "12d1ff862c61b5737e469baa48a3d409270afbf5",
-      "published": "2026-09-28",
-      "score": 82,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "Simon Willison's hands-on test: Sonnet 5.5 is priced the same as Sonnet 5 but runs 30%+ faster and beats it on every benchmark, approaching Opus 5.5 on some coding tasks. It inherited Opus 5.5's 'max' thinking-effort bug, burning 128k tokens before failing to render an SVG.",
-      "title": "Claude Sonnet 5.5",
-      "topics": [
-        "claude-code",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5",
-      "why": "First-hand tested benchmarks, pricing and a reproducible bug report from a trusted source."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "50e18c5419845c26792b56969688ef4397e64552",
-      "published": "2026-09-28",
-      "score": 78,
-      "source": "Anthropic News (unofficial mirror)",
-      "source_url": "https://www.anthropic.com/news",
-      "summary": "Anthropic's Sonnet 5.5 jumps from 10.3% to 70.6% on Terminal-Bench 4.0, nears Opus 5.5 on GDPval-AA, and runs 30%+ faster at the same $2/$10 per-million-token price. It adds cyber safeguards matching Opus 5.5 and new anti-distillation protections.",
-      "title": "Introducing Claude Sonnet 5.5",
-      "topics": [
-        "claude-code",
-        "research"
-      ],
-      "type": "article",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5",
-      "why": "A major model release with concrete benchmark jumps and new safety measures."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "5b94c506716ceb12d5a1a163c6e03894d3ad3e0b",
-      "published": "2026-09-28",
-      "score": 70,
-      "source": "Simon Willison",
-      "source_url": "https://simonwillison.net/",
-      "summary": "OpenAI's Agent Security lead Joe D'Arrigo says capability jumps in cyber, swarming and coordination outpaced the org's security culture, and argues resilience needs people, incident response and comms ready before the next jump, not just hardened systems.",
-      "title": "Quoting @joedaroo",
-      "topics": [
-        "engineering"
-      ],
-      "type": "article",
-      "url": "https://simonwillison.net/2026/Sep/28/joedaroo",
-      "why": "A named practitioner's hard-won lesson on organizational readiness for capability jumps."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "8888096787fa183f6aa5d4543d7fb9dd1b8e1c87",
-      "published": "2026-09-28",
-      "score": 68,
-      "source": ".NET Blog",
-      "source_url": "https://devblogs.microsoft.com/dotnet/",
-      "summary": "New experimental Blazor components (ChatPage, UIAgent, ContentBlock) turn streamed agent responses into observable UI: typed tool-call rendering, approval workflows via ApprovalRequiredAIFunction, and shared state where user and agent co-edit a document via AG-UI events.",
-      "title": "Build Agentic UI with the new Blazor AI components",
-      "topics": [
-        "azure",
-        "engineering"
-      ],
-      "type": "video",
-      "url": "https://devblogs.microsoft.com/dotnet/build-agentic-ui-blazor",
-      "why": "Working code patterns for building reviewable, collaborative agent UIs on .NET."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-29",
-      "id": "6894c2029578d0c500dff4b5adf815b00f2f0e84",
-      "published": "2026-09-28",
-      "score": 65,
-      "source": "Azure Updates",
-      "source_url": "https://azure.microsoft.com/en-us/updates/",
-      "summary": "Vector search and vector indexes reach GA in Azure SQL Database: CREATE VECTOR INDEX builds an approximate DiskANN index (cosine/euclidean/dot metrics), and VECTOR_SEARCH performs the nearest-neighbor query in T-SQL.",
-      "title": "[Launched] Generally Available: Vector search and vector indexes in Azure SQL",
-      "topics": [
-        "azure"
-      ],
-      "type": "release",
-      "url": "https://azure.microsoft.com/updates?id=571800",
-      "why": "A concrete, usable syntax for native vector search now shipped in Azure SQL."
-    },
-    {
-      "deepened": true,
-      "depth": "deep-dive",
-      "first_seen": "2026-09-29",
-      "id": "4cdfe3ff40e2272b97f30a73f653d992c3e26d6b",
-      "published": "2026-09-28",
-      "score": 65,
-      "source": "Import AI",
-      "source_url": "https://importai.substack.com/",
-      "summary": "Levin's 'platonic mindspace' theory reframes AI alignment via mind:body::math:physics; Google tests Trillium TPUs in orbit, surviving radiation but facing thermal limits; Zhipu used its own models to triple GLM-5.3-Flash throughput in under two weeks via an automated feedback loop.",
-      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
-      "topics": [
-        "research"
-      ],
-      "type": "article",
-      "url": "https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "why": "A research survey tying three developments to a shared self-improvement-loop implication."
-    },
-    {
-      "deepened": true,
-      "depth": "overview",
-      "first_seen": "2026-09-29",
-      "id": "2036905c699657cdef956459d84f152ae6807227",
-      "published": "2026-09-28",
-      "score": 63,
-      "source": "Azure AI Foundry Blog",
-      "source_url": "https://techcommunity.microsoft.com/category/azure/blog/azure-ai-foundry-blog",
-      "summary": "Sonnet 5.5 lands in Microsoft Foundry at the same $2/$10 per-million-token price as Sonnet 5, averaging 98% of Opus 5.5's benchmark scores while beating it on Terminal-Bench 4.0 (70.6% vs 66.4%) using fewer tokens per task.",
-      "title": "Claude Sonnet 5.5 is now available in Microsoft Foundry",
-      "topics": [
-        "azure",
-        "claude-code"
-      ],
-      "type": "article",
-      "url": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/claude-sonnet-5-5-is-now-available-in-microsoft-foundry/ba-p/4559774",
-      "why": "Concrete pricing and benchmark numbers for a model now available on Azure."
     }
   ],
   "meta": {
-    "last_run": "2026-11-27T05:07:31Z",
-    "new_items": 1,
-    "run_date": "2026-11-27",
-    "total_items": 292,
+    "last_run": "2026-11-28T05:06:27Z",
+    "new_items": 4,
+    "run_date": "2026-11-28",
+    "total_items": 289,
     "window_days": 60
   }
 }
